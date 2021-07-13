@@ -117,8 +117,8 @@ namespace PoePricing
                 foreach (var scarabQuality in scarabType.Value)
                 {
                     scarabQuality.Value.Count = 0;
-                    scarabQuality.Value.CountTextBox.Text = "0";
-                    scarabQuality.Value.CountPoorTextBox.Text = "0";
+                    scarabQuality.Value.CountTextBox.Text = "";
+                    scarabQuality.Value.CountPoorTextBox.Text = "";
                 }
             }
         }
@@ -279,8 +279,8 @@ namespace PoePricing
             foreach (var essenceType in essences)
             {
                 essenceType.Value.Count = 0;
-                essenceType.Value.CountTextBox.Text = "0";
-                essenceType.Value.CountPoorTextBox.Text = "0";
+                essenceType.Value.CountTextBox.Text = "";
+                essenceType.Value.CountPoorTextBox.Text = "";
             }
         }
 
@@ -437,8 +437,8 @@ namespace PoePricing
             foreach (var fossilType in fossils)
             {
                 fossilType.Value.Count = 0;
-                fossilType.Value.CountTextBox.Text = "0";
-                fossilType.Value.CountPoorTextBox.Text = "0";
+                fossilType.Value.CountTextBox.Text = "";
+                fossilType.Value.CountPoorTextBox.Text = "";
             }
         }
 
@@ -697,6 +697,9 @@ namespace PoePricing
             {
                 scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.ForeColor = Color.Black;
                 scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.ForeColor = Color.Black;
+
+                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.BackColor = Color.Black;
+                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.BackColor = Color.Black;
             } else
             {
                 var color = Color.Lime;
@@ -715,6 +718,9 @@ namespace PoePricing
                 }
                 scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.ForeColor = color;
                 scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.ForeColor = color;
+
+                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
+                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
             }
 
             UpdateScarabTotal();
@@ -751,19 +757,17 @@ namespace PoePricing
             {
                 essences[essence.essenceType].CountTextBox.ForeColor = Color.Black;
                 essences[essence.essenceType].CountPoorTextBox.ForeColor = Color.Black;
+
+                essences[essence.essenceType].CountTextBox.BackColor = Color.Black;
+                essences[essence.essenceType].CountPoorTextBox.BackColor = Color.Black;
             }
             else
             {
-                var color = Color.Tan;
-                if (essence.essenceType == EssenceType.Delirium ||
-                    essence.essenceType == EssenceType.Horror ||
-                    essence.essenceType == EssenceType.Hysteria ||
-                    essence.essenceType == EssenceType.Insanity)
-                {
-                    color = Color.Crimson;
-                }
-                essences[essence.essenceType].CountTextBox.ForeColor = color;
-                essences[essence.essenceType].CountPoorTextBox.ForeColor = color;
+                essences[essence.essenceType].CountTextBox.ForeColor = Color.Tan;
+                essences[essence.essenceType].CountPoorTextBox.ForeColor = Color.Tan;
+
+                essences[essence.essenceType].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
+                essences[essence.essenceType].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
             }
 
             UpdateEssenceTotal();
@@ -797,11 +801,17 @@ namespace PoePricing
             {
                 fossils[fossil.fossilType].CountTextBox.ForeColor = Color.Black;
                 fossils[fossil.fossilType].CountPoorTextBox.ForeColor = Color.Black;
+
+                fossils[fossil.fossilType].CountTextBox.BackColor = Color.Black;
+                fossils[fossil.fossilType].CountPoorTextBox.BackColor = Color.Black;
             }
             else
             {
                 fossils[fossil.fossilType].CountTextBox.ForeColor = Color.Gold;
                 fossils[fossil.fossilType].CountPoorTextBox.ForeColor = Color.Gold;
+
+                fossils[fossil.fossilType].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
+                fossils[fossil.fossilType].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
             }
 
             UpdateFossilTotal();
