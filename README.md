@@ -10,5 +10,4 @@ Scarabs
 Essences  
 Fossils  
 
-The compiled program can be downloaded here: 
-[PoePricing_13-7-2021.zip](https://github.com/eraaegis/PoePricing/files/6811237/PoePricing_13-7-2021.zip)
+The compiled program can be downloaded here: [PoePricing_13-7-2021.zip](https://github.com/eraaegis/PoePricing/files/6811478/PoePricing_13-7-2021.zip)
