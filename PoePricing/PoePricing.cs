@@ -32,7 +32,7 @@ namespace PoePricing
             {
                 this.StashTabSelector.Items.Add(tab);
             }
-
+            
             tabs = new Dictionary<Tabs, Tab>();
             tabs.Add(Tabs.Scarab, new Tab(this.ScarabBasePanel, this.ScarabPanel, this.ScarabPoorPanel, this.ScarabTotal, this.ScarabTotalPoor));
             tabs.Add(Tabs.Essence, new Tab(this.EssenceBasePanel, this.EssencePanel, this.EssencePoorPanel, this.EssenceTotal, this.EssenceTotalPoor));
@@ -52,6 +52,7 @@ namespace PoePricing
                 tab.Value.panels[currentDisplayMode].Visible = true;
                 tab.Value.panels[(DisplayMode)(1 - (int)currentDisplayMode)].Visible = false;
             }
+            this.ScreencapButton.Click += ScreencapButton_Click;
             this.ResetButton.Click += ResetButton_Click;
             this.StashTabSelector.SelectedIndexChanged += StashTabSelector_SelectedIndexChanged;
             this.StashTabSelector.SelectedIndex = 0;
@@ -657,6 +658,15 @@ namespace PoePricing
                 tab.Value.panels[currentDisplayMode].Visible = true;
                 tab.Value.panels[(DisplayMode)(1 - (int)currentDisplayMode)].Visible = false;
             }
+        }
+
+        private void ScreencapButton_Click(object sender, EventArgs e)
+        {
+            var bounds = this.Bounds;
+            var bitmap = new Bitmap(bounds.Width, bounds.Height);
+            var g = Graphics.FromImage(bitmap);
+            g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
+            Clipboard.SetImage(bitmap);
         }
 
         private void ResetButton_Click(object sender, EventArgs e)

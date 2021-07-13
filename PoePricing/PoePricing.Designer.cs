@@ -134,6 +134,7 @@ namespace PoePricing
             this.ResetButton = new System.Windows.Forms.Button();
             this.FossilBasePanel = new System.Windows.Forms.Panel();
             this.FossilPoorPanel = new System.Windows.Forms.Panel();
+            this.FossilGlyphicPoorLabel = new System.Windows.Forms.Label();
             this.FossilTangledPoorLabel = new System.Windows.Forms.Label();
             this.FossilShudderingPoorLabel = new System.Windows.Forms.Label();
             this.FossilSerratedPoorLabel = new System.Windows.Forms.Label();
@@ -189,11 +190,11 @@ namespace PoePricing
             this.FossilJaggedLabel = new System.Windows.Forms.Label();
             this.FossilTotalPoor = new System.Windows.Forms.Label();
             this.FossilTotalPoorLabel = new System.Windows.Forms.Label();
-            this.FossilGlyphicPoorLabel = new System.Windows.Forms.Label();
             this.LeagueSelector = new System.Windows.Forms.ComboBox();
             this.StartPanel = new System.Windows.Forms.Panel();
-            this.StartPastebin = new System.Windows.Forms.RichTextBox();
             this.StartInstructions = new System.Windows.Forms.TextBox();
+            this.StartPastebin = new System.Windows.Forms.RichTextBox();
+            this.ScreencapButton = new System.Windows.Forms.Button();
             this.Toolbar.SuspendLayout();
             this.ScarabBasePanel.SuspendLayout();
             this.ScarabPoorPanel.SuspendLayout();
@@ -1443,6 +1444,17 @@ namespace PoePricing
             this.FossilPoorPanel.Size = new System.Drawing.Size(1109, 640);
             this.FossilPoorPanel.TabIndex = 0;
             // 
+            // FossilGlyphicPoorLabel
+            // 
+            this.FossilGlyphicPoorLabel.AutoSize = true;
+            this.FossilGlyphicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilGlyphicPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilGlyphicPoorLabel.Location = new System.Drawing.Point(320, 586);
+            this.FossilGlyphicPoorLabel.Name = "FossilGlyphicPoorLabel";
+            this.FossilGlyphicPoorLabel.Size = new System.Drawing.Size(87, 20);
+            this.FossilGlyphicPoorLabel.TabIndex = 0;
+            this.FossilGlyphicPoorLabel.Text = "GLYPHIC";
+            // 
             // FossilTangledPoorLabel
             // 
             this.FossilTangledPoorLabel.AutoSize = true;
@@ -2074,17 +2086,6 @@ namespace PoePricing
             this.FossilTotalPoorLabel.TabIndex = 0;
             this.FossilTotalPoorLabel.Text = "Total Price:";
             // 
-            // FossilGlyphicPoorLabel
-            // 
-            this.FossilGlyphicPoorLabel.AutoSize = true;
-            this.FossilGlyphicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilGlyphicPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilGlyphicPoorLabel.Location = new System.Drawing.Point(320, 586);
-            this.FossilGlyphicPoorLabel.Name = "FossilGlyphicPoorLabel";
-            this.FossilGlyphicPoorLabel.Size = new System.Drawing.Size(87, 20);
-            this.FossilGlyphicPoorLabel.TabIndex = 0;
-            this.FossilGlyphicPoorLabel.Text = "GLYPHIC";
-            // 
             // LeagueSelector
             // 
             this.LeagueSelector.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -2104,16 +2105,6 @@ namespace PoePricing
             this.StartPanel.Size = new System.Drawing.Size(1109, 640);
             this.StartPanel.TabIndex = 1003;
             // 
-            // StartPastebin
-            // 
-            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
-            this.StartPastebin.Name = "StartPastebin";
-            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
-            this.StartPastebin.TabIndex = 1;
-            this.StartPastebin.Text = "Paste things here";
-            // 
             // StartInstructions
             // 
             this.StartInstructions.BackColor = System.Drawing.Color.Black;
@@ -2127,6 +2118,25 @@ namespace PoePricing
             this.StartInstructions.TabIndex = 0;
             this.StartInstructions.Text = resources.GetString("StartInstructions.Text");
             // 
+            // StartPastebin
+            // 
+            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
+            this.StartPastebin.Name = "StartPastebin";
+            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
+            this.StartPastebin.TabIndex = 1;
+            this.StartPastebin.Text = "Paste things here";
+            // 
+            // ScreencapButton
+            // 
+            this.ScreencapButton.Location = new System.Drawing.Point(12, 647);
+            this.ScreencapButton.Name = "ScreencapButton";
+            this.ScreencapButton.Size = new System.Drawing.Size(143, 23);
+            this.ScreencapButton.TabIndex = 999;
+            this.ScreencapButton.Text = "Copy Screen to Clipboard";
+            this.ScreencapButton.UseVisualStyleBackColor = true;
+            // 
             // PoePricing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2137,6 +2147,7 @@ namespace PoePricing
             this.Controls.Add(this.LeagueSelector);
             this.Controls.Add(this.DisplayModeButton);
             this.Controls.Add(this.ResetButton);
+            this.Controls.Add(this.ScreencapButton);
             this.Controls.Add(this.FossilBasePanel);
             this.Controls.Add(this.EssenceBasePanel);
             this.Controls.Add(this.ScarabBasePanel);
@@ -2336,6 +2347,7 @@ namespace PoePricing
         private System.Windows.Forms.Panel StartPanel;
         private System.Windows.Forms.RichTextBox StartPastebin;
         private System.Windows.Forms.TextBox StartInstructions;
+        private System.Windows.Forms.Button ScreencapButton;
     }
 }
 
