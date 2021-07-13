@@ -6,8 +6,9 @@ Compiled using Visual Studio 2019 .NET Framework 4.7.2
 
 Supported stash tabs include:
 
-Scarabs
+Scarabs  
+Essences  
+Fossils  
 
-Essences
-
-Fossils
+The compiled program can be downloaded here: 
+[PoePricing_13-7-2021.zip](https://github.com/eraaegis/PoePricing/files/6811237/PoePricing_13-7-2021.zip)
