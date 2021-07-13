@@ -663,9 +663,9 @@ namespace PoePricing
         private void ScreencapButton_Click(object sender, EventArgs e)
         {
             var bounds = this.Bounds;
-            var bitmap = new Bitmap(bounds.Width, bounds.Height);
+            var bitmap = new Bitmap(bounds.Width - 14, bounds.Height - 7, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             var g = Graphics.FromImage(bitmap);
-            g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
+            g.CopyFromScreen(new Point(bounds.Left + 7, bounds.Top), Point.Empty, bounds.Size);
             Clipboard.SetImage(bitmap);
         }
 
