@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fossil.cs" />
+    <Compile Include="Essence.cs" />
+    <Compile Include="Scarab.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="PoePricing.cs">
       <SubType>Form</SubType>
@@ -88,6 +91,7 @@
   <ItemGroup>
     <None Include="images\essence\bg.png" />
     <None Include="images\fossil\bg.png" />
+    <None Include="images\cross.png" />
     <Content Include="images\scarab\bg.png" />
     <Content Include="images\scarab\scarab_bg_uncut.png" />
   </ItemGroup>

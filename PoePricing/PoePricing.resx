@@ -127,6 +127,20 @@
 3. Click 'Copy' on the top left corner
 4. Paste in the space below</value>
   </data>
+  <data name="StashDumpInstructions.Text" xml:space="preserve">
+    <value>Follow these instructions carefully:
+1. Log in to www.pathofexile.com (The official site)
+2. Enter 'Tab Index' and 'Account Name' on the right and click 'Go'
+    A webpage will be opened with your stash tab info
+3. Click 'Copy' on the top left corner
+4. Paste in the space below
+
+Edit: To switch stash tabs, you may also simply replace the tabIndex
+parameter on the link itself</value>
+  </data>
+  <metadata name="StashDumpToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>110, 3</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

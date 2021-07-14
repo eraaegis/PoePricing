@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -18,10 +19,6 @@ namespace PoePricing
     {
         private readonly Dictionary<Tabs, Tab> tabs;
         private string currentLeague = "";
-
-        private Dictionary<ScarabType, Dictionary<ScarabQuality, Item>> scarabs;
-        private Dictionary<EssenceType, Item> essences;
-        private Dictionary<FossilType, Item> fossils;
 
         private DisplayMode currentDisplayMode;
         public PoePricing()
@@ -74,512 +71,34 @@ namespace PoePricing
                 this.LeagueSelector.SelectedIndex = saveFile.SelectedIndex;
 
                 this.StartPanel.Visible = false;
+
+                // also put in stash dump saved details
+                if (!string.IsNullOrEmpty(saveFile.TabIndex))
+                {
+                    this.StashDumpTabIndex.Text = saveFile.TabIndex;
+                }
+                if (!string.IsNullOrEmpty(saveFile.AccountName))
+                {
+                    this.StashDumpAccountName.Text = saveFile.AccountName;
+                }
             } catch (Exception e)
             {
 
             }
             this.StartPastebin.GotFocus += StartPastebin_GotFocus;
             this.StartPastebin.TextChanged += StartPastebin_TextChanged;
-        }
 
-        private void GetScarabPrice()
-        {
-            try
-            {
-                var url = $"https://poe.ninja/api/data/ItemOverview?league={currentLeague}&type=Scarab&language=en";
-                var request = WebRequest.Create(url);
-                var webResponse = request.GetResponse();
-                var webStream = webResponse.GetResponseStream();
-                var reader = new StreamReader(webStream);
-                var jsonString = JObject.Parse(reader.ReadToEnd());
-                foreach (var itemString in jsonString["lines"])
-                {
-                    Scarab item;
-                    var hasItem = StringToTypeDictionary.ScarabDict.TryGetValue(itemString["name"].ToString(), out item);
-                    if (!hasItem)
-                    {
-                        continue;
-                    }
-                    scarabs[item.scarabType][item.scarabQuality].Price = itemString["chaosValue"].ToObject<double>();
-                    scarabs[item.scarabType][item.scarabQuality].PriceLabel.Text = itemString["chaosValue"].ToString() + "c";
-                    scarabs[item.scarabType][item.scarabQuality].PricePoorLabel.Text = itemString["chaosValue"].ToString() + "c";
-                }
-            } catch (Exception e)
-            {
+            // stash dumping
+            this.StashDumpPanel.Visible = false;
+            this.StashDumpButton.Click += StashDumpButton_Click;
+            this.StashDumpExitButton.Click += StashDumpExitButton_Click;
+            this.StashDumpGoButton.Click += StashDumpGoButton_Click;
+            this.StashDumpTabIndex.KeyPress += TextBox_KeyPress;
+            this.StashDumpPastebin.GotFocus += StashDumpPastebin_GotFocus;
+            this.StashDumpPastebin.TextChanged += StashDumpPastebin_TextChanged;
 
-            }
-        }
-
-        private void ResetScarabCount()
-        {
-            foreach (var scarabType in scarabs)
-            {
-                foreach (var scarabQuality in scarabType.Value)
-                {
-                    scarabQuality.Value.Count = 0;
-                    scarabQuality.Value.CountTextBox.Text = "";
-                    scarabQuality.Value.CountPoorTextBox.Text = "";
-                }
-            }
-        }
-
-        private void InitializeScarab()
-        {
-            scarabs = new Dictionary<ScarabType, Dictionary<ScarabQuality, Item>>();
-            foreach (ScarabType scarabType in Enum.GetValues(typeof(ScarabType)))
-            {
-                var scarabTypeDict = new Dictionary<ScarabQuality, Item>();
-                foreach (ScarabQuality scarabQuality in Enum.GetValues(typeof(ScarabQuality)))
-                {
-                    scarabTypeDict.Add(scarabQuality, new Item());
-                }
-                scarabs.Add(scarabType, scarabTypeDict);
-            }
-
-            var scarabTypeList = new List<ScarabType> {
-                ScarabType.Bestiary,
-                ScarabType.Reliquary,
-                ScarabType.Torment,
-                ScarabType.Sulphite,
-                ScarabType.Metamorph,
-                ScarabType.Legion,
-                ScarabType.Ambush,
-                ScarabType.Blight,
-                ScarabType.Shaper,
-                ScarabType.Perandus,
-                ScarabType.Cartography,
-                ScarabType.Harbinger,
-                ScarabType.Elder,
-                ScarabType.Divination,
-                ScarabType.Breach,
-                ScarabType.Abyss
-            };
-
-            // normal panel
-            var currentTabIndex = 1;
-            for (var i = 0; i < scarabTypeList.Count; ++i)
-            {
-                foreach (ScarabQuality scarabQuality in Enum.GetValues(typeof(ScarabQuality)))
-                {
-                    var textBox = new TextBox();
-
-                    textBox.BackColor = Color.Black;
-                    textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                    textBox.TextAlign = HorizontalAlignment.Right;
-                    textBox.ForeColor = Color.Black;
-                    var locationX = 281 + (int)scarabQuality * 68;
-                    var locationY = 73 + i * 66;
-                    if (i >= scarabTypeList.Count / 2)
-                    {
-                        locationX += 284;
-                        locationY -= 8 * 66;
-                    }
-                    textBox.Location = new Point(locationX, locationY);
-                    textBox.MaxLength = 4;
-                    textBox.Name = Enum.GetName(typeof(ScarabQuality), scarabQuality) + Enum.GetName(typeof(ScarabType), scarabTypeList[i]);
-                    textBox.Size = new Size(57, 26);
-                    textBox.TabIndex = currentTabIndex;
-                    textBox.Tag = new Scarab(scarabTypeList[i], scarabQuality);
-                    textBox.KeyPress += TextBox_KeyPress;
-                    textBox.TextChanged += ScarabTextBox_TextChanged;
-                    ++currentTabIndex;
-                    this.ScarabPanel.Controls.Add(textBox);
-                    scarabs[scarabTypeList[i]][scarabQuality].CountTextBox = textBox;
-
-                    Label label = new Label();
-                    label.AutoSize = true;
-                    label.ForeColor = Color.Lime;
-                    label.Location = new Point(locationX, locationY + 29);
-                    label.Name = Enum.GetName(typeof(ScarabQuality), scarabQuality) + Enum.GetName(typeof(ScarabType), scarabTypeList[i]) + "Price";
-                    label.Size = new Size(19, 13);
-                    label.TabIndex = 0;
-                    label.Tag = new Scarab(scarabTypeList[i], scarabQuality);
-                    scarabs[scarabTypeList[i]][scarabQuality].PriceLabel = label;
-                    this.ScarabPanel.Controls.Add(label);
-                }
-            }
-
-            // poor panel
-            currentTabIndex = 1;
-            foreach (ScarabType scarabType in Enum.GetValues(typeof(ScarabType)))
-            {
-                foreach (ScarabQuality scarabQuality in Enum.GetValues(typeof(ScarabQuality)))
-                {
-                    var textBox = new TextBox();
-                    textBox.BackColor = Color.Black;
-                    textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                    textBox.TextAlign = HorizontalAlignment.Right;
-                    textBox.ForeColor = Color.Black;
-                    var locationX = 281 + (int)scarabQuality * 68;
-                    var locationY = 73 + (int)scarabType * 66;
-                    if ((int)scarabType >= scarabTypeList.Count / 2)
-                    {
-                        locationX += 395;
-                        locationY -= 8 * 66;
-                    }
-                    textBox.Location = new Point(locationX, locationY);
-                    textBox.MaxLength = 4;
-                    textBox.Name = Enum.GetName(typeof(ScarabQuality), scarabQuality) + Enum.GetName(typeof(ScarabType), scarabType);
-                    textBox.Size = new Size(57, 26);
-                    textBox.TabIndex = currentTabIndex;
-                    textBox.Tag = new Scarab(scarabType, scarabQuality);
-                    textBox.KeyPress += TextBox_KeyPress;
-                    textBox.TextChanged += ScarabTextBox_TextChanged;
-                    ++currentTabIndex;
-                    this.ScarabPoorPanel.Controls.Add(textBox);
-                    scarabs[scarabType][scarabQuality].CountPoorTextBox = textBox;
-
-                    Label label = new Label();
-                    label.AutoSize = true;
-                    label.ForeColor = Color.Lime;
-                    label.Location = new Point(locationX, locationY + 29);
-                    label.Name = Enum.GetName(typeof(ScarabQuality), scarabQuality) + Enum.GetName(typeof(ScarabType), scarabType) + "Price";
-                    label.Size = new Size(19, 13);
-                    label.TabIndex = 0;
-                    label.Tag = new Scarab(scarabType, scarabQuality);
-                    scarabs[scarabType][scarabQuality].PricePoorLabel = label;
-                    this.ScarabPoorPanel.Controls.Add(label);
-                }
-            }
-
-            GetScarabPrice();
-        }
-
-        private void GetEssencePrice()
-        {
-            try
-            {
-                var url = $"https://poe.ninja/api/data/ItemOverview?league={currentLeague}&type=Essence&language=en";
-                var request = WebRequest.Create(url);
-                var webResponse = request.GetResponse();
-                var webStream = webResponse.GetResponseStream();
-                var reader = new StreamReader(webStream);
-                var jsonString = JObject.Parse(reader.ReadToEnd());
-                foreach (var itemString in jsonString["lines"])
-                {
-                    Essence item;
-                    var hasItem = StringToTypeDictionary.EssenceDict.TryGetValue(itemString["name"].ToString(), out item);
-                    if (!hasItem)
-                    {
-                        continue;
-                    }
-                    essences[item.essenceType].Price = itemString["chaosValue"].ToObject<double>();
-                    essences[item.essenceType].PriceLabel.Text = itemString["chaosValue"].ToString() + "c";
-                    essences[item.essenceType].PricePoorLabel.Text = itemString["chaosValue"].ToString() + "c";
-                }
-            }
-            catch (Exception e)
-            {
-
-            }
-        }
-
-        private void ResetEssenceCount()
-        {
-            foreach (var essenceType in essences)
-            {
-                essenceType.Value.Count = 0;
-                essenceType.Value.CountTextBox.Text = "";
-                essenceType.Value.CountPoorTextBox.Text = "";
-            }
-        }
-
-        private void InitializeEssence()
-        {
-            essences = new Dictionary<EssenceType, Item>();
-            foreach (EssenceType essenceType in Enum.GetValues(typeof(EssenceType)))
-            {
-                essences.Add(essenceType, new Item());
-            }
-
-            var essenceTypeList = new List<EssenceType> {
-                EssenceType.Greed,
-                EssenceType.Contempt,
-                EssenceType.Hatred,
-                EssenceType.Woe,
-                EssenceType.Fear,
-                EssenceType.Anger,
-                EssenceType.Torment,
-                EssenceType.Sorrow,
-                EssenceType.Rage,
-                EssenceType.Suffering,
-                EssenceType.Wrath,
-                EssenceType.Doubt,
-                EssenceType.Loathing,
-                EssenceType.Zeal,
-                EssenceType.Anguish,
-                EssenceType.Spite,
-                EssenceType.Scorn,
-                EssenceType.Envy,
-                EssenceType.Misery,
-                EssenceType.Dread,
-                EssenceType.Insanity,
-                EssenceType.Horror,
-                EssenceType.Delirium,
-                EssenceType.Hysteria
-            };
-
-            // normal panel
-            var currentTabIndex = 1;
-            for (var i = 0; i < essenceTypeList.Count; ++i)
-            {
-                var textBox = new TextBox();
-
-                textBox.BackColor = Color.Black;
-                textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                textBox.TextAlign = HorizontalAlignment.Right;
-                textBox.ForeColor = Color.Black;
-                var locationX = 260;
-                var locationY = 36 + i * 49;
-                if (i >= essenceTypeList.Count / 2)
-                {
-                    locationX += 533;
-                    locationY -= 12 * 49;
-                }
-                textBox.Location = new Point(locationX, locationY);
-                textBox.MaxLength = 4;
-                textBox.Name = Enum.GetName(typeof(EssenceType), essenceTypeList[i]) + "Essence";
-                textBox.Size = new Size(57, 26);
-                textBox.TabIndex = currentTabIndex;
-                textBox.Tag = new Essence(essenceTypeList[i]);
-                textBox.KeyPress += TextBox_KeyPress;
-                textBox.TextChanged += EssenceTextBox_TextChanged;
-                ++currentTabIndex;
-                this.EssencePanel.Controls.Add(textBox);
-                essences[essenceTypeList[i]].CountTextBox = textBox;
-
-                Label label = new Label();
-                label.AutoSize = true;
-                label.ForeColor = Color.Lime;
-                label.Location = new Point(locationX, locationY + 29);
-                label.Name = Enum.GetName(typeof(EssenceType), essenceTypeList[i]) + "EssencePrice";
-                label.Size = new Size(19, 13);
-                label.TabIndex = 0;
-                label.Tag = new Essence(essenceTypeList[i]);
-                essences[essenceTypeList[i]].PriceLabel = label;
-                this.EssencePanel.Controls.Add(label);
-            }
-
-            // poor panel
-            currentTabIndex = 1;
-            foreach (EssenceType essenceType in Enum.GetValues(typeof(EssenceType)))
-            {
-                var textBox = new TextBox();
-                textBox.BackColor = Color.Black;
-                textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                textBox.TextAlign = HorizontalAlignment.Right;
-                textBox.ForeColor = Color.Black;
-                var locationX = 440;
-                var locationY = 55 + (int)essenceType * 44;
-                if ((int)essenceType >= essenceTypeList.Count / 2)
-                {
-                    locationX += 240;
-                    locationY -= 12 * 44;
-                }
-                textBox.Location = new Point(locationX, locationY);
-                textBox.MaxLength = 4;
-                textBox.Name = Enum.GetName(typeof(EssenceType), essenceType) + "Essence";
-                textBox.Size = new Size(57, 26);
-                textBox.TabIndex = currentTabIndex;
-                textBox.Tag = new Essence(essenceType);
-                textBox.KeyPress += TextBox_KeyPress;
-                textBox.TextChanged += EssenceTextBox_TextChanged;
-                ++currentTabIndex;
-                this.EssencePoorPanel.Controls.Add(textBox);
-                essences[essenceType].CountPoorTextBox = textBox;
-
-                Label label = new Label();
-                label.AutoSize = true;
-                label.ForeColor = Color.Lime;
-                label.Location = new Point(locationX + 57, locationY);
-                label.Name = Enum.GetName(typeof(EssenceType), essenceType) + "EssencePrice";
-                label.Size = new Size(19, 13);
-                label.TabIndex = 0;
-                label.Tag = new Essence(essenceType);
-                essences[essenceType].PricePoorLabel = label;
-                this.EssencePoorPanel.Controls.Add(label);
-            }
-
-            GetEssencePrice();
-        }
-
-        private void GetFossilPrice()
-        {
-            try
-            {
-                var url = $"https://poe.ninja/api/data/ItemOverview?league={currentLeague}&type=Fossil&language=en";
-                var request = WebRequest.Create(url);
-                var webResponse = request.GetResponse();
-                var webStream = webResponse.GetResponseStream();
-                var reader = new StreamReader(webStream);
-                var jsonString = JObject.Parse(reader.ReadToEnd());
-                foreach (var itemString in jsonString["lines"])
-                {
-                    Fossil item;
-                    var hasItem = StringToTypeDictionary.FossilDict.TryGetValue(itemString["name"].ToString(), out item);
-                    if (!hasItem)
-                    {
-                        continue;
-                    }
-                    fossils[item.fossilType].Price = itemString["chaosValue"].ToObject<double>();
-                    fossils[item.fossilType].PriceLabel.Text = itemString["chaosValue"].ToString() + "c";
-                    fossils[item.fossilType].PricePoorLabel.Text = itemString["chaosValue"].ToString() + "c";
-                }
-            }
-            catch (Exception e)
-            {
-
-            }
-        }
-
-        private void ResetFossilCount()
-        {
-            foreach (var fossilType in fossils)
-            {
-                fossilType.Value.Count = 0;
-                fossilType.Value.CountTextBox.Text = "";
-                fossilType.Value.CountPoorTextBox.Text = "";
-            }
-        }
-
-        private void InitializeFossil()
-        {
-            fossils = new Dictionary<FossilType, Item>();
-            foreach (FossilType fossilType in Enum.GetValues(typeof(FossilType)))
-            {
-                fossils.Add(fossilType, new Item());
-            }
-
-            var fossilTypeList = new List<FossilType> {
-                FossilType.Jagged,
-                FossilType.Dense,
-                FossilType.Frigid,
-                FossilType.Aberrant,
-                FossilType.Scorched,
-                FossilType.Metallic,
-                FossilType.Pristine,
-                FossilType.Bound,
-                FossilType.Corroded,
-                FossilType.Perfect,
-                FossilType.Prismatic,
-                FossilType.Enchanted,
-                FossilType.Aetheric,
-                FossilType.Lucent,
-                FossilType.Serrated,
-                FossilType.Shuddering,
-                FossilType.Tangled,
-                FossilType.Bloodstained,
-                FossilType.Gilded,
-                FossilType.Encrusted,
-                FossilType.Sanctified,
-                FossilType.Hollow,
-                FossilType.Fractured,
-                FossilType.Glyphic,
-                FossilType.Faceted
-            };
-
-            // normal panel
-            var currentTabIndex = 1;
-            for (var i = 0; i < fossilTypeList.Count; ++i)
-            {
-                var textBox = new TextBox();
-
-                textBox.BackColor = Color.Black;
-                textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                textBox.TextAlign = HorizontalAlignment.Right;
-                textBox.ForeColor = Color.Black;
-                var locationX = 327 + i * 66;
-                var locationY = 64;
-                if (i >= 24)
-                {
-                    locationX -= 18 * 66;
-                    locationY += 3 * 66;
-                } else if (i >= 23)
-                {
-                    locationX -= 23 * 66;
-                    locationY += 3 * 66;
-                } else if (i >= 21)
-                {
-                    locationX -= 15 * 66 + 33;
-                    locationY += 2 * 66;
-                } else if (i >= 18)
-                {
-                    locationX -= 16 * 66;
-                    locationY += 2 * 66;
-                } else if (i >= 16)
-                {
-                    locationX -= 16 * 66 + 33;
-                    locationY += 2 * 66;
-                } else if (i >= 7)
-                {
-                    locationX -= 8 * 66;
-                    locationY += 66;
-                }
-                textBox.Location = new Point(locationX, locationY);
-                textBox.MaxLength = 4;
-                textBox.Name = Enum.GetName(typeof(FossilType), fossilTypeList[i]) + "Fossil";
-                textBox.Size = new Size(57, 26);
-                textBox.TabIndex = currentTabIndex;
-                textBox.Tag = new Fossil(fossilTypeList[i]);
-                textBox.KeyPress += TextBox_KeyPress;
-                textBox.TextChanged += FossilTextBox_TextChanged;
-                ++currentTabIndex;
-                this.FossilPanel.Controls.Add(textBox);
-                fossils[fossilTypeList[i]].CountTextBox = textBox;
-
-                Label label = new Label();
-                label.AutoSize = true;
-                label.ForeColor = Color.Lime;
-                label.Location = new Point(locationX, locationY + 29);
-                label.Name = Enum.GetName(typeof(FossilType), fossilTypeList[i]) + "FossilPrice";
-                label.Size = new Size(19, 13);
-                label.TabIndex = 0;
-                label.Tag = new Fossil(fossilTypeList[i]);
-                fossils[fossilTypeList[i]].PriceLabel = label;
-                this.FossilPanel.Controls.Add(label);
-            }
-
-            // poor panel
-            currentTabIndex = 1;
-            foreach (FossilType fossilType in Enum.GetValues(typeof(FossilType)))
-            {
-                var textBox = new TextBox();
-                textBox.BackColor = Color.Black;
-                textBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-                textBox.TextAlign = HorizontalAlignment.Right;
-                textBox.ForeColor = Color.Black;
-                var locationX = 440;
-                var locationY = 55 + (int)fossilType * 44;
-                if ((int)fossilType >= 13)
-                {
-                    locationX += 256;
-                    locationY -= 13 * 44;
-                }
-                textBox.Location = new Point(locationX, locationY);
-                textBox.MaxLength = 4;
-                textBox.Name = Enum.GetName(typeof(FossilType), fossilType) + "Fossil";
-                textBox.Size = new Size(57, 26);
-                textBox.TabIndex = currentTabIndex;
-                textBox.Tag = new Fossil(fossilType);
-                textBox.KeyPress += TextBox_KeyPress;
-                textBox.TextChanged += FossilTextBox_TextChanged;
-                ++currentTabIndex;
-                this.FossilPoorPanel.Controls.Add(textBox);
-                fossils[fossilType].CountPoorTextBox = textBox;
-
-                Label label = new Label();
-                label.AutoSize = true;
-                label.ForeColor = Color.Lime;
-                label.Location = new Point(locationX + 57, locationY);
-                label.Name = Enum.GetName(typeof(FossilType), fossilType) + "FossilPrice";
-                label.Size = new Size(19, 13);
-                label.TabIndex = 0;
-                label.Tag = new Fossil(fossilType);
-                fossils[fossilType].PricePoorLabel = label;
-                this.FossilPoorPanel.Controls.Add(label);
-            }
-
-            GetFossilPrice();
+            this.StashDumpToolTip.SetToolTip(this.StashDumpTabIndexLabel, "Tab indices start from 0 from the top");
+            this.StashDumpToolTip.SetToolTip(this.StashDumpAccountNameLabel, "Account name can be found when you logged in to pathofexile.com at the top left corner");
         }
 
         private void LeagueSelector_SelectedIndexChanged(object sender, EventArgs e)
@@ -684,154 +203,6 @@ namespace PoePricing
             }
         }
 
-        private void ScarabTextBox_TextChanged(object sender, EventArgs e)
-        {
-            var textBox = (TextBox)sender;
-            var scarab = (Scarab)(textBox.Tag);
-            var value = string.IsNullOrEmpty(textBox.Text) ? 0 : int.Parse(textBox.Text);
-            scarabs[scarab.scarabType][scarab.scarabQuality].Count = value;
-            scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.Text = textBox.Text;
-            scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.Text = textBox.Text;
-
-            if (value == 0)
-            {
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.ForeColor = Color.Black;
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.ForeColor = Color.Black;
-
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.BackColor = Color.Black;
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.BackColor = Color.Black;
-            } else
-            {
-                var color = Color.Lime;
-                var scarabQuality = scarab.scarabQuality;
-                if (scarabQuality == ScarabQuality.Polished)
-                {
-                    color = Color.DeepSkyBlue;
-                }
-                else if (scarabQuality == ScarabQuality.Gilded)
-                {
-                    color = Color.Violet;
-                }
-                else if (scarabQuality == ScarabQuality.Winged)
-                {
-                    color = Color.Gold;
-                }
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.ForeColor = color;
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.ForeColor = color;
-
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
-                scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
-            }
-
-            UpdateScarabTotal();
-        }
-
-        private void UpdateScarabTotal()
-        {
-            var scarabTab = tabs[Tabs.Scarab];
-            var total = 0.0;
-
-            foreach (var scarabType in scarabs)
-            {
-                foreach (var scarabQuality in scarabType.Value)
-                {
-                    var item = scarabQuality.Value;
-                    total += item.Price * item.Count;
-                }
-            }
-
-            scarabTab.normalTotal.Text = total.ToString() + "c";
-            scarabTab.poorTotal.Text = total.ToString() + "c";
-        }
-
-        private void EssenceTextBox_TextChanged(object sender, EventArgs e)
-        {
-            var textBox = (TextBox)sender;
-            var essence = (Essence)(textBox.Tag);
-            var value = string.IsNullOrEmpty(textBox.Text) ? 0 : int.Parse(textBox.Text);
-            essences[essence.essenceType].Count = value;
-            essences[essence.essenceType].CountTextBox.Text = textBox.Text;
-            essences[essence.essenceType].CountPoorTextBox.Text = textBox.Text;
-
-            if (value == 0)
-            {
-                essences[essence.essenceType].CountTextBox.ForeColor = Color.Black;
-                essences[essence.essenceType].CountPoorTextBox.ForeColor = Color.Black;
-
-                essences[essence.essenceType].CountTextBox.BackColor = Color.Black;
-                essences[essence.essenceType].CountPoorTextBox.BackColor = Color.Black;
-            }
-            else
-            {
-                essences[essence.essenceType].CountTextBox.ForeColor = Color.Tan;
-                essences[essence.essenceType].CountPoorTextBox.ForeColor = Color.Tan;
-
-                essences[essence.essenceType].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
-                essences[essence.essenceType].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
-            }
-
-            UpdateEssenceTotal();
-        }
-
-        private void UpdateEssenceTotal()
-        {
-            var essenceTab = tabs[Tabs.Essence];
-            var total = 0.0;
-
-            foreach (var essenceType in essences)
-            {
-                var item = essenceType.Value;
-                total += item.Price * item.Count;
-            }
-
-            essenceTab.normalTotal.Text = total.ToString() + "c";
-            essenceTab.poorTotal.Text = total.ToString() + "c";
-        }
-
-        private void FossilTextBox_TextChanged(object sender, EventArgs e)
-        {
-            var textBox = (TextBox)sender;
-            var fossil = (Fossil)(textBox.Tag);
-            var value = string.IsNullOrEmpty(textBox.Text) ? 0 : int.Parse(textBox.Text);
-            fossils[fossil.fossilType].Count = value;
-            fossils[fossil.fossilType].CountTextBox.Text = textBox.Text;
-            fossils[fossil.fossilType].CountPoorTextBox.Text = textBox.Text;
-
-            if (value == 0)
-            {
-                fossils[fossil.fossilType].CountTextBox.ForeColor = Color.Black;
-                fossils[fossil.fossilType].CountPoorTextBox.ForeColor = Color.Black;
-
-                fossils[fossil.fossilType].CountTextBox.BackColor = Color.Black;
-                fossils[fossil.fossilType].CountPoorTextBox.BackColor = Color.Black;
-            }
-            else
-            {
-                fossils[fossil.fossilType].CountTextBox.ForeColor = Color.Gold;
-                fossils[fossil.fossilType].CountPoorTextBox.ForeColor = Color.Gold;
-
-                fossils[fossil.fossilType].CountTextBox.BackColor = Color.FromArgb(64, 64, 64);
-                fossils[fossil.fossilType].CountPoorTextBox.BackColor = Color.FromArgb(64, 64, 64);
-            }
-
-            UpdateFossilTotal();
-        }
-
-        private void UpdateFossilTotal()
-        {
-            var fossilTab = tabs[Tabs.Fossil];
-            var total = 0.0;
-
-            foreach (var fossilType in fossils)
-            {
-                var item = fossilType.Value;
-                total += item.Price * item.Count;
-            }
-
-            fossilTab.normalTotal.Text = total.ToString() + "c";
-            fossilTab.poorTotal.Text = total.ToString() + "c";
-        }
-
         private void StartPastebin_GotFocus(object sender, EventArgs e)
         {
             ((RichTextBox)sender).Text = "";
@@ -880,7 +251,42 @@ namespace PoePricing
                 this.StartPanel.Visible = false;
 
                 // save to file
-                saveFile.SelectedIndex = 0;
+                var fs = File.Create(@"leagues.txt");
+                var info = new UTF8Encoding().GetBytes(JsonConvert.SerializeObject(saveFile));
+                fs.Write(info, 0, info.Length);
+                fs.Close();
+            } catch (Exception ex)
+            {
+                if (!string.IsNullOrEmpty(text) && text != "Paste things here")
+                {
+                    this.StartPastebin.Text = "ERROR PARSING DATA";
+                }
+            }
+        }
+
+        private void StashDumpButton_Click(object sender, EventArgs e)
+        {
+            this.StashDumpPanel.Visible = true;
+            this.StashDumpPastebin.Text = "Paste things here";
+        }
+
+        private void StashDumpExitButton_Click(object sender, EventArgs e)
+        {
+            this.StashDumpPanel.Visible = false;
+        }
+
+        private void StashDumpGoButton_Click(object sender, EventArgs e)
+        {
+            var tabIndex = this.StashDumpTabIndex.Text;
+            var accountName = this.StashDumpAccountName.Text;
+            Process.Start($"https://www.pathofexile.com/character-window/get-stash-items?league={currentLeague}&tabs=1&tabIndex={tabIndex}&accountName={accountName}");
+            try
+            {
+                var leagueFile = File.ReadAllText(@"leagues.txt");
+                var saveFile = (JObject.Parse(leagueFile)).ToObject<SaveFile>();
+                saveFile.TabIndex = tabIndex;
+                saveFile.AccountName = accountName;
+
                 var fs = File.Create(@"leagues.txt");
                 var info = new UTF8Encoding().GetBytes(JsonConvert.SerializeObject(saveFile));
                 fs.Write(info, 0, info.Length);
@@ -888,6 +294,92 @@ namespace PoePricing
             } catch (Exception ex)
             {
 
+            }
+        }
+
+        private void StashDumpPastebin_GotFocus(object sender, EventArgs e)
+        {
+            ((RichTextBox)sender).Text = "";
+        }
+
+        private void StashDumpPastebin_TextChanged(object sender, EventArgs e)
+        {
+            var text = ((RichTextBox)sender).Text;
+            try
+            {
+                var jsonObj = JObject.Parse(text);
+                if (jsonObj["error"] != null)
+                {
+                    return;
+                }
+
+                var items = jsonObj["items"];
+                if (items == null)
+                {
+                    return;
+                }
+
+                foreach (var item in items)
+                {
+                    var name = item["baseType"].ToString();
+                    var count = item["stackSize"];
+                    Scarab scarab;
+                    var hasItem = StringToTypeDictionary.ScarabDict.TryGetValue(name, out scarab);
+                    if (scarab != null)
+                    {
+                        if (count == null)
+                        {
+                            scarabs[scarab.scarabType][scarab.scarabQuality].Count += 1;
+                        } else
+                        {
+                            scarabs[scarab.scarabType][scarab.scarabQuality].Count += count.ToObject<int>();
+                        }
+                        scarabs[scarab.scarabType][scarab.scarabQuality].CountTextBox.Text = scarabs[scarab.scarabType][scarab.scarabQuality].Count.ToString();
+                        scarabs[scarab.scarabType][scarab.scarabQuality].CountPoorTextBox.Text = scarabs[scarab.scarabType][scarab.scarabQuality].Count.ToString();
+                        continue;
+                    }
+                    Essence essence;
+                    hasItem = StringToTypeDictionary.EssenceDict.TryGetValue(name, out essence);
+                    if (essence != null)
+                    {
+                        if (count == null)
+                        {
+                            essences[essence.essenceType].Count += 1;
+                        }
+                        else
+                        {
+                            essences[essence.essenceType].Count += count.ToObject<int>();
+                        }
+                        essences[essence.essenceType].CountTextBox.Text = essences[essence.essenceType].Count.ToString();
+                        essences[essence.essenceType].CountPoorTextBox.Text = essences[essence.essenceType].Count.ToString();
+                        continue;
+                    }
+                    Fossil fossil;
+                    hasItem = StringToTypeDictionary.FossilDict.TryGetValue(name, out fossil);
+                    if (fossil != null)
+                    {
+                        if (count == null)
+                        {
+                            fossils[fossil.fossilType].Count += 1;
+                        }
+                        else
+                        {
+                            fossils[fossil.fossilType].Count += count.ToObject<int>();
+                        }
+                        fossils[fossil.fossilType].CountTextBox.Text = fossils[fossil.fossilType].Count.ToString();
+                        fossils[fossil.fossilType].CountPoorTextBox.Text = fossils[fossil.fossilType].Count.ToString();
+                        continue;
+                    }
+                }
+
+                this.StashDumpPanel.Visible = false;
+            }
+            catch (Exception ex)
+            {
+                if (!string.IsNullOrEmpty(text) && text != "Paste things here")
+                {
+                    this.StashDumpPastebin.Text = "ERROR PARSING DATA";
+                }
             }
         }
 

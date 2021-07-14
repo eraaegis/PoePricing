@@ -29,6 +29,7 @@ namespace PoePricing
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PoePricing));
             this.Toolbar = new System.Windows.Forms.MenuStrip();
             this.StashTabSelector = new System.Windows.Forms.ToolStripComboBox();
@@ -55,25 +56,6 @@ namespace PoePricing
             this.BestiaryPoorLabel = new System.Windows.Forms.Label();
             this.BlightPoorLabel = new System.Windows.Forms.Label();
             this.BreachPoorLabel = new System.Windows.Forms.Label();
-            this.ScarabPanel = new System.Windows.Forms.Panel();
-            this.ScarabTotalLabel = new System.Windows.Forms.Label();
-            this.ScarabTotal = new System.Windows.Forms.Label();
-            this.AbyssLabel = new System.Windows.Forms.Label();
-            this.BreachLabel = new System.Windows.Forms.Label();
-            this.DivinationLabel = new System.Windows.Forms.Label();
-            this.ElderLabel = new System.Windows.Forms.Label();
-            this.HarbingerLabel = new System.Windows.Forms.Label();
-            this.CartographyLabel = new System.Windows.Forms.Label();
-            this.PerandusLabel = new System.Windows.Forms.Label();
-            this.ShaperLabel = new System.Windows.Forms.Label();
-            this.BlightLabel = new System.Windows.Forms.Label();
-            this.AmbushLabel = new System.Windows.Forms.Label();
-            this.LegionLabel = new System.Windows.Forms.Label();
-            this.MetamorphLabel = new System.Windows.Forms.Label();
-            this.SulphiteLabel = new System.Windows.Forms.Label();
-            this.ReliquaryLabel = new System.Windows.Forms.Label();
-            this.TormentLabel = new System.Windows.Forms.Label();
-            this.BestiaryLabel = new System.Windows.Forms.Label();
             this.DisplayModeButton = new System.Windows.Forms.Button();
             this.EssenceBasePanel = new System.Windows.Forms.Panel();
             this.EssencePoorPanel = new System.Windows.Forms.Panel();
@@ -104,33 +86,6 @@ namespace PoePricing
             this.EssenceAnguishPoorLabel = new System.Windows.Forms.Label();
             this.EssenceContemptPoorLabel = new System.Windows.Forms.Label();
             this.EssenceAngerPoorLabel = new System.Windows.Forms.Label();
-            this.EssencePanel = new System.Windows.Forms.Panel();
-            this.EssenceHysteriaLabel = new System.Windows.Forms.Label();
-            this.EssenceDeliriumLabel = new System.Windows.Forms.Label();
-            this.EssenceHorrorLabel = new System.Windows.Forms.Label();
-            this.EssenceInsanityLabel = new System.Windows.Forms.Label();
-            this.EssenceDoubtLabel = new System.Windows.Forms.Label();
-            this.EssenceWrathLabel = new System.Windows.Forms.Label();
-            this.EssenceSufferingLabel = new System.Windows.Forms.Label();
-            this.EssenceRageLabel = new System.Windows.Forms.Label();
-            this.EssenceTotalLabel = new System.Windows.Forms.Label();
-            this.EssenceTotal = new System.Windows.Forms.Label();
-            this.EssenceDreadLabel = new System.Windows.Forms.Label();
-            this.EssenceMiseryLabel = new System.Windows.Forms.Label();
-            this.EssenceEnvyLabel = new System.Windows.Forms.Label();
-            this.EssenceScornLabel = new System.Windows.Forms.Label();
-            this.EssenceSpiteLabel = new System.Windows.Forms.Label();
-            this.EssenceAnguishLabel = new System.Windows.Forms.Label();
-            this.EssenceZealLabel = new System.Windows.Forms.Label();
-            this.EssenceLoathingLabel = new System.Windows.Forms.Label();
-            this.EssenceSorrowLabel = new System.Windows.Forms.Label();
-            this.EssenceTormentLabel = new System.Windows.Forms.Label();
-            this.EssenceAngerLabel = new System.Windows.Forms.Label();
-            this.EssenceFearLabel = new System.Windows.Forms.Label();
-            this.EssenceWoeLabel = new System.Windows.Forms.Label();
-            this.EssenceContemptLabel = new System.Windows.Forms.Label();
-            this.EssenceHatredLabel = new System.Windows.Forms.Label();
-            this.EssenceGreedLabel = new System.Windows.Forms.Label();
             this.ResetButton = new System.Windows.Forms.Button();
             this.FossilBasePanel = new System.Windows.Forms.Panel();
             this.FossilPoorPanel = new System.Windows.Forms.Panel();
@@ -162,6 +117,22 @@ namespace PoePricing
             this.FossilTitlePoorLabel = new System.Windows.Forms.Label();
             this.FossilTotal = new System.Windows.Forms.Label();
             this.FossilTotalLabel = new System.Windows.Forms.Label();
+            this.LeagueSelector = new System.Windows.Forms.ComboBox();
+            this.StartPanel = new System.Windows.Forms.Panel();
+            this.StartInstructions = new System.Windows.Forms.TextBox();
+            this.StartPastebin = new System.Windows.Forms.RichTextBox();
+            this.ScreencapButton = new System.Windows.Forms.Button();
+            this.StashDumpPanel = new System.Windows.Forms.Panel();
+            this.StashDumpAccountNameLabel = new System.Windows.Forms.Label();
+            this.StashDumpTabIndexLabel = new System.Windows.Forms.Label();
+            this.StashDumpAccountName = new System.Windows.Forms.TextBox();
+            this.StashDumpTabIndex = new System.Windows.Forms.TextBox();
+            this.StashDumpInstructions = new System.Windows.Forms.TextBox();
+            this.StashDumpPastebin = new System.Windows.Forms.RichTextBox();
+            this.StashDumpToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.StashDumpGoButton = new System.Windows.Forms.Button();
+            this.StashDumpButton = new System.Windows.Forms.Button();
+            this.StashDumpExitButton = new System.Windows.Forms.Button();
             this.FossilPanel = new System.Windows.Forms.Panel();
             this.FossilFacetedLabel = new System.Windows.Forms.Label();
             this.FossilGlyphicLabel = new System.Windows.Forms.Label();
@@ -190,22 +161,64 @@ namespace PoePricing
             this.FossilJaggedLabel = new System.Windows.Forms.Label();
             this.FossilTotalPoor = new System.Windows.Forms.Label();
             this.FossilTotalPoorLabel = new System.Windows.Forms.Label();
-            this.LeagueSelector = new System.Windows.Forms.ComboBox();
-            this.StartPanel = new System.Windows.Forms.Panel();
-            this.StartInstructions = new System.Windows.Forms.TextBox();
-            this.StartPastebin = new System.Windows.Forms.RichTextBox();
-            this.ScreencapButton = new System.Windows.Forms.Button();
+            this.EssencePanel = new System.Windows.Forms.Panel();
+            this.EssenceHysteriaLabel = new System.Windows.Forms.Label();
+            this.EssenceDeliriumLabel = new System.Windows.Forms.Label();
+            this.EssenceHorrorLabel = new System.Windows.Forms.Label();
+            this.EssenceInsanityLabel = new System.Windows.Forms.Label();
+            this.EssenceDoubtLabel = new System.Windows.Forms.Label();
+            this.EssenceWrathLabel = new System.Windows.Forms.Label();
+            this.EssenceSufferingLabel = new System.Windows.Forms.Label();
+            this.EssenceRageLabel = new System.Windows.Forms.Label();
+            this.EssenceTotalLabel = new System.Windows.Forms.Label();
+            this.EssenceTotal = new System.Windows.Forms.Label();
+            this.EssenceDreadLabel = new System.Windows.Forms.Label();
+            this.EssenceMiseryLabel = new System.Windows.Forms.Label();
+            this.EssenceEnvyLabel = new System.Windows.Forms.Label();
+            this.EssenceScornLabel = new System.Windows.Forms.Label();
+            this.EssenceSpiteLabel = new System.Windows.Forms.Label();
+            this.EssenceAnguishLabel = new System.Windows.Forms.Label();
+            this.EssenceZealLabel = new System.Windows.Forms.Label();
+            this.EssenceLoathingLabel = new System.Windows.Forms.Label();
+            this.EssenceSorrowLabel = new System.Windows.Forms.Label();
+            this.EssenceTormentLabel = new System.Windows.Forms.Label();
+            this.EssenceAngerLabel = new System.Windows.Forms.Label();
+            this.EssenceFearLabel = new System.Windows.Forms.Label();
+            this.EssenceWoeLabel = new System.Windows.Forms.Label();
+            this.EssenceContemptLabel = new System.Windows.Forms.Label();
+            this.EssenceHatredLabel = new System.Windows.Forms.Label();
+            this.EssenceGreedLabel = new System.Windows.Forms.Label();
+            this.ScarabPanel = new System.Windows.Forms.Panel();
+            this.ScarabTotalLabel = new System.Windows.Forms.Label();
+            this.ScarabTotal = new System.Windows.Forms.Label();
+            this.AbyssLabel = new System.Windows.Forms.Label();
+            this.BreachLabel = new System.Windows.Forms.Label();
+            this.DivinationLabel = new System.Windows.Forms.Label();
+            this.ElderLabel = new System.Windows.Forms.Label();
+            this.HarbingerLabel = new System.Windows.Forms.Label();
+            this.CartographyLabel = new System.Windows.Forms.Label();
+            this.PerandusLabel = new System.Windows.Forms.Label();
+            this.ShaperLabel = new System.Windows.Forms.Label();
+            this.BlightLabel = new System.Windows.Forms.Label();
+            this.AmbushLabel = new System.Windows.Forms.Label();
+            this.LegionLabel = new System.Windows.Forms.Label();
+            this.MetamorphLabel = new System.Windows.Forms.Label();
+            this.SulphiteLabel = new System.Windows.Forms.Label();
+            this.ReliquaryLabel = new System.Windows.Forms.Label();
+            this.TormentLabel = new System.Windows.Forms.Label();
+            this.BestiaryLabel = new System.Windows.Forms.Label();
             this.Toolbar.SuspendLayout();
             this.ScarabBasePanel.SuspendLayout();
             this.ScarabPoorPanel.SuspendLayout();
-            this.ScarabPanel.SuspendLayout();
             this.EssenceBasePanel.SuspendLayout();
             this.EssencePoorPanel.SuspendLayout();
-            this.EssencePanel.SuspendLayout();
             this.FossilBasePanel.SuspendLayout();
             this.FossilPoorPanel.SuspendLayout();
-            this.FossilPanel.SuspendLayout();
             this.StartPanel.SuspendLayout();
+            this.StashDumpPanel.SuspendLayout();
+            this.FossilPanel.SuspendLayout();
+            this.EssencePanel.SuspendLayout();
+            this.ScarabPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Toolbar
@@ -490,231 +503,6 @@ namespace PoePricing
             this.BreachPoorLabel.Size = new System.Drawing.Size(83, 20);
             this.BreachPoorLabel.TabIndex = 1;
             this.BreachPoorLabel.Text = "BREACH";
-            // 
-            // ScarabPanel
-            // 
-            this.ScarabPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg;
-            this.ScarabPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ScarabPanel.Controls.Add(this.ScarabTotalLabel);
-            this.ScarabPanel.Controls.Add(this.ScarabTotal);
-            this.ScarabPanel.Controls.Add(this.AbyssLabel);
-            this.ScarabPanel.Controls.Add(this.BreachLabel);
-            this.ScarabPanel.Controls.Add(this.DivinationLabel);
-            this.ScarabPanel.Controls.Add(this.ElderLabel);
-            this.ScarabPanel.Controls.Add(this.HarbingerLabel);
-            this.ScarabPanel.Controls.Add(this.CartographyLabel);
-            this.ScarabPanel.Controls.Add(this.PerandusLabel);
-            this.ScarabPanel.Controls.Add(this.ShaperLabel);
-            this.ScarabPanel.Controls.Add(this.BlightLabel);
-            this.ScarabPanel.Controls.Add(this.AmbushLabel);
-            this.ScarabPanel.Controls.Add(this.LegionLabel);
-            this.ScarabPanel.Controls.Add(this.MetamorphLabel);
-            this.ScarabPanel.Controls.Add(this.SulphiteLabel);
-            this.ScarabPanel.Controls.Add(this.ReliquaryLabel);
-            this.ScarabPanel.Controls.Add(this.TormentLabel);
-            this.ScarabPanel.Controls.Add(this.BestiaryLabel);
-            this.ScarabPanel.Location = new System.Drawing.Point(0, 0);
-            this.ScarabPanel.Name = "ScarabPanel";
-            this.ScarabPanel.Size = new System.Drawing.Size(1109, 640);
-            this.ScarabPanel.TabIndex = 0;
-            // 
-            // ScarabTotalLabel
-            // 
-            this.ScarabTotalLabel.AutoSize = true;
-            this.ScarabTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScarabTotalLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.ScarabTotalLabel.Location = new System.Drawing.Point(671, 592);
-            this.ScarabTotalLabel.Name = "ScarabTotalLabel";
-            this.ScarabTotalLabel.Size = new System.Drawing.Size(116, 24);
-            this.ScarabTotalLabel.TabIndex = 20;
-            this.ScarabTotalLabel.Text = "Total Price:";
-            // 
-            // ScarabTotal
-            // 
-            this.ScarabTotal.AutoSize = true;
-            this.ScarabTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScarabTotal.ForeColor = System.Drawing.Color.Yellow;
-            this.ScarabTotal.Location = new System.Drawing.Point(793, 592);
-            this.ScarabTotal.Name = "ScarabTotal";
-            this.ScarabTotal.Size = new System.Drawing.Size(32, 24);
-            this.ScarabTotal.TabIndex = 19;
-            this.ScarabTotal.Text = "0c";
-            // 
-            // AbyssLabel
-            // 
-            this.AbyssLabel.AutoSize = true;
-            this.AbyssLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbyssLabel.ForeColor = System.Drawing.Color.Tan;
-            this.AbyssLabel.Location = new System.Drawing.Point(829, 540);
-            this.AbyssLabel.Name = "AbyssLabel";
-            this.AbyssLabel.Size = new System.Drawing.Size(69, 20);
-            this.AbyssLabel.TabIndex = 0;
-            this.AbyssLabel.Text = "ABYSS";
-            // 
-            // BreachLabel
-            // 
-            this.BreachLabel.AutoSize = true;
-            this.BreachLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreachLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BreachLabel.Location = new System.Drawing.Point(829, 473);
-            this.BreachLabel.Name = "BreachLabel";
-            this.BreachLabel.Size = new System.Drawing.Size(83, 20);
-            this.BreachLabel.TabIndex = 0;
-            this.BreachLabel.Text = "BREACH";
-            // 
-            // DivinationLabel
-            // 
-            this.DivinationLabel.AutoSize = true;
-            this.DivinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DivinationLabel.ForeColor = System.Drawing.Color.Tan;
-            this.DivinationLabel.Location = new System.Drawing.Point(829, 407);
-            this.DivinationLabel.Name = "DivinationLabel";
-            this.DivinationLabel.Size = new System.Drawing.Size(111, 20);
-            this.DivinationLabel.TabIndex = 0;
-            this.DivinationLabel.Text = "DIVINATION";
-            // 
-            // ElderLabel
-            // 
-            this.ElderLabel.AutoSize = true;
-            this.ElderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElderLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ElderLabel.Location = new System.Drawing.Point(829, 341);
-            this.ElderLabel.Name = "ElderLabel";
-            this.ElderLabel.Size = new System.Drawing.Size(69, 20);
-            this.ElderLabel.TabIndex = 0;
-            this.ElderLabel.Text = "ELDER";
-            // 
-            // HarbingerLabel
-            // 
-            this.HarbingerLabel.AutoSize = true;
-            this.HarbingerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HarbingerLabel.ForeColor = System.Drawing.Color.Tan;
-            this.HarbingerLabel.Location = new System.Drawing.Point(829, 275);
-            this.HarbingerLabel.Name = "HarbingerLabel";
-            this.HarbingerLabel.Size = new System.Drawing.Size(116, 20);
-            this.HarbingerLabel.TabIndex = 0;
-            this.HarbingerLabel.Text = "HARBINGER";
-            // 
-            // CartographyLabel
-            // 
-            this.CartographyLabel.AutoSize = true;
-            this.CartographyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartographyLabel.ForeColor = System.Drawing.Color.Tan;
-            this.CartographyLabel.Location = new System.Drawing.Point(829, 209);
-            this.CartographyLabel.Name = "CartographyLabel";
-            this.CartographyLabel.Size = new System.Drawing.Size(144, 20);
-            this.CartographyLabel.TabIndex = 0;
-            this.CartographyLabel.Text = "CARTOGRAPHY";
-            // 
-            // PerandusLabel
-            // 
-            this.PerandusLabel.AutoSize = true;
-            this.PerandusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PerandusLabel.ForeColor = System.Drawing.Color.Tan;
-            this.PerandusLabel.Location = new System.Drawing.Point(829, 144);
-            this.PerandusLabel.Name = "PerandusLabel";
-            this.PerandusLabel.Size = new System.Drawing.Size(107, 20);
-            this.PerandusLabel.TabIndex = 0;
-            this.PerandusLabel.Text = "PERANDUS";
-            // 
-            // ShaperLabel
-            // 
-            this.ShaperLabel.AutoSize = true;
-            this.ShaperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShaperLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ShaperLabel.Location = new System.Drawing.Point(829, 78);
-            this.ShaperLabel.Name = "ShaperLabel";
-            this.ShaperLabel.Size = new System.Drawing.Size(82, 20);
-            this.ShaperLabel.TabIndex = 0;
-            this.ShaperLabel.Text = "SHAPER";
-            // 
-            // BlightLabel
-            // 
-            this.BlightLabel.AutoSize = true;
-            this.BlightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BlightLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BlightLabel.Location = new System.Drawing.Point(206, 540);
-            this.BlightLabel.Name = "BlightLabel";
-            this.BlightLabel.Size = new System.Drawing.Size(74, 20);
-            this.BlightLabel.TabIndex = 0;
-            this.BlightLabel.Text = "BLIGHT";
-            // 
-            // AmbushLabel
-            // 
-            this.AmbushLabel.AutoSize = true;
-            this.AmbushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmbushLabel.ForeColor = System.Drawing.Color.Tan;
-            this.AmbushLabel.Location = new System.Drawing.Point(195, 473);
-            this.AmbushLabel.Name = "AmbushLabel";
-            this.AmbushLabel.Size = new System.Drawing.Size(85, 20);
-            this.AmbushLabel.TabIndex = 0;
-            this.AmbushLabel.Text = "AMBUSH";
-            // 
-            // LegionLabel
-            // 
-            this.LegionLabel.AutoSize = true;
-            this.LegionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LegionLabel.ForeColor = System.Drawing.Color.Tan;
-            this.LegionLabel.Location = new System.Drawing.Point(204, 407);
-            this.LegionLabel.Name = "LegionLabel";
-            this.LegionLabel.Size = new System.Drawing.Size(76, 20);
-            this.LegionLabel.TabIndex = 0;
-            this.LegionLabel.Text = "LEGION";
-            // 
-            // MetamorphLabel
-            // 
-            this.MetamorphLabel.AutoSize = true;
-            this.MetamorphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MetamorphLabel.ForeColor = System.Drawing.Color.Tan;
-            this.MetamorphLabel.Location = new System.Drawing.Point(159, 341);
-            this.MetamorphLabel.Name = "MetamorphLabel";
-            this.MetamorphLabel.Size = new System.Drawing.Size(121, 20);
-            this.MetamorphLabel.TabIndex = 0;
-            this.MetamorphLabel.Text = "METAMORPH";
-            // 
-            // SulphiteLabel
-            // 
-            this.SulphiteLabel.AutoSize = true;
-            this.SulphiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SulphiteLabel.ForeColor = System.Drawing.Color.Tan;
-            this.SulphiteLabel.Location = new System.Drawing.Point(184, 275);
-            this.SulphiteLabel.Name = "SulphiteLabel";
-            this.SulphiteLabel.Size = new System.Drawing.Size(96, 20);
-            this.SulphiteLabel.TabIndex = 0;
-            this.SulphiteLabel.Text = "SULPHITE";
-            // 
-            // ReliquaryLabel
-            // 
-            this.ReliquaryLabel.AutoSize = true;
-            this.ReliquaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReliquaryLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ReliquaryLabel.Location = new System.Drawing.Point(167, 144);
-            this.ReliquaryLabel.Name = "ReliquaryLabel";
-            this.ReliquaryLabel.Size = new System.Drawing.Size(113, 20);
-            this.ReliquaryLabel.TabIndex = 0;
-            this.ReliquaryLabel.Text = "RELIQUARY";
-            // 
-            // TormentLabel
-            // 
-            this.TormentLabel.AutoSize = true;
-            this.TormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TormentLabel.ForeColor = System.Drawing.Color.Tan;
-            this.TormentLabel.Location = new System.Drawing.Point(187, 209);
-            this.TormentLabel.Name = "TormentLabel";
-            this.TormentLabel.Size = new System.Drawing.Size(93, 20);
-            this.TormentLabel.TabIndex = 0;
-            this.TormentLabel.Text = "TORMENT";
-            // 
-            // BestiaryLabel
-            // 
-            this.BestiaryLabel.AutoSize = true;
-            this.BestiaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BestiaryLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BestiaryLabel.Location = new System.Drawing.Point(182, 78);
-            this.BestiaryLabel.Name = "BestiaryLabel";
-            this.BestiaryLabel.Size = new System.Drawing.Size(98, 20);
-            this.BestiaryLabel.TabIndex = 0;
-            this.BestiaryLabel.Text = "BESTIARY";
             // 
             // DisplayModeButton
             // 
@@ -1067,328 +855,6 @@ namespace PoePricing
             this.EssenceAngerPoorLabel.Size = new System.Drawing.Size(72, 20);
             this.EssenceAngerPoorLabel.TabIndex = 0;
             this.EssenceAngerPoorLabel.Text = "ANGER";
-            // 
-            // EssencePanel
-            // 
-            this.EssencePanel.BackgroundImage = global::PoePricing.Properties.Resources.bg1;
-            this.EssencePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.EssencePanel.Controls.Add(this.EssenceHysteriaLabel);
-            this.EssencePanel.Controls.Add(this.EssenceDeliriumLabel);
-            this.EssencePanel.Controls.Add(this.EssenceHorrorLabel);
-            this.EssencePanel.Controls.Add(this.EssenceInsanityLabel);
-            this.EssencePanel.Controls.Add(this.EssenceDoubtLabel);
-            this.EssencePanel.Controls.Add(this.EssenceWrathLabel);
-            this.EssencePanel.Controls.Add(this.EssenceSufferingLabel);
-            this.EssencePanel.Controls.Add(this.EssenceRageLabel);
-            this.EssencePanel.Controls.Add(this.EssenceTotalLabel);
-            this.EssencePanel.Controls.Add(this.EssenceTotal);
-            this.EssencePanel.Controls.Add(this.EssenceDreadLabel);
-            this.EssencePanel.Controls.Add(this.EssenceMiseryLabel);
-            this.EssencePanel.Controls.Add(this.EssenceEnvyLabel);
-            this.EssencePanel.Controls.Add(this.EssenceScornLabel);
-            this.EssencePanel.Controls.Add(this.EssenceSpiteLabel);
-            this.EssencePanel.Controls.Add(this.EssenceAnguishLabel);
-            this.EssencePanel.Controls.Add(this.EssenceZealLabel);
-            this.EssencePanel.Controls.Add(this.EssenceLoathingLabel);
-            this.EssencePanel.Controls.Add(this.EssenceSorrowLabel);
-            this.EssencePanel.Controls.Add(this.EssenceTormentLabel);
-            this.EssencePanel.Controls.Add(this.EssenceAngerLabel);
-            this.EssencePanel.Controls.Add(this.EssenceFearLabel);
-            this.EssencePanel.Controls.Add(this.EssenceWoeLabel);
-            this.EssencePanel.Controls.Add(this.EssenceContemptLabel);
-            this.EssencePanel.Controls.Add(this.EssenceHatredLabel);
-            this.EssencePanel.Controls.Add(this.EssenceGreedLabel);
-            this.EssencePanel.Location = new System.Drawing.Point(0, 0);
-            this.EssencePanel.Name = "EssencePanel";
-            this.EssencePanel.Size = new System.Drawing.Size(1109, 640);
-            this.EssencePanel.TabIndex = 0;
-            // 
-            // EssenceHysteriaLabel
-            // 
-            this.EssenceHysteriaLabel.AutoSize = true;
-            this.EssenceHysteriaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceHysteriaLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.EssenceHysteriaLabel.Location = new System.Drawing.Point(851, 578);
-            this.EssenceHysteriaLabel.Name = "EssenceHysteriaLabel";
-            this.EssenceHysteriaLabel.Size = new System.Drawing.Size(99, 20);
-            this.EssenceHysteriaLabel.TabIndex = 0;
-            this.EssenceHysteriaLabel.Text = "HYSTERIA";
-            // 
-            // EssenceDeliriumLabel
-            // 
-            this.EssenceDeliriumLabel.AutoSize = true;
-            this.EssenceDeliriumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceDeliriumLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.EssenceDeliriumLabel.Location = new System.Drawing.Point(851, 529);
-            this.EssenceDeliriumLabel.Name = "EssenceDeliriumLabel";
-            this.EssenceDeliriumLabel.Size = new System.Drawing.Size(96, 20);
-            this.EssenceDeliriumLabel.TabIndex = 0;
-            this.EssenceDeliriumLabel.Text = "DELIRIUM";
-            // 
-            // EssenceHorrorLabel
-            // 
-            this.EssenceHorrorLabel.AutoSize = true;
-            this.EssenceHorrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceHorrorLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.EssenceHorrorLabel.Location = new System.Drawing.Point(851, 480);
-            this.EssenceHorrorLabel.Name = "EssenceHorrorLabel";
-            this.EssenceHorrorLabel.Size = new System.Drawing.Size(87, 20);
-            this.EssenceHorrorLabel.TabIndex = 0;
-            this.EssenceHorrorLabel.Text = "HORROR";
-            // 
-            // EssenceInsanityLabel
-            // 
-            this.EssenceInsanityLabel.AutoSize = true;
-            this.EssenceInsanityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceInsanityLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.EssenceInsanityLabel.Location = new System.Drawing.Point(851, 431);
-            this.EssenceInsanityLabel.Name = "EssenceInsanityLabel";
-            this.EssenceInsanityLabel.Size = new System.Drawing.Size(91, 20);
-            this.EssenceInsanityLabel.TabIndex = 0;
-            this.EssenceInsanityLabel.Text = "INSANITY";
-            // 
-            // EssenceDoubtLabel
-            // 
-            this.EssenceDoubtLabel.AutoSize = true;
-            this.EssenceDoubtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceDoubtLabel.ForeColor = System.Drawing.Color.Gold;
-            this.EssenceDoubtLabel.Location = new System.Drawing.Point(188, 578);
-            this.EssenceDoubtLabel.Name = "EssenceDoubtLabel";
-            this.EssenceDoubtLabel.Size = new System.Drawing.Size(70, 20);
-            this.EssenceDoubtLabel.TabIndex = 0;
-            this.EssenceDoubtLabel.Text = "DOUBT";
-            // 
-            // EssenceWrathLabel
-            // 
-            this.EssenceWrathLabel.AutoSize = true;
-            this.EssenceWrathLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceWrathLabel.ForeColor = System.Drawing.Color.Gold;
-            this.EssenceWrathLabel.Location = new System.Drawing.Point(185, 529);
-            this.EssenceWrathLabel.Name = "EssenceWrathLabel";
-            this.EssenceWrathLabel.Size = new System.Drawing.Size(73, 20);
-            this.EssenceWrathLabel.TabIndex = 0;
-            this.EssenceWrathLabel.Text = "WRATH";
-            // 
-            // EssenceSufferingLabel
-            // 
-            this.EssenceSufferingLabel.AutoSize = true;
-            this.EssenceSufferingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceSufferingLabel.ForeColor = System.Drawing.Color.Gold;
-            this.EssenceSufferingLabel.Location = new System.Drawing.Point(145, 480);
-            this.EssenceSufferingLabel.Name = "EssenceSufferingLabel";
-            this.EssenceSufferingLabel.Size = new System.Drawing.Size(113, 20);
-            this.EssenceSufferingLabel.TabIndex = 0;
-            this.EssenceSufferingLabel.Text = "SUFFERING";
-            // 
-            // EssenceRageLabel
-            // 
-            this.EssenceRageLabel.AutoSize = true;
-            this.EssenceRageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceRageLabel.ForeColor = System.Drawing.Color.Gold;
-            this.EssenceRageLabel.Location = new System.Drawing.Point(198, 431);
-            this.EssenceRageLabel.Name = "EssenceRageLabel";
-            this.EssenceRageLabel.Size = new System.Drawing.Size(60, 20);
-            this.EssenceRageLabel.TabIndex = 0;
-            this.EssenceRageLabel.Text = "RAGE";
-            // 
-            // EssenceTotalLabel
-            // 
-            this.EssenceTotalLabel.AutoSize = true;
-            this.EssenceTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceTotalLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.EssenceTotalLabel.Location = new System.Drawing.Point(463, 592);
-            this.EssenceTotalLabel.Name = "EssenceTotalLabel";
-            this.EssenceTotalLabel.Size = new System.Drawing.Size(116, 24);
-            this.EssenceTotalLabel.TabIndex = 0;
-            this.EssenceTotalLabel.Text = "Total Price:";
-            // 
-            // EssenceTotal
-            // 
-            this.EssenceTotal.AutoSize = true;
-            this.EssenceTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceTotal.ForeColor = System.Drawing.Color.Yellow;
-            this.EssenceTotal.Location = new System.Drawing.Point(599, 592);
-            this.EssenceTotal.Name = "EssenceTotal";
-            this.EssenceTotal.Size = new System.Drawing.Size(32, 24);
-            this.EssenceTotal.TabIndex = 0;
-            this.EssenceTotal.Text = "0c";
-            // 
-            // EssenceDreadLabel
-            // 
-            this.EssenceDreadLabel.AutoSize = true;
-            this.EssenceDreadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceDreadLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.EssenceDreadLabel.Location = new System.Drawing.Point(851, 382);
-            this.EssenceDreadLabel.Name = "EssenceDreadLabel";
-            this.EssenceDreadLabel.Size = new System.Drawing.Size(72, 20);
-            this.EssenceDreadLabel.TabIndex = 0;
-            this.EssenceDreadLabel.Text = "DREAD";
-            // 
-            // EssenceMiseryLabel
-            // 
-            this.EssenceMiseryLabel.AutoSize = true;
-            this.EssenceMiseryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceMiseryLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.EssenceMiseryLabel.Location = new System.Drawing.Point(851, 333);
-            this.EssenceMiseryLabel.Name = "EssenceMiseryLabel";
-            this.EssenceMiseryLabel.Size = new System.Drawing.Size(78, 20);
-            this.EssenceMiseryLabel.TabIndex = 0;
-            this.EssenceMiseryLabel.Text = "MISERY";
-            // 
-            // EssenceEnvyLabel
-            // 
-            this.EssenceEnvyLabel.AutoSize = true;
-            this.EssenceEnvyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceEnvyLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.EssenceEnvyLabel.Location = new System.Drawing.Point(851, 284);
-            this.EssenceEnvyLabel.Name = "EssenceEnvyLabel";
-            this.EssenceEnvyLabel.Size = new System.Drawing.Size(57, 20);
-            this.EssenceEnvyLabel.TabIndex = 0;
-            this.EssenceEnvyLabel.Text = "ENVY";
-            // 
-            // EssenceScornLabel
-            // 
-            this.EssenceScornLabel.AutoSize = true;
-            this.EssenceScornLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceScornLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.EssenceScornLabel.Location = new System.Drawing.Point(851, 235);
-            this.EssenceScornLabel.Name = "EssenceScornLabel";
-            this.EssenceScornLabel.Size = new System.Drawing.Size(71, 20);
-            this.EssenceScornLabel.TabIndex = 0;
-            this.EssenceScornLabel.Text = "SCORN";
-            // 
-            // EssenceSpiteLabel
-            // 
-            this.EssenceSpiteLabel.AutoSize = true;
-            this.EssenceSpiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceSpiteLabel.ForeColor = System.Drawing.Color.Red;
-            this.EssenceSpiteLabel.Location = new System.Drawing.Point(851, 186);
-            this.EssenceSpiteLabel.Name = "EssenceSpiteLabel";
-            this.EssenceSpiteLabel.Size = new System.Drawing.Size(60, 20);
-            this.EssenceSpiteLabel.TabIndex = 0;
-            this.EssenceSpiteLabel.Text = "SPITE";
-            // 
-            // EssenceAnguishLabel
-            // 
-            this.EssenceAnguishLabel.AutoSize = true;
-            this.EssenceAnguishLabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.EssenceAnguishLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceAnguishLabel.ForeColor = System.Drawing.Color.Red;
-            this.EssenceAnguishLabel.Location = new System.Drawing.Point(851, 137);
-            this.EssenceAnguishLabel.Name = "EssenceAnguishLabel";
-            this.EssenceAnguishLabel.Size = new System.Drawing.Size(91, 20);
-            this.EssenceAnguishLabel.TabIndex = 0;
-            this.EssenceAnguishLabel.Text = "ANGUISH";
-            // 
-            // EssenceZealLabel
-            // 
-            this.EssenceZealLabel.AutoSize = true;
-            this.EssenceZealLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceZealLabel.ForeColor = System.Drawing.Color.Red;
-            this.EssenceZealLabel.Location = new System.Drawing.Point(851, 88);
-            this.EssenceZealLabel.Name = "EssenceZealLabel";
-            this.EssenceZealLabel.Size = new System.Drawing.Size(54, 20);
-            this.EssenceZealLabel.TabIndex = 0;
-            this.EssenceZealLabel.Text = "ZEAL";
-            // 
-            // EssenceLoathingLabel
-            // 
-            this.EssenceLoathingLabel.AutoSize = true;
-            this.EssenceLoathingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceLoathingLabel.ForeColor = System.Drawing.Color.Red;
-            this.EssenceLoathingLabel.Location = new System.Drawing.Point(851, 39);
-            this.EssenceLoathingLabel.Name = "EssenceLoathingLabel";
-            this.EssenceLoathingLabel.Size = new System.Drawing.Size(99, 20);
-            this.EssenceLoathingLabel.TabIndex = 0;
-            this.EssenceLoathingLabel.Text = "LOATHING";
-            // 
-            // EssenceSorrowLabel
-            // 
-            this.EssenceSorrowLabel.AutoSize = true;
-            this.EssenceSorrowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceSorrowLabel.ForeColor = System.Drawing.Color.SpringGreen;
-            this.EssenceSorrowLabel.Location = new System.Drawing.Point(169, 382);
-            this.EssenceSorrowLabel.Name = "EssenceSorrowLabel";
-            this.EssenceSorrowLabel.Size = new System.Drawing.Size(89, 20);
-            this.EssenceSorrowLabel.TabIndex = 0;
-            this.EssenceSorrowLabel.Text = "SORROW";
-            // 
-            // EssenceTormentLabel
-            // 
-            this.EssenceTormentLabel.AutoSize = true;
-            this.EssenceTormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceTormentLabel.ForeColor = System.Drawing.Color.SpringGreen;
-            this.EssenceTormentLabel.Location = new System.Drawing.Point(165, 333);
-            this.EssenceTormentLabel.Name = "EssenceTormentLabel";
-            this.EssenceTormentLabel.Size = new System.Drawing.Size(93, 20);
-            this.EssenceTormentLabel.TabIndex = 0;
-            this.EssenceTormentLabel.Text = "TORMENT";
-            // 
-            // EssenceAngerLabel
-            // 
-            this.EssenceAngerLabel.AutoSize = true;
-            this.EssenceAngerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceAngerLabel.ForeColor = System.Drawing.Color.SpringGreen;
-            this.EssenceAngerLabel.Location = new System.Drawing.Point(186, 284);
-            this.EssenceAngerLabel.Name = "EssenceAngerLabel";
-            this.EssenceAngerLabel.Size = new System.Drawing.Size(72, 20);
-            this.EssenceAngerLabel.TabIndex = 0;
-            this.EssenceAngerLabel.Text = "ANGER";
-            // 
-            // EssenceFearLabel
-            // 
-            this.EssenceFearLabel.AutoSize = true;
-            this.EssenceFearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceFearLabel.ForeColor = System.Drawing.Color.SpringGreen;
-            this.EssenceFearLabel.Location = new System.Drawing.Point(201, 235);
-            this.EssenceFearLabel.Name = "EssenceFearLabel";
-            this.EssenceFearLabel.Size = new System.Drawing.Size(57, 20);
-            this.EssenceFearLabel.TabIndex = 0;
-            this.EssenceFearLabel.Text = "FEAR";
-            // 
-            // EssenceWoeLabel
-            // 
-            this.EssenceWoeLabel.AutoSize = true;
-            this.EssenceWoeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceWoeLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.EssenceWoeLabel.Location = new System.Drawing.Point(208, 186);
-            this.EssenceWoeLabel.Name = "EssenceWoeLabel";
-            this.EssenceWoeLabel.Size = new System.Drawing.Size(50, 20);
-            this.EssenceWoeLabel.TabIndex = 0;
-            this.EssenceWoeLabel.Text = "WOE";
-            // 
-            // EssenceContemptLabel
-            // 
-            this.EssenceContemptLabel.AutoSize = true;
-            this.EssenceContemptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceContemptLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.EssenceContemptLabel.Location = new System.Drawing.Point(155, 88);
-            this.EssenceContemptLabel.Name = "EssenceContemptLabel";
-            this.EssenceContemptLabel.Size = new System.Drawing.Size(103, 20);
-            this.EssenceContemptLabel.TabIndex = 0;
-            this.EssenceContemptLabel.Text = "CONTEMPT";
-            // 
-            // EssenceHatredLabel
-            // 
-            this.EssenceHatredLabel.AutoSize = true;
-            this.EssenceHatredLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceHatredLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.EssenceHatredLabel.Location = new System.Drawing.Point(176, 137);
-            this.EssenceHatredLabel.Name = "EssenceHatredLabel";
-            this.EssenceHatredLabel.Size = new System.Drawing.Size(82, 20);
-            this.EssenceHatredLabel.TabIndex = 0;
-            this.EssenceHatredLabel.Text = "HATRED";
-            // 
-            // EssenceGreedLabel
-            // 
-            this.EssenceGreedLabel.AutoSize = true;
-            this.EssenceGreedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceGreedLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.EssenceGreedLabel.Location = new System.Drawing.Point(185, 39);
-            this.EssenceGreedLabel.Name = "EssenceGreedLabel";
-            this.EssenceGreedLabel.Size = new System.Drawing.Size(73, 20);
-            this.EssenceGreedLabel.TabIndex = 0;
-            this.EssenceGreedLabel.Text = "GREED";
             // 
             // ResetButton
             // 
@@ -1753,6 +1219,169 @@ namespace PoePricing
             this.FossilTotalLabel.TabIndex = 0;
             this.FossilTotalLabel.Text = "Total Price:";
             // 
+            // LeagueSelector
+            // 
+            this.LeagueSelector.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LeagueSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeagueSelector.FormattingEnabled = true;
+            this.LeagueSelector.Location = new System.Drawing.Point(764, 4);
+            this.LeagueSelector.Name = "LeagueSelector";
+            this.LeagueSelector.Size = new System.Drawing.Size(121, 23);
+            this.LeagueSelector.TabIndex = 1001;
+            // 
+            // StartPanel
+            // 
+            this.StartPanel.Controls.Add(this.StartInstructions);
+            this.StartPanel.Controls.Add(this.StartPastebin);
+            this.StartPanel.Location = new System.Drawing.Point(12, 30);
+            this.StartPanel.Name = "StartPanel";
+            this.StartPanel.Size = new System.Drawing.Size(1109, 640);
+            this.StartPanel.TabIndex = 1003;
+            // 
+            // StartInstructions
+            // 
+            this.StartInstructions.BackColor = System.Drawing.Color.Black;
+            this.StartInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StartInstructions.ForeColor = System.Drawing.Color.White;
+            this.StartInstructions.Location = new System.Drawing.Point(389, 0);
+            this.StartInstructions.Multiline = true;
+            this.StartInstructions.Name = "StartInstructions";
+            this.StartInstructions.ReadOnly = true;
+            this.StartInstructions.Size = new System.Drawing.Size(330, 76);
+            this.StartInstructions.TabIndex = 0;
+            this.StartInstructions.Text = resources.GetString("StartInstructions.Text");
+            // 
+            // StartPastebin
+            // 
+            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
+            this.StartPastebin.Name = "StartPastebin";
+            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
+            this.StartPastebin.TabIndex = 1;
+            this.StartPastebin.Text = "Paste things here";
+            // 
+            // ScreencapButton
+            // 
+            this.ScreencapButton.Location = new System.Drawing.Point(12, 647);
+            this.ScreencapButton.Name = "ScreencapButton";
+            this.ScreencapButton.Size = new System.Drawing.Size(143, 23);
+            this.ScreencapButton.TabIndex = 999;
+            this.ScreencapButton.Text = "Copy Screen to Clipboard";
+            this.ScreencapButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpPanel
+            // 
+            this.StashDumpPanel.Controls.Add(this.StashDumpExitButton);
+            this.StashDumpPanel.Controls.Add(this.StashDumpGoButton);
+            this.StashDumpPanel.Controls.Add(this.StashDumpAccountNameLabel);
+            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndexLabel);
+            this.StashDumpPanel.Controls.Add(this.StashDumpAccountName);
+            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndex);
+            this.StashDumpPanel.Controls.Add(this.StashDumpInstructions);
+            this.StashDumpPanel.Controls.Add(this.StashDumpPastebin);
+            this.StashDumpPanel.Location = new System.Drawing.Point(12, 30);
+            this.StashDumpPanel.Name = "StashDumpPanel";
+            this.StashDumpPanel.Size = new System.Drawing.Size(1109, 640);
+            this.StashDumpPanel.TabIndex = 1004;
+            // 
+            // StashDumpAccountNameLabel
+            // 
+            this.StashDumpAccountNameLabel.AutoSize = true;
+            this.StashDumpAccountNameLabel.Cursor = System.Windows.Forms.Cursors.Help;
+            this.StashDumpAccountNameLabel.ForeColor = System.Drawing.Color.White;
+            this.StashDumpAccountNameLabel.Location = new System.Drawing.Point(904, 23);
+            this.StashDumpAccountNameLabel.Name = "StashDumpAccountNameLabel";
+            this.StashDumpAccountNameLabel.Size = new System.Drawing.Size(93, 13);
+            this.StashDumpAccountNameLabel.TabIndex = 0;
+            this.StashDumpAccountNameLabel.Text = "Account Name (?)";
+            // 
+            // StashDumpTabIndexLabel
+            // 
+            this.StashDumpTabIndexLabel.AutoSize = true;
+            this.StashDumpTabIndexLabel.Cursor = System.Windows.Forms.Cursors.Help;
+            this.StashDumpTabIndexLabel.ForeColor = System.Drawing.Color.White;
+            this.StashDumpTabIndexLabel.Location = new System.Drawing.Point(789, 23);
+            this.StashDumpTabIndexLabel.Name = "StashDumpTabIndexLabel";
+            this.StashDumpTabIndexLabel.Size = new System.Drawing.Size(70, 13);
+            this.StashDumpTabIndexLabel.TabIndex = 0;
+            this.StashDumpTabIndexLabel.Text = "Tab Index (?)";
+            // 
+            // StashDumpAccountName
+            // 
+            this.StashDumpAccountName.BackColor = System.Drawing.Color.Black;
+            this.StashDumpAccountName.ForeColor = System.Drawing.Color.White;
+            this.StashDumpAccountName.Location = new System.Drawing.Point(907, 39);
+            this.StashDumpAccountName.MaxLength = 30;
+            this.StashDumpAccountName.Name = "StashDumpAccountName";
+            this.StashDumpAccountName.Size = new System.Drawing.Size(100, 20);
+            this.StashDumpAccountName.TabIndex = 2;
+            this.StashDumpAccountName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // StashDumpTabIndex
+            // 
+            this.StashDumpTabIndex.BackColor = System.Drawing.Color.Black;
+            this.StashDumpTabIndex.ForeColor = System.Drawing.Color.White;
+            this.StashDumpTabIndex.Location = new System.Drawing.Point(792, 39);
+            this.StashDumpTabIndex.MaxLength = 4;
+            this.StashDumpTabIndex.Name = "StashDumpTabIndex";
+            this.StashDumpTabIndex.Size = new System.Drawing.Size(100, 20);
+            this.StashDumpTabIndex.TabIndex = 1;
+            this.StashDumpTabIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // StashDumpInstructions
+            // 
+            this.StashDumpInstructions.BackColor = System.Drawing.Color.Black;
+            this.StashDumpInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StashDumpInstructions.ForeColor = System.Drawing.Color.White;
+            this.StashDumpInstructions.Location = new System.Drawing.Point(389, 0);
+            this.StashDumpInstructions.Multiline = true;
+            this.StashDumpInstructions.Name = "StashDumpInstructions";
+            this.StashDumpInstructions.ReadOnly = true;
+            this.StashDumpInstructions.Size = new System.Drawing.Size(330, 122);
+            this.StashDumpInstructions.TabIndex = 0;
+            this.StashDumpInstructions.Text = resources.GetString("StashDumpInstructions.Text");
+            // 
+            // StashDumpPastebin
+            // 
+            this.StashDumpPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StashDumpPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StashDumpPastebin.Location = new System.Drawing.Point(274, 125);
+            this.StashDumpPastebin.Name = "StashDumpPastebin";
+            this.StashDumpPastebin.Size = new System.Drawing.Size(561, 511);
+            this.StashDumpPastebin.TabIndex = 4;
+            this.StashDumpPastebin.Text = "Paste things here";
+            // 
+            // StashDumpGoButton
+            // 
+            this.StashDumpGoButton.Location = new System.Drawing.Point(940, 75);
+            this.StashDumpGoButton.Name = "StashDumpGoButton";
+            this.StashDumpGoButton.Size = new System.Drawing.Size(67, 23);
+            this.StashDumpGoButton.TabIndex = 3;
+            this.StashDumpGoButton.Text = "Go";
+            this.StashDumpGoButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpButton
+            // 
+            this.StashDumpButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.StashDumpButton.Location = new System.Drawing.Point(935, 647);
+            this.StashDumpButton.Name = "StashDumpButton";
+            this.StashDumpButton.Size = new System.Drawing.Size(107, 23);
+            this.StashDumpButton.TabIndex = 1005;
+            this.StashDumpButton.Text = "Import Stash";
+            this.StashDumpButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpExitButton
+            // 
+            this.StashDumpExitButton.BackgroundImage = global::PoePricing.Properties.Resources.cross;
+            this.StashDumpExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StashDumpExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StashDumpExitButton.Location = new System.Drawing.Point(1074, 3);
+            this.StashDumpExitButton.Name = "StashDumpExitButton";
+            this.StashDumpExitButton.Size = new System.Drawing.Size(32, 32);
+            this.StashDumpExitButton.TabIndex = 5;
+            this.StashDumpExitButton.UseVisualStyleBackColor = true;
+            // 
             // FossilPanel
             // 
             this.FossilPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg2;
@@ -2086,56 +1715,552 @@ namespace PoePricing
             this.FossilTotalPoorLabel.TabIndex = 0;
             this.FossilTotalPoorLabel.Text = "Total Price:";
             // 
-            // LeagueSelector
+            // EssencePanel
             // 
-            this.LeagueSelector.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeagueSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeagueSelector.FormattingEnabled = true;
-            this.LeagueSelector.Location = new System.Drawing.Point(764, 4);
-            this.LeagueSelector.Name = "LeagueSelector";
-            this.LeagueSelector.Size = new System.Drawing.Size(121, 23);
-            this.LeagueSelector.TabIndex = 1001;
+            this.EssencePanel.BackgroundImage = global::PoePricing.Properties.Resources.bg1;
+            this.EssencePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.EssencePanel.Controls.Add(this.EssenceHysteriaLabel);
+            this.EssencePanel.Controls.Add(this.EssenceDeliriumLabel);
+            this.EssencePanel.Controls.Add(this.EssenceHorrorLabel);
+            this.EssencePanel.Controls.Add(this.EssenceInsanityLabel);
+            this.EssencePanel.Controls.Add(this.EssenceDoubtLabel);
+            this.EssencePanel.Controls.Add(this.EssenceWrathLabel);
+            this.EssencePanel.Controls.Add(this.EssenceSufferingLabel);
+            this.EssencePanel.Controls.Add(this.EssenceRageLabel);
+            this.EssencePanel.Controls.Add(this.EssenceTotalLabel);
+            this.EssencePanel.Controls.Add(this.EssenceTotal);
+            this.EssencePanel.Controls.Add(this.EssenceDreadLabel);
+            this.EssencePanel.Controls.Add(this.EssenceMiseryLabel);
+            this.EssencePanel.Controls.Add(this.EssenceEnvyLabel);
+            this.EssencePanel.Controls.Add(this.EssenceScornLabel);
+            this.EssencePanel.Controls.Add(this.EssenceSpiteLabel);
+            this.EssencePanel.Controls.Add(this.EssenceAnguishLabel);
+            this.EssencePanel.Controls.Add(this.EssenceZealLabel);
+            this.EssencePanel.Controls.Add(this.EssenceLoathingLabel);
+            this.EssencePanel.Controls.Add(this.EssenceSorrowLabel);
+            this.EssencePanel.Controls.Add(this.EssenceTormentLabel);
+            this.EssencePanel.Controls.Add(this.EssenceAngerLabel);
+            this.EssencePanel.Controls.Add(this.EssenceFearLabel);
+            this.EssencePanel.Controls.Add(this.EssenceWoeLabel);
+            this.EssencePanel.Controls.Add(this.EssenceContemptLabel);
+            this.EssencePanel.Controls.Add(this.EssenceHatredLabel);
+            this.EssencePanel.Controls.Add(this.EssenceGreedLabel);
+            this.EssencePanel.Location = new System.Drawing.Point(0, 0);
+            this.EssencePanel.Name = "EssencePanel";
+            this.EssencePanel.Size = new System.Drawing.Size(1109, 640);
+            this.EssencePanel.TabIndex = 0;
             // 
-            // StartPanel
+            // EssenceHysteriaLabel
             // 
-            this.StartPanel.Controls.Add(this.StartInstructions);
-            this.StartPanel.Controls.Add(this.StartPastebin);
-            this.StartPanel.Location = new System.Drawing.Point(12, 30);
-            this.StartPanel.Name = "StartPanel";
-            this.StartPanel.Size = new System.Drawing.Size(1109, 640);
-            this.StartPanel.TabIndex = 1003;
+            this.EssenceHysteriaLabel.AutoSize = true;
+            this.EssenceHysteriaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceHysteriaLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.EssenceHysteriaLabel.Location = new System.Drawing.Point(851, 578);
+            this.EssenceHysteriaLabel.Name = "EssenceHysteriaLabel";
+            this.EssenceHysteriaLabel.Size = new System.Drawing.Size(99, 20);
+            this.EssenceHysteriaLabel.TabIndex = 0;
+            this.EssenceHysteriaLabel.Text = "HYSTERIA";
             // 
-            // StartInstructions
+            // EssenceDeliriumLabel
             // 
-            this.StartInstructions.BackColor = System.Drawing.Color.Black;
-            this.StartInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.StartInstructions.ForeColor = System.Drawing.Color.White;
-            this.StartInstructions.Location = new System.Drawing.Point(389, 0);
-            this.StartInstructions.Multiline = true;
-            this.StartInstructions.Name = "StartInstructions";
-            this.StartInstructions.ReadOnly = true;
-            this.StartInstructions.Size = new System.Drawing.Size(330, 76);
-            this.StartInstructions.TabIndex = 0;
-            this.StartInstructions.Text = resources.GetString("StartInstructions.Text");
+            this.EssenceDeliriumLabel.AutoSize = true;
+            this.EssenceDeliriumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceDeliriumLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.EssenceDeliriumLabel.Location = new System.Drawing.Point(851, 529);
+            this.EssenceDeliriumLabel.Name = "EssenceDeliriumLabel";
+            this.EssenceDeliriumLabel.Size = new System.Drawing.Size(96, 20);
+            this.EssenceDeliriumLabel.TabIndex = 0;
+            this.EssenceDeliriumLabel.Text = "DELIRIUM";
             // 
-            // StartPastebin
+            // EssenceHorrorLabel
             // 
-            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
-            this.StartPastebin.Name = "StartPastebin";
-            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
-            this.StartPastebin.TabIndex = 1;
-            this.StartPastebin.Text = "Paste things here";
+            this.EssenceHorrorLabel.AutoSize = true;
+            this.EssenceHorrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceHorrorLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.EssenceHorrorLabel.Location = new System.Drawing.Point(851, 480);
+            this.EssenceHorrorLabel.Name = "EssenceHorrorLabel";
+            this.EssenceHorrorLabel.Size = new System.Drawing.Size(87, 20);
+            this.EssenceHorrorLabel.TabIndex = 0;
+            this.EssenceHorrorLabel.Text = "HORROR";
             // 
-            // ScreencapButton
+            // EssenceInsanityLabel
             // 
-            this.ScreencapButton.Location = new System.Drawing.Point(12, 647);
-            this.ScreencapButton.Name = "ScreencapButton";
-            this.ScreencapButton.Size = new System.Drawing.Size(143, 23);
-            this.ScreencapButton.TabIndex = 999;
-            this.ScreencapButton.Text = "Copy Screen to Clipboard";
-            this.ScreencapButton.UseVisualStyleBackColor = true;
+            this.EssenceInsanityLabel.AutoSize = true;
+            this.EssenceInsanityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceInsanityLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.EssenceInsanityLabel.Location = new System.Drawing.Point(851, 431);
+            this.EssenceInsanityLabel.Name = "EssenceInsanityLabel";
+            this.EssenceInsanityLabel.Size = new System.Drawing.Size(91, 20);
+            this.EssenceInsanityLabel.TabIndex = 0;
+            this.EssenceInsanityLabel.Text = "INSANITY";
+            // 
+            // EssenceDoubtLabel
+            // 
+            this.EssenceDoubtLabel.AutoSize = true;
+            this.EssenceDoubtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceDoubtLabel.ForeColor = System.Drawing.Color.Gold;
+            this.EssenceDoubtLabel.Location = new System.Drawing.Point(188, 578);
+            this.EssenceDoubtLabel.Name = "EssenceDoubtLabel";
+            this.EssenceDoubtLabel.Size = new System.Drawing.Size(70, 20);
+            this.EssenceDoubtLabel.TabIndex = 0;
+            this.EssenceDoubtLabel.Text = "DOUBT";
+            // 
+            // EssenceWrathLabel
+            // 
+            this.EssenceWrathLabel.AutoSize = true;
+            this.EssenceWrathLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceWrathLabel.ForeColor = System.Drawing.Color.Gold;
+            this.EssenceWrathLabel.Location = new System.Drawing.Point(185, 529);
+            this.EssenceWrathLabel.Name = "EssenceWrathLabel";
+            this.EssenceWrathLabel.Size = new System.Drawing.Size(73, 20);
+            this.EssenceWrathLabel.TabIndex = 0;
+            this.EssenceWrathLabel.Text = "WRATH";
+            // 
+            // EssenceSufferingLabel
+            // 
+            this.EssenceSufferingLabel.AutoSize = true;
+            this.EssenceSufferingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceSufferingLabel.ForeColor = System.Drawing.Color.Gold;
+            this.EssenceSufferingLabel.Location = new System.Drawing.Point(145, 480);
+            this.EssenceSufferingLabel.Name = "EssenceSufferingLabel";
+            this.EssenceSufferingLabel.Size = new System.Drawing.Size(113, 20);
+            this.EssenceSufferingLabel.TabIndex = 0;
+            this.EssenceSufferingLabel.Text = "SUFFERING";
+            // 
+            // EssenceRageLabel
+            // 
+            this.EssenceRageLabel.AutoSize = true;
+            this.EssenceRageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceRageLabel.ForeColor = System.Drawing.Color.Gold;
+            this.EssenceRageLabel.Location = new System.Drawing.Point(198, 431);
+            this.EssenceRageLabel.Name = "EssenceRageLabel";
+            this.EssenceRageLabel.Size = new System.Drawing.Size(60, 20);
+            this.EssenceRageLabel.TabIndex = 0;
+            this.EssenceRageLabel.Text = "RAGE";
+            // 
+            // EssenceTotalLabel
+            // 
+            this.EssenceTotalLabel.AutoSize = true;
+            this.EssenceTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceTotalLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.EssenceTotalLabel.Location = new System.Drawing.Point(463, 592);
+            this.EssenceTotalLabel.Name = "EssenceTotalLabel";
+            this.EssenceTotalLabel.Size = new System.Drawing.Size(116, 24);
+            this.EssenceTotalLabel.TabIndex = 0;
+            this.EssenceTotalLabel.Text = "Total Price:";
+            // 
+            // EssenceTotal
+            // 
+            this.EssenceTotal.AutoSize = true;
+            this.EssenceTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceTotal.ForeColor = System.Drawing.Color.Yellow;
+            this.EssenceTotal.Location = new System.Drawing.Point(599, 592);
+            this.EssenceTotal.Name = "EssenceTotal";
+            this.EssenceTotal.Size = new System.Drawing.Size(32, 24);
+            this.EssenceTotal.TabIndex = 0;
+            this.EssenceTotal.Text = "0c";
+            // 
+            // EssenceDreadLabel
+            // 
+            this.EssenceDreadLabel.AutoSize = true;
+            this.EssenceDreadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceDreadLabel.ForeColor = System.Drawing.Color.DarkViolet;
+            this.EssenceDreadLabel.Location = new System.Drawing.Point(851, 382);
+            this.EssenceDreadLabel.Name = "EssenceDreadLabel";
+            this.EssenceDreadLabel.Size = new System.Drawing.Size(72, 20);
+            this.EssenceDreadLabel.TabIndex = 0;
+            this.EssenceDreadLabel.Text = "DREAD";
+            // 
+            // EssenceMiseryLabel
+            // 
+            this.EssenceMiseryLabel.AutoSize = true;
+            this.EssenceMiseryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceMiseryLabel.ForeColor = System.Drawing.Color.DarkViolet;
+            this.EssenceMiseryLabel.Location = new System.Drawing.Point(851, 333);
+            this.EssenceMiseryLabel.Name = "EssenceMiseryLabel";
+            this.EssenceMiseryLabel.Size = new System.Drawing.Size(78, 20);
+            this.EssenceMiseryLabel.TabIndex = 0;
+            this.EssenceMiseryLabel.Text = "MISERY";
+            // 
+            // EssenceEnvyLabel
+            // 
+            this.EssenceEnvyLabel.AutoSize = true;
+            this.EssenceEnvyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceEnvyLabel.ForeColor = System.Drawing.Color.DarkViolet;
+            this.EssenceEnvyLabel.Location = new System.Drawing.Point(851, 284);
+            this.EssenceEnvyLabel.Name = "EssenceEnvyLabel";
+            this.EssenceEnvyLabel.Size = new System.Drawing.Size(57, 20);
+            this.EssenceEnvyLabel.TabIndex = 0;
+            this.EssenceEnvyLabel.Text = "ENVY";
+            // 
+            // EssenceScornLabel
+            // 
+            this.EssenceScornLabel.AutoSize = true;
+            this.EssenceScornLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceScornLabel.ForeColor = System.Drawing.Color.DarkViolet;
+            this.EssenceScornLabel.Location = new System.Drawing.Point(851, 235);
+            this.EssenceScornLabel.Name = "EssenceScornLabel";
+            this.EssenceScornLabel.Size = new System.Drawing.Size(71, 20);
+            this.EssenceScornLabel.TabIndex = 0;
+            this.EssenceScornLabel.Text = "SCORN";
+            // 
+            // EssenceSpiteLabel
+            // 
+            this.EssenceSpiteLabel.AutoSize = true;
+            this.EssenceSpiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceSpiteLabel.ForeColor = System.Drawing.Color.Red;
+            this.EssenceSpiteLabel.Location = new System.Drawing.Point(851, 186);
+            this.EssenceSpiteLabel.Name = "EssenceSpiteLabel";
+            this.EssenceSpiteLabel.Size = new System.Drawing.Size(60, 20);
+            this.EssenceSpiteLabel.TabIndex = 0;
+            this.EssenceSpiteLabel.Text = "SPITE";
+            // 
+            // EssenceAnguishLabel
+            // 
+            this.EssenceAnguishLabel.AutoSize = true;
+            this.EssenceAnguishLabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EssenceAnguishLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceAnguishLabel.ForeColor = System.Drawing.Color.Red;
+            this.EssenceAnguishLabel.Location = new System.Drawing.Point(851, 137);
+            this.EssenceAnguishLabel.Name = "EssenceAnguishLabel";
+            this.EssenceAnguishLabel.Size = new System.Drawing.Size(91, 20);
+            this.EssenceAnguishLabel.TabIndex = 0;
+            this.EssenceAnguishLabel.Text = "ANGUISH";
+            // 
+            // EssenceZealLabel
+            // 
+            this.EssenceZealLabel.AutoSize = true;
+            this.EssenceZealLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceZealLabel.ForeColor = System.Drawing.Color.Red;
+            this.EssenceZealLabel.Location = new System.Drawing.Point(851, 88);
+            this.EssenceZealLabel.Name = "EssenceZealLabel";
+            this.EssenceZealLabel.Size = new System.Drawing.Size(54, 20);
+            this.EssenceZealLabel.TabIndex = 0;
+            this.EssenceZealLabel.Text = "ZEAL";
+            // 
+            // EssenceLoathingLabel
+            // 
+            this.EssenceLoathingLabel.AutoSize = true;
+            this.EssenceLoathingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceLoathingLabel.ForeColor = System.Drawing.Color.Red;
+            this.EssenceLoathingLabel.Location = new System.Drawing.Point(851, 39);
+            this.EssenceLoathingLabel.Name = "EssenceLoathingLabel";
+            this.EssenceLoathingLabel.Size = new System.Drawing.Size(99, 20);
+            this.EssenceLoathingLabel.TabIndex = 0;
+            this.EssenceLoathingLabel.Text = "LOATHING";
+            // 
+            // EssenceSorrowLabel
+            // 
+            this.EssenceSorrowLabel.AutoSize = true;
+            this.EssenceSorrowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceSorrowLabel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.EssenceSorrowLabel.Location = new System.Drawing.Point(169, 382);
+            this.EssenceSorrowLabel.Name = "EssenceSorrowLabel";
+            this.EssenceSorrowLabel.Size = new System.Drawing.Size(89, 20);
+            this.EssenceSorrowLabel.TabIndex = 0;
+            this.EssenceSorrowLabel.Text = "SORROW";
+            // 
+            // EssenceTormentLabel
+            // 
+            this.EssenceTormentLabel.AutoSize = true;
+            this.EssenceTormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceTormentLabel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.EssenceTormentLabel.Location = new System.Drawing.Point(165, 333);
+            this.EssenceTormentLabel.Name = "EssenceTormentLabel";
+            this.EssenceTormentLabel.Size = new System.Drawing.Size(93, 20);
+            this.EssenceTormentLabel.TabIndex = 0;
+            this.EssenceTormentLabel.Text = "TORMENT";
+            // 
+            // EssenceAngerLabel
+            // 
+            this.EssenceAngerLabel.AutoSize = true;
+            this.EssenceAngerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceAngerLabel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.EssenceAngerLabel.Location = new System.Drawing.Point(186, 284);
+            this.EssenceAngerLabel.Name = "EssenceAngerLabel";
+            this.EssenceAngerLabel.Size = new System.Drawing.Size(72, 20);
+            this.EssenceAngerLabel.TabIndex = 0;
+            this.EssenceAngerLabel.Text = "ANGER";
+            // 
+            // EssenceFearLabel
+            // 
+            this.EssenceFearLabel.AutoSize = true;
+            this.EssenceFearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceFearLabel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.EssenceFearLabel.Location = new System.Drawing.Point(201, 235);
+            this.EssenceFearLabel.Name = "EssenceFearLabel";
+            this.EssenceFearLabel.Size = new System.Drawing.Size(57, 20);
+            this.EssenceFearLabel.TabIndex = 0;
+            this.EssenceFearLabel.Text = "FEAR";
+            // 
+            // EssenceWoeLabel
+            // 
+            this.EssenceWoeLabel.AutoSize = true;
+            this.EssenceWoeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceWoeLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.EssenceWoeLabel.Location = new System.Drawing.Point(208, 186);
+            this.EssenceWoeLabel.Name = "EssenceWoeLabel";
+            this.EssenceWoeLabel.Size = new System.Drawing.Size(50, 20);
+            this.EssenceWoeLabel.TabIndex = 0;
+            this.EssenceWoeLabel.Text = "WOE";
+            // 
+            // EssenceContemptLabel
+            // 
+            this.EssenceContemptLabel.AutoSize = true;
+            this.EssenceContemptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceContemptLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.EssenceContemptLabel.Location = new System.Drawing.Point(155, 88);
+            this.EssenceContemptLabel.Name = "EssenceContemptLabel";
+            this.EssenceContemptLabel.Size = new System.Drawing.Size(103, 20);
+            this.EssenceContemptLabel.TabIndex = 0;
+            this.EssenceContemptLabel.Text = "CONTEMPT";
+            // 
+            // EssenceHatredLabel
+            // 
+            this.EssenceHatredLabel.AutoSize = true;
+            this.EssenceHatredLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceHatredLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.EssenceHatredLabel.Location = new System.Drawing.Point(176, 137);
+            this.EssenceHatredLabel.Name = "EssenceHatredLabel";
+            this.EssenceHatredLabel.Size = new System.Drawing.Size(82, 20);
+            this.EssenceHatredLabel.TabIndex = 0;
+            this.EssenceHatredLabel.Text = "HATRED";
+            // 
+            // EssenceGreedLabel
+            // 
+            this.EssenceGreedLabel.AutoSize = true;
+            this.EssenceGreedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceGreedLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.EssenceGreedLabel.Location = new System.Drawing.Point(185, 39);
+            this.EssenceGreedLabel.Name = "EssenceGreedLabel";
+            this.EssenceGreedLabel.Size = new System.Drawing.Size(73, 20);
+            this.EssenceGreedLabel.TabIndex = 0;
+            this.EssenceGreedLabel.Text = "GREED";
+            // 
+            // ScarabPanel
+            // 
+            this.ScarabPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg;
+            this.ScarabPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ScarabPanel.Controls.Add(this.ScarabTotalLabel);
+            this.ScarabPanel.Controls.Add(this.ScarabTotal);
+            this.ScarabPanel.Controls.Add(this.AbyssLabel);
+            this.ScarabPanel.Controls.Add(this.BreachLabel);
+            this.ScarabPanel.Controls.Add(this.DivinationLabel);
+            this.ScarabPanel.Controls.Add(this.ElderLabel);
+            this.ScarabPanel.Controls.Add(this.HarbingerLabel);
+            this.ScarabPanel.Controls.Add(this.CartographyLabel);
+            this.ScarabPanel.Controls.Add(this.PerandusLabel);
+            this.ScarabPanel.Controls.Add(this.ShaperLabel);
+            this.ScarabPanel.Controls.Add(this.BlightLabel);
+            this.ScarabPanel.Controls.Add(this.AmbushLabel);
+            this.ScarabPanel.Controls.Add(this.LegionLabel);
+            this.ScarabPanel.Controls.Add(this.MetamorphLabel);
+            this.ScarabPanel.Controls.Add(this.SulphiteLabel);
+            this.ScarabPanel.Controls.Add(this.ReliquaryLabel);
+            this.ScarabPanel.Controls.Add(this.TormentLabel);
+            this.ScarabPanel.Controls.Add(this.BestiaryLabel);
+            this.ScarabPanel.Location = new System.Drawing.Point(0, 0);
+            this.ScarabPanel.Name = "ScarabPanel";
+            this.ScarabPanel.Size = new System.Drawing.Size(1109, 640);
+            this.ScarabPanel.TabIndex = 0;
+            // 
+            // ScarabTotalLabel
+            // 
+            this.ScarabTotalLabel.AutoSize = true;
+            this.ScarabTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScarabTotalLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.ScarabTotalLabel.Location = new System.Drawing.Point(671, 592);
+            this.ScarabTotalLabel.Name = "ScarabTotalLabel";
+            this.ScarabTotalLabel.Size = new System.Drawing.Size(116, 24);
+            this.ScarabTotalLabel.TabIndex = 20;
+            this.ScarabTotalLabel.Text = "Total Price:";
+            // 
+            // ScarabTotal
+            // 
+            this.ScarabTotal.AutoSize = true;
+            this.ScarabTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScarabTotal.ForeColor = System.Drawing.Color.Yellow;
+            this.ScarabTotal.Location = new System.Drawing.Point(793, 592);
+            this.ScarabTotal.Name = "ScarabTotal";
+            this.ScarabTotal.Size = new System.Drawing.Size(32, 24);
+            this.ScarabTotal.TabIndex = 19;
+            this.ScarabTotal.Text = "0c";
+            // 
+            // AbyssLabel
+            // 
+            this.AbyssLabel.AutoSize = true;
+            this.AbyssLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbyssLabel.ForeColor = System.Drawing.Color.Tan;
+            this.AbyssLabel.Location = new System.Drawing.Point(829, 540);
+            this.AbyssLabel.Name = "AbyssLabel";
+            this.AbyssLabel.Size = new System.Drawing.Size(69, 20);
+            this.AbyssLabel.TabIndex = 0;
+            this.AbyssLabel.Text = "ABYSS";
+            // 
+            // BreachLabel
+            // 
+            this.BreachLabel.AutoSize = true;
+            this.BreachLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreachLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BreachLabel.Location = new System.Drawing.Point(829, 473);
+            this.BreachLabel.Name = "BreachLabel";
+            this.BreachLabel.Size = new System.Drawing.Size(83, 20);
+            this.BreachLabel.TabIndex = 0;
+            this.BreachLabel.Text = "BREACH";
+            // 
+            // DivinationLabel
+            // 
+            this.DivinationLabel.AutoSize = true;
+            this.DivinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DivinationLabel.ForeColor = System.Drawing.Color.Tan;
+            this.DivinationLabel.Location = new System.Drawing.Point(829, 407);
+            this.DivinationLabel.Name = "DivinationLabel";
+            this.DivinationLabel.Size = new System.Drawing.Size(111, 20);
+            this.DivinationLabel.TabIndex = 0;
+            this.DivinationLabel.Text = "DIVINATION";
+            // 
+            // ElderLabel
+            // 
+            this.ElderLabel.AutoSize = true;
+            this.ElderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ElderLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ElderLabel.Location = new System.Drawing.Point(829, 341);
+            this.ElderLabel.Name = "ElderLabel";
+            this.ElderLabel.Size = new System.Drawing.Size(69, 20);
+            this.ElderLabel.TabIndex = 0;
+            this.ElderLabel.Text = "ELDER";
+            // 
+            // HarbingerLabel
+            // 
+            this.HarbingerLabel.AutoSize = true;
+            this.HarbingerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HarbingerLabel.ForeColor = System.Drawing.Color.Tan;
+            this.HarbingerLabel.Location = new System.Drawing.Point(829, 275);
+            this.HarbingerLabel.Name = "HarbingerLabel";
+            this.HarbingerLabel.Size = new System.Drawing.Size(116, 20);
+            this.HarbingerLabel.TabIndex = 0;
+            this.HarbingerLabel.Text = "HARBINGER";
+            // 
+            // CartographyLabel
+            // 
+            this.CartographyLabel.AutoSize = true;
+            this.CartographyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartographyLabel.ForeColor = System.Drawing.Color.Tan;
+            this.CartographyLabel.Location = new System.Drawing.Point(829, 209);
+            this.CartographyLabel.Name = "CartographyLabel";
+            this.CartographyLabel.Size = new System.Drawing.Size(144, 20);
+            this.CartographyLabel.TabIndex = 0;
+            this.CartographyLabel.Text = "CARTOGRAPHY";
+            // 
+            // PerandusLabel
+            // 
+            this.PerandusLabel.AutoSize = true;
+            this.PerandusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PerandusLabel.ForeColor = System.Drawing.Color.Tan;
+            this.PerandusLabel.Location = new System.Drawing.Point(829, 144);
+            this.PerandusLabel.Name = "PerandusLabel";
+            this.PerandusLabel.Size = new System.Drawing.Size(107, 20);
+            this.PerandusLabel.TabIndex = 0;
+            this.PerandusLabel.Text = "PERANDUS";
+            // 
+            // ShaperLabel
+            // 
+            this.ShaperLabel.AutoSize = true;
+            this.ShaperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShaperLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ShaperLabel.Location = new System.Drawing.Point(829, 78);
+            this.ShaperLabel.Name = "ShaperLabel";
+            this.ShaperLabel.Size = new System.Drawing.Size(82, 20);
+            this.ShaperLabel.TabIndex = 0;
+            this.ShaperLabel.Text = "SHAPER";
+            // 
+            // BlightLabel
+            // 
+            this.BlightLabel.AutoSize = true;
+            this.BlightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BlightLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BlightLabel.Location = new System.Drawing.Point(206, 540);
+            this.BlightLabel.Name = "BlightLabel";
+            this.BlightLabel.Size = new System.Drawing.Size(74, 20);
+            this.BlightLabel.TabIndex = 0;
+            this.BlightLabel.Text = "BLIGHT";
+            // 
+            // AmbushLabel
+            // 
+            this.AmbushLabel.AutoSize = true;
+            this.AmbushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmbushLabel.ForeColor = System.Drawing.Color.Tan;
+            this.AmbushLabel.Location = new System.Drawing.Point(195, 473);
+            this.AmbushLabel.Name = "AmbushLabel";
+            this.AmbushLabel.Size = new System.Drawing.Size(85, 20);
+            this.AmbushLabel.TabIndex = 0;
+            this.AmbushLabel.Text = "AMBUSH";
+            // 
+            // LegionLabel
+            // 
+            this.LegionLabel.AutoSize = true;
+            this.LegionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LegionLabel.ForeColor = System.Drawing.Color.Tan;
+            this.LegionLabel.Location = new System.Drawing.Point(204, 407);
+            this.LegionLabel.Name = "LegionLabel";
+            this.LegionLabel.Size = new System.Drawing.Size(76, 20);
+            this.LegionLabel.TabIndex = 0;
+            this.LegionLabel.Text = "LEGION";
+            // 
+            // MetamorphLabel
+            // 
+            this.MetamorphLabel.AutoSize = true;
+            this.MetamorphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetamorphLabel.ForeColor = System.Drawing.Color.Tan;
+            this.MetamorphLabel.Location = new System.Drawing.Point(159, 341);
+            this.MetamorphLabel.Name = "MetamorphLabel";
+            this.MetamorphLabel.Size = new System.Drawing.Size(121, 20);
+            this.MetamorphLabel.TabIndex = 0;
+            this.MetamorphLabel.Text = "METAMORPH";
+            // 
+            // SulphiteLabel
+            // 
+            this.SulphiteLabel.AutoSize = true;
+            this.SulphiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SulphiteLabel.ForeColor = System.Drawing.Color.Tan;
+            this.SulphiteLabel.Location = new System.Drawing.Point(184, 275);
+            this.SulphiteLabel.Name = "SulphiteLabel";
+            this.SulphiteLabel.Size = new System.Drawing.Size(96, 20);
+            this.SulphiteLabel.TabIndex = 0;
+            this.SulphiteLabel.Text = "SULPHITE";
+            // 
+            // ReliquaryLabel
+            // 
+            this.ReliquaryLabel.AutoSize = true;
+            this.ReliquaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReliquaryLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ReliquaryLabel.Location = new System.Drawing.Point(167, 144);
+            this.ReliquaryLabel.Name = "ReliquaryLabel";
+            this.ReliquaryLabel.Size = new System.Drawing.Size(113, 20);
+            this.ReliquaryLabel.TabIndex = 0;
+            this.ReliquaryLabel.Text = "RELIQUARY";
+            // 
+            // TormentLabel
+            // 
+            this.TormentLabel.AutoSize = true;
+            this.TormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TormentLabel.ForeColor = System.Drawing.Color.Tan;
+            this.TormentLabel.Location = new System.Drawing.Point(187, 209);
+            this.TormentLabel.Name = "TormentLabel";
+            this.TormentLabel.Size = new System.Drawing.Size(93, 20);
+            this.TormentLabel.TabIndex = 0;
+            this.TormentLabel.Text = "TORMENT";
+            // 
+            // BestiaryLabel
+            // 
+            this.BestiaryLabel.AutoSize = true;
+            this.BestiaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BestiaryLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BestiaryLabel.Location = new System.Drawing.Point(182, 78);
+            this.BestiaryLabel.Name = "BestiaryLabel";
+            this.BestiaryLabel.Size = new System.Drawing.Size(98, 20);
+            this.BestiaryLabel.TabIndex = 0;
+            this.BestiaryLabel.Text = "BESTIARY";
             // 
             // PoePricing
             // 
@@ -2143,10 +2268,12 @@ namespace PoePricing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1133, 682);
+            this.Controls.Add(this.StashDumpPanel);
             this.Controls.Add(this.StartPanel);
+            this.Controls.Add(this.ResetButton);
+            this.Controls.Add(this.StashDumpButton);
             this.Controls.Add(this.LeagueSelector);
             this.Controls.Add(this.DisplayModeButton);
-            this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.ScreencapButton);
             this.Controls.Add(this.FossilBasePanel);
             this.Controls.Add(this.EssenceBasePanel);
@@ -2162,20 +2289,22 @@ namespace PoePricing
             this.ScarabBasePanel.ResumeLayout(false);
             this.ScarabPoorPanel.ResumeLayout(false);
             this.ScarabPoorPanel.PerformLayout();
-            this.ScarabPanel.ResumeLayout(false);
-            this.ScarabPanel.PerformLayout();
             this.EssenceBasePanel.ResumeLayout(false);
             this.EssencePoorPanel.ResumeLayout(false);
             this.EssencePoorPanel.PerformLayout();
-            this.EssencePanel.ResumeLayout(false);
-            this.EssencePanel.PerformLayout();
             this.FossilBasePanel.ResumeLayout(false);
             this.FossilPoorPanel.ResumeLayout(false);
             this.FossilPoorPanel.PerformLayout();
-            this.FossilPanel.ResumeLayout(false);
-            this.FossilPanel.PerformLayout();
             this.StartPanel.ResumeLayout(false);
             this.StartPanel.PerformLayout();
+            this.StashDumpPanel.ResumeLayout(false);
+            this.StashDumpPanel.PerformLayout();
+            this.FossilPanel.ResumeLayout(false);
+            this.FossilPanel.PerformLayout();
+            this.EssencePanel.ResumeLayout(false);
+            this.EssencePanel.PerformLayout();
+            this.ScarabPanel.ResumeLayout(false);
+            this.ScarabPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2348,6 +2477,17 @@ namespace PoePricing
         private System.Windows.Forms.RichTextBox StartPastebin;
         private System.Windows.Forms.TextBox StartInstructions;
         private System.Windows.Forms.Button ScreencapButton;
+        private System.Windows.Forms.Panel StashDumpPanel;
+        private System.Windows.Forms.Label StashDumpAccountNameLabel;
+        private System.Windows.Forms.Label StashDumpTabIndexLabel;
+        private System.Windows.Forms.TextBox StashDumpAccountName;
+        private System.Windows.Forms.TextBox StashDumpTabIndex;
+        private System.Windows.Forms.TextBox StashDumpInstructions;
+        private System.Windows.Forms.RichTextBox StashDumpPastebin;
+        private System.Windows.Forms.ToolTip StashDumpToolTip;
+        private System.Windows.Forms.Button StashDumpGoButton;
+        private System.Windows.Forms.Button StashDumpButton;
+        private System.Windows.Forms.Button StashDumpExitButton;
     }
 }
 
