@@ -92,7 +92,10 @@
     <None Include="images\essence\bg.png" />
     <None Include="images\fossil\bg.png" />
     <None Include="images\cross.png" />
+    <None Include="images\essence\logo.png" />
+    <None Include="images\fossil\logo.png" />
     <Content Include="images\scarab\bg.png" />
+    <None Include="images\scarab\logo.png" />
     <Content Include="images\scarab\scarab_bg_uncut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
