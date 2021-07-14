@@ -216,13 +216,13 @@ namespace PoePricing
                 var jsonObj = JObject.Parse(text);
                 if (jsonObj["error"] != null)
                 {
-                    return;
+                    throw new Exception();
                 }
 
                 var leagues = jsonObj["leagues"];
                 if (leagues == null)
                 {
-                    return;
+                    throw new Exception();
                 }
 
                 var saveFile = new SaveFile();
@@ -310,13 +310,13 @@ namespace PoePricing
                 var jsonObj = JObject.Parse(text);
                 if (jsonObj["error"] != null)
                 {
-                    return;
+                    throw new Exception();
                 }
 
                 var items = jsonObj["items"];
                 if (items == null)
                 {
-                    return;
+                    throw new Exception();
                 }
 
                 foreach (var item in items)
