@@ -36,6 +36,8 @@ namespace PoePricing
             this.RefreshPriceButton = new System.Windows.Forms.Button();
             this.PoeNinjaLabel = new System.Windows.Forms.Label();
             this.ScarabBasePanel = new System.Windows.Forms.Panel();
+            this.ScarabLogo = new System.Windows.Forms.Panel();
+            this.ScarabTitle = new System.Windows.Forms.Label();
             this.ScarabPoorPanel = new System.Windows.Forms.Panel();
             this.ScarabTitlePoorLabel = new System.Windows.Forms.Label();
             this.ScarabTotalPoorLabel = new System.Windows.Forms.Label();
@@ -44,7 +46,7 @@ namespace PoePricing
             this.SulphitePoorLabel = new System.Windows.Forms.Label();
             this.ShaperPoorLabel = new System.Windows.Forms.Label();
             this.ReliquaryPoorLabel = new System.Windows.Forms.Label();
-            this.PerandusPoorLabel = new System.Windows.Forms.Label();
+            this.ExpeditionPoorLabel = new System.Windows.Forms.Label();
             this.MetamorphPoorLabel = new System.Windows.Forms.Label();
             this.LegionPoorLabel = new System.Windows.Forms.Label();
             this.HarbingerPoorLabel = new System.Windows.Forms.Label();
@@ -56,8 +58,29 @@ namespace PoePricing
             this.BestiaryPoorLabel = new System.Windows.Forms.Label();
             this.BlightPoorLabel = new System.Windows.Forms.Label();
             this.BreachPoorLabel = new System.Windows.Forms.Label();
+            this.ScarabPanel = new System.Windows.Forms.Panel();
+            this.ScarabTotalLabel = new System.Windows.Forms.Label();
+            this.ScarabTotal = new System.Windows.Forms.Label();
+            this.AbyssLabel = new System.Windows.Forms.Label();
+            this.BreachLabel = new System.Windows.Forms.Label();
+            this.DivinationLabel = new System.Windows.Forms.Label();
+            this.ElderLabel = new System.Windows.Forms.Label();
+            this.HarbingerLabel = new System.Windows.Forms.Label();
+            this.CartographyLabel = new System.Windows.Forms.Label();
+            this.ExpeditionLabel = new System.Windows.Forms.Label();
+            this.ShaperLabel = new System.Windows.Forms.Label();
+            this.BlightLabel = new System.Windows.Forms.Label();
+            this.AmbushLabel = new System.Windows.Forms.Label();
+            this.LegionLabel = new System.Windows.Forms.Label();
+            this.MetamorphLabel = new System.Windows.Forms.Label();
+            this.SulphiteLabel = new System.Windows.Forms.Label();
+            this.ReliquaryLabel = new System.Windows.Forms.Label();
+            this.TormentLabel = new System.Windows.Forms.Label();
+            this.BestiaryLabel = new System.Windows.Forms.Label();
             this.DisplayModeButton = new System.Windows.Forms.Button();
             this.EssenceBasePanel = new System.Windows.Forms.Panel();
+            this.EssenceLogo = new System.Windows.Forms.Panel();
+            this.EssenceTitle = new System.Windows.Forms.Label();
             this.EssencePoorPanel = new System.Windows.Forms.Panel();
             this.EssenceTitlePoorLabel = new System.Windows.Forms.Label();
             this.EssenceInsanityPoorLabel = new System.Windows.Forms.Label();
@@ -86,86 +109,6 @@ namespace PoePricing
             this.EssenceAnguishPoorLabel = new System.Windows.Forms.Label();
             this.EssenceContemptPoorLabel = new System.Windows.Forms.Label();
             this.EssenceAngerPoorLabel = new System.Windows.Forms.Label();
-            this.ResetButton = new System.Windows.Forms.Button();
-            this.FossilBasePanel = new System.Windows.Forms.Panel();
-            this.FossilPoorPanel = new System.Windows.Forms.Panel();
-            this.FossilGlyphicPoorLabel = new System.Windows.Forms.Label();
-            this.FossilTangledPoorLabel = new System.Windows.Forms.Label();
-            this.FossilShudderingPoorLabel = new System.Windows.Forms.Label();
-            this.FossilSerratedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilScorchedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilGildedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilFrigidPoorLabel = new System.Windows.Forms.Label();
-            this.FossilFracturedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilFacetedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilSanctifiedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilPristinePoorLabel = new System.Windows.Forms.Label();
-            this.FossilPrismaticPoorLabel = new System.Windows.Forms.Label();
-            this.FossilPerfectPoorLabel = new System.Windows.Forms.Label();
-            this.FossilMetallicPoorLabel = new System.Windows.Forms.Label();
-            this.FossilLucentPoorLabel = new System.Windows.Forms.Label();
-            this.FossilJaggedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilHollowPoorLabel = new System.Windows.Forms.Label();
-            this.FossilEncrustedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilEnchantedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilDensePoorLabel = new System.Windows.Forms.Label();
-            this.FossilCorrodedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilBoundPoorLabel = new System.Windows.Forms.Label();
-            this.FossilAethericPoorLabel = new System.Windows.Forms.Label();
-            this.FossilBloodstainedPoorLabel = new System.Windows.Forms.Label();
-            this.FossilAberrantPoorLabel = new System.Windows.Forms.Label();
-            this.FossilTitlePoorLabel = new System.Windows.Forms.Label();
-            this.FossilTotal = new System.Windows.Forms.Label();
-            this.FossilTotalLabel = new System.Windows.Forms.Label();
-            this.LeagueSelector = new System.Windows.Forms.ComboBox();
-            this.StartPanel = new System.Windows.Forms.Panel();
-            this.StartInstructions = new System.Windows.Forms.TextBox();
-            this.StartPastebin = new System.Windows.Forms.RichTextBox();
-            this.ScreencapButton = new System.Windows.Forms.Button();
-            this.StashDumpPanel = new System.Windows.Forms.Panel();
-            this.StashDumpGoButton = new System.Windows.Forms.Button();
-            this.StashDumpAccountNameLabel = new System.Windows.Forms.Label();
-            this.StashDumpTabIndexLabel = new System.Windows.Forms.Label();
-            this.StashDumpAccountName = new System.Windows.Forms.TextBox();
-            this.StashDumpTabIndex = new System.Windows.Forms.TextBox();
-            this.StashDumpInstructions = new System.Windows.Forms.TextBox();
-            this.StashDumpPastebin = new System.Windows.Forms.RichTextBox();
-            this.StashDumpToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.StashDumpButton = new System.Windows.Forms.Button();
-            this.ScarabTitle = new System.Windows.Forms.Label();
-            this.EssenceTitle = new System.Windows.Forms.Label();
-            this.FossilTitle = new System.Windows.Forms.Label();
-            this.StashDumpExitButton = new System.Windows.Forms.Button();
-            this.FossilPanel = new System.Windows.Forms.Panel();
-            this.FossilFacetedLabel = new System.Windows.Forms.Label();
-            this.FossilGlyphicLabel = new System.Windows.Forms.Label();
-            this.FossilFracturedLabel = new System.Windows.Forms.Label();
-            this.FossilHollowLabel = new System.Windows.Forms.Label();
-            this.FossilSanctifiedLabel = new System.Windows.Forms.Label();
-            this.FossilEncrustedLabel = new System.Windows.Forms.Label();
-            this.FossilGildedLabel = new System.Windows.Forms.Label();
-            this.FossilBloodstainedLabel = new System.Windows.Forms.Label();
-            this.FossilTangledLabel = new System.Windows.Forms.Label();
-            this.FossilShudderingLabel = new System.Windows.Forms.Label();
-            this.FossilSerratedLabel = new System.Windows.Forms.Label();
-            this.FossilLucentLabel = new System.Windows.Forms.Label();
-            this.FossilAethericLabel = new System.Windows.Forms.Label();
-            this.FossilEnchantedLabel = new System.Windows.Forms.Label();
-            this.FossilPrismaticLabel = new System.Windows.Forms.Label();
-            this.FossilPerfectLabel = new System.Windows.Forms.Label();
-            this.FossilCorrodedLabel = new System.Windows.Forms.Label();
-            this.FossilBoundLabel = new System.Windows.Forms.Label();
-            this.FossilPristineLabel = new System.Windows.Forms.Label();
-            this.FossilMetallicLabel = new System.Windows.Forms.Label();
-            this.FossilScorchedLabel = new System.Windows.Forms.Label();
-            this.FossilAberrantLabel = new System.Windows.Forms.Label();
-            this.FossilFrigidLabel = new System.Windows.Forms.Label();
-            this.FossilDenseLabel = new System.Windows.Forms.Label();
-            this.FossilJaggedLabel = new System.Windows.Forms.Label();
-            this.FossilTotalPoor = new System.Windows.Forms.Label();
-            this.FossilTotalPoorLabel = new System.Windows.Forms.Label();
-            this.EssenceLogo = new System.Windows.Forms.Panel();
-            this.FossilLogo = new System.Windows.Forms.Panel();
             this.EssencePanel = new System.Windows.Forms.Panel();
             this.EssenceHysteriaLabel = new System.Windows.Forms.Label();
             this.EssenceDeliriumLabel = new System.Windows.Forms.Label();
@@ -193,38 +136,95 @@ namespace PoePricing
             this.EssenceContemptLabel = new System.Windows.Forms.Label();
             this.EssenceHatredLabel = new System.Windows.Forms.Label();
             this.EssenceGreedLabel = new System.Windows.Forms.Label();
-            this.ScarabLogo = new System.Windows.Forms.Panel();
-            this.ScarabPanel = new System.Windows.Forms.Panel();
-            this.ScarabTotalLabel = new System.Windows.Forms.Label();
-            this.ScarabTotal = new System.Windows.Forms.Label();
-            this.AbyssLabel = new System.Windows.Forms.Label();
-            this.BreachLabel = new System.Windows.Forms.Label();
-            this.DivinationLabel = new System.Windows.Forms.Label();
-            this.ElderLabel = new System.Windows.Forms.Label();
-            this.HarbingerLabel = new System.Windows.Forms.Label();
-            this.CartographyLabel = new System.Windows.Forms.Label();
-            this.PerandusLabel = new System.Windows.Forms.Label();
-            this.ShaperLabel = new System.Windows.Forms.Label();
-            this.BlightLabel = new System.Windows.Forms.Label();
-            this.AmbushLabel = new System.Windows.Forms.Label();
-            this.LegionLabel = new System.Windows.Forms.Label();
-            this.MetamorphLabel = new System.Windows.Forms.Label();
-            this.SulphiteLabel = new System.Windows.Forms.Label();
-            this.ReliquaryLabel = new System.Windows.Forms.Label();
-            this.TormentLabel = new System.Windows.Forms.Label();
-            this.BestiaryLabel = new System.Windows.Forms.Label();
+            this.ResetButton = new System.Windows.Forms.Button();
+            this.FossilBasePanel = new System.Windows.Forms.Panel();
+            this.FossilLogo = new System.Windows.Forms.Panel();
+            this.FossilTitle = new System.Windows.Forms.Label();
+            this.FossilPoorPanel = new System.Windows.Forms.Panel();
+            this.FossilGlyphicPoorLabel = new System.Windows.Forms.Label();
+            this.FossilTangledPoorLabel = new System.Windows.Forms.Label();
+            this.FossilShudderingPoorLabel = new System.Windows.Forms.Label();
+            this.FossilSerratedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilScorchedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilGildedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilFrigidPoorLabel = new System.Windows.Forms.Label();
+            this.FossilFracturedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilFacetedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilSanctifiedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilPristinePoorLabel = new System.Windows.Forms.Label();
+            this.FossilPrismaticPoorLabel = new System.Windows.Forms.Label();
+            this.FossilPerfectPoorLabel = new System.Windows.Forms.Label();
+            this.FossilMetallicPoorLabel = new System.Windows.Forms.Label();
+            this.FossilLucentPoorLabel = new System.Windows.Forms.Label();
+            this.FossilJaggedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilHollowPoorLabel = new System.Windows.Forms.Label();
+            this.FossilFundamentalPoorLabel = new System.Windows.Forms.Label();
+            this.FossilDeftPoorLabel = new System.Windows.Forms.Label();
+            this.FossilDensePoorLabel = new System.Windows.Forms.Label();
+            this.FossilCorrodedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilBoundPoorLabel = new System.Windows.Forms.Label();
+            this.FossilAethericPoorLabel = new System.Windows.Forms.Label();
+            this.FossilBloodstainedPoorLabel = new System.Windows.Forms.Label();
+            this.FossilAberrantPoorLabel = new System.Windows.Forms.Label();
+            this.FossilTitlePoorLabel = new System.Windows.Forms.Label();
+            this.FossilTotal = new System.Windows.Forms.Label();
+            this.FossilTotalLabel = new System.Windows.Forms.Label();
+            this.FossilPanel = new System.Windows.Forms.Panel();
+            this.FossilFacetedLabel = new System.Windows.Forms.Label();
+            this.FossilGlyphicLabel = new System.Windows.Forms.Label();
+            this.FossilFracturedLabel = new System.Windows.Forms.Label();
+            this.FossilHollowLabel = new System.Windows.Forms.Label();
+            this.FossilSanctifiedLabel = new System.Windows.Forms.Label();
+            this.FossilFundamentalLabel = new System.Windows.Forms.Label();
+            this.FossilGildedLabel = new System.Windows.Forms.Label();
+            this.FossilBloodstainedLabel = new System.Windows.Forms.Label();
+            this.FossilTangledLabel = new System.Windows.Forms.Label();
+            this.FossilShudderingLabel = new System.Windows.Forms.Label();
+            this.FossilSerratedLabel = new System.Windows.Forms.Label();
+            this.FossilLucentLabel = new System.Windows.Forms.Label();
+            this.FossilAethericLabel = new System.Windows.Forms.Label();
+            this.FossilDeftLabel = new System.Windows.Forms.Label();
+            this.FossilPrismaticLabel = new System.Windows.Forms.Label();
+            this.FossilPerfectLabel = new System.Windows.Forms.Label();
+            this.FossilCorrodedLabel = new System.Windows.Forms.Label();
+            this.FossilBoundLabel = new System.Windows.Forms.Label();
+            this.FossilPristineLabel = new System.Windows.Forms.Label();
+            this.FossilMetallicLabel = new System.Windows.Forms.Label();
+            this.FossilScorchedLabel = new System.Windows.Forms.Label();
+            this.FossilAberrantLabel = new System.Windows.Forms.Label();
+            this.FossilFrigidLabel = new System.Windows.Forms.Label();
+            this.FossilDenseLabel = new System.Windows.Forms.Label();
+            this.FossilJaggedLabel = new System.Windows.Forms.Label();
+            this.FossilTotalPoor = new System.Windows.Forms.Label();
+            this.FossilTotalPoorLabel = new System.Windows.Forms.Label();
+            this.LeagueSelector = new System.Windows.Forms.ComboBox();
+            this.StartPanel = new System.Windows.Forms.Panel();
+            this.StartInstructions = new System.Windows.Forms.TextBox();
+            this.StartPastebin = new System.Windows.Forms.RichTextBox();
+            this.ScreencapButton = new System.Windows.Forms.Button();
+            this.StashDumpPanel = new System.Windows.Forms.Panel();
+            this.StashDumpExitButton = new System.Windows.Forms.Button();
+            this.StashDumpGoButton = new System.Windows.Forms.Button();
+            this.StashDumpAccountNameLabel = new System.Windows.Forms.Label();
+            this.StashDumpTabIndexLabel = new System.Windows.Forms.Label();
+            this.StashDumpAccountName = new System.Windows.Forms.TextBox();
+            this.StashDumpTabIndex = new System.Windows.Forms.TextBox();
+            this.StashDumpInstructions = new System.Windows.Forms.TextBox();
+            this.StashDumpPastebin = new System.Windows.Forms.RichTextBox();
+            this.StashDumpToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.StashDumpButton = new System.Windows.Forms.Button();
             this.Toolbar.SuspendLayout();
             this.ScarabBasePanel.SuspendLayout();
             this.ScarabPoorPanel.SuspendLayout();
+            this.ScarabPanel.SuspendLayout();
             this.EssenceBasePanel.SuspendLayout();
             this.EssencePoorPanel.SuspendLayout();
+            this.EssencePanel.SuspendLayout();
             this.FossilBasePanel.SuspendLayout();
             this.FossilPoorPanel.SuspendLayout();
+            this.FossilPanel.SuspendLayout();
             this.StartPanel.SuspendLayout();
             this.StashDumpPanel.SuspendLayout();
-            this.FossilPanel.SuspendLayout();
-            this.EssencePanel.SuspendLayout();
-            this.ScarabPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Toolbar
@@ -277,6 +277,27 @@ namespace PoePricing
             this.ScarabBasePanel.Size = new System.Drawing.Size(1109, 640);
             this.ScarabBasePanel.TabIndex = 0;
             // 
+            // ScarabLogo
+            // 
+            this.ScarabLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo;
+            this.ScarabLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ScarabLogo.Location = new System.Drawing.Point(0, 0);
+            this.ScarabLogo.Name = "ScarabLogo";
+            this.ScarabLogo.Size = new System.Drawing.Size(64, 64);
+            this.ScarabLogo.TabIndex = 0;
+            // 
+            // ScarabTitle
+            // 
+            this.ScarabTitle.AutoSize = true;
+            this.ScarabTitle.BackColor = System.Drawing.Color.Black;
+            this.ScarabTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScarabTitle.ForeColor = System.Drawing.Color.ForestGreen;
+            this.ScarabTitle.Location = new System.Drawing.Point(0, 64);
+            this.ScarabTitle.Name = "ScarabTitle";
+            this.ScarabTitle.Size = new System.Drawing.Size(106, 31);
+            this.ScarabTitle.TabIndex = 0;
+            this.ScarabTitle.Text = "Scarab";
+            // 
             // ScarabPoorPanel
             // 
             this.ScarabPoorPanel.Controls.Add(this.ScarabTitlePoorLabel);
@@ -286,7 +307,7 @@ namespace PoePricing
             this.ScarabPoorPanel.Controls.Add(this.SulphitePoorLabel);
             this.ScarabPoorPanel.Controls.Add(this.ShaperPoorLabel);
             this.ScarabPoorPanel.Controls.Add(this.ReliquaryPoorLabel);
-            this.ScarabPoorPanel.Controls.Add(this.PerandusPoorLabel);
+            this.ScarabPoorPanel.Controls.Add(this.ExpeditionPoorLabel);
             this.ScarabPoorPanel.Controls.Add(this.MetamorphPoorLabel);
             this.ScarabPoorPanel.Controls.Add(this.LegionPoorLabel);
             this.ScarabPoorPanel.Controls.Add(this.HarbingerPoorLabel);
@@ -380,23 +401,23 @@ namespace PoePricing
             this.ReliquaryPoorLabel.TabIndex = 13;
             this.ReliquaryPoorLabel.Text = "RELIQUARY";
             // 
-            // PerandusPoorLabel
+            // ExpeditionPoorLabel
             // 
-            this.PerandusPoorLabel.AutoSize = true;
-            this.PerandusPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PerandusPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.PerandusPoorLabel.Location = new System.Drawing.Point(555, 275);
-            this.PerandusPoorLabel.Name = "PerandusPoorLabel";
-            this.PerandusPoorLabel.Size = new System.Drawing.Size(107, 20);
-            this.PerandusPoorLabel.TabIndex = 12;
-            this.PerandusPoorLabel.Text = "PERANDUS";
+            this.ExpeditionPoorLabel.AutoSize = true;
+            this.ExpeditionPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpeditionPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ExpeditionPoorLabel.Location = new System.Drawing.Point(555, 74);
+            this.ExpeditionPoorLabel.Name = "ExpeditionPoorLabel";
+            this.ExpeditionPoorLabel.Size = new System.Drawing.Size(116, 20);
+            this.ExpeditionPoorLabel.TabIndex = 12;
+            this.ExpeditionPoorLabel.Text = "EXPEDITION";
             // 
             // MetamorphPoorLabel
             // 
             this.MetamorphPoorLabel.AutoSize = true;
             this.MetamorphPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MetamorphPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.MetamorphPoorLabel.Location = new System.Drawing.Point(555, 209);
+            this.MetamorphPoorLabel.Location = new System.Drawing.Point(555, 275);
             this.MetamorphPoorLabel.Name = "MetamorphPoorLabel";
             this.MetamorphPoorLabel.Size = new System.Drawing.Size(121, 20);
             this.MetamorphPoorLabel.TabIndex = 11;
@@ -407,7 +428,7 @@ namespace PoePricing
             this.LegionPoorLabel.AutoSize = true;
             this.LegionPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LegionPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.LegionPoorLabel.Location = new System.Drawing.Point(555, 144);
+            this.LegionPoorLabel.Location = new System.Drawing.Point(555, 209);
             this.LegionPoorLabel.Name = "LegionPoorLabel";
             this.LegionPoorLabel.Size = new System.Drawing.Size(76, 20);
             this.LegionPoorLabel.TabIndex = 10;
@@ -418,7 +439,7 @@ namespace PoePricing
             this.HarbingerPoorLabel.AutoSize = true;
             this.HarbingerPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HarbingerPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.HarbingerPoorLabel.Location = new System.Drawing.Point(555, 78);
+            this.HarbingerPoorLabel.Location = new System.Drawing.Point(555, 144);
             this.HarbingerPoorLabel.Name = "HarbingerPoorLabel";
             this.HarbingerPoorLabel.Size = new System.Drawing.Size(116, 20);
             this.HarbingerPoorLabel.TabIndex = 9;
@@ -512,6 +533,231 @@ namespace PoePricing
             this.BreachPoorLabel.TabIndex = 1;
             this.BreachPoorLabel.Text = "BREACH";
             // 
+            // ScarabPanel
+            // 
+            this.ScarabPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg;
+            this.ScarabPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ScarabPanel.Controls.Add(this.ScarabTotalLabel);
+            this.ScarabPanel.Controls.Add(this.ScarabTotal);
+            this.ScarabPanel.Controls.Add(this.AbyssLabel);
+            this.ScarabPanel.Controls.Add(this.BreachLabel);
+            this.ScarabPanel.Controls.Add(this.DivinationLabel);
+            this.ScarabPanel.Controls.Add(this.ElderLabel);
+            this.ScarabPanel.Controls.Add(this.HarbingerLabel);
+            this.ScarabPanel.Controls.Add(this.CartographyLabel);
+            this.ScarabPanel.Controls.Add(this.ExpeditionLabel);
+            this.ScarabPanel.Controls.Add(this.ShaperLabel);
+            this.ScarabPanel.Controls.Add(this.BlightLabel);
+            this.ScarabPanel.Controls.Add(this.AmbushLabel);
+            this.ScarabPanel.Controls.Add(this.LegionLabel);
+            this.ScarabPanel.Controls.Add(this.MetamorphLabel);
+            this.ScarabPanel.Controls.Add(this.SulphiteLabel);
+            this.ScarabPanel.Controls.Add(this.ReliquaryLabel);
+            this.ScarabPanel.Controls.Add(this.TormentLabel);
+            this.ScarabPanel.Controls.Add(this.BestiaryLabel);
+            this.ScarabPanel.Location = new System.Drawing.Point(0, 0);
+            this.ScarabPanel.Name = "ScarabPanel";
+            this.ScarabPanel.Size = new System.Drawing.Size(1109, 640);
+            this.ScarabPanel.TabIndex = 0;
+            // 
+            // ScarabTotalLabel
+            // 
+            this.ScarabTotalLabel.AutoSize = true;
+            this.ScarabTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScarabTotalLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.ScarabTotalLabel.Location = new System.Drawing.Point(671, 592);
+            this.ScarabTotalLabel.Name = "ScarabTotalLabel";
+            this.ScarabTotalLabel.Size = new System.Drawing.Size(116, 24);
+            this.ScarabTotalLabel.TabIndex = 20;
+            this.ScarabTotalLabel.Text = "Total Price:";
+            // 
+            // ScarabTotal
+            // 
+            this.ScarabTotal.AutoSize = true;
+            this.ScarabTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScarabTotal.ForeColor = System.Drawing.Color.Yellow;
+            this.ScarabTotal.Location = new System.Drawing.Point(793, 592);
+            this.ScarabTotal.Name = "ScarabTotal";
+            this.ScarabTotal.Size = new System.Drawing.Size(32, 24);
+            this.ScarabTotal.TabIndex = 19;
+            this.ScarabTotal.Text = "0c";
+            // 
+            // AbyssLabel
+            // 
+            this.AbyssLabel.AutoSize = true;
+            this.AbyssLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbyssLabel.ForeColor = System.Drawing.Color.Tan;
+            this.AbyssLabel.Location = new System.Drawing.Point(829, 540);
+            this.AbyssLabel.Name = "AbyssLabel";
+            this.AbyssLabel.Size = new System.Drawing.Size(69, 20);
+            this.AbyssLabel.TabIndex = 0;
+            this.AbyssLabel.Text = "ABYSS";
+            // 
+            // BreachLabel
+            // 
+            this.BreachLabel.AutoSize = true;
+            this.BreachLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BreachLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BreachLabel.Location = new System.Drawing.Point(829, 473);
+            this.BreachLabel.Name = "BreachLabel";
+            this.BreachLabel.Size = new System.Drawing.Size(83, 20);
+            this.BreachLabel.TabIndex = 0;
+            this.BreachLabel.Text = "BREACH";
+            // 
+            // DivinationLabel
+            // 
+            this.DivinationLabel.AutoSize = true;
+            this.DivinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DivinationLabel.ForeColor = System.Drawing.Color.Tan;
+            this.DivinationLabel.Location = new System.Drawing.Point(829, 407);
+            this.DivinationLabel.Name = "DivinationLabel";
+            this.DivinationLabel.Size = new System.Drawing.Size(111, 20);
+            this.DivinationLabel.TabIndex = 0;
+            this.DivinationLabel.Text = "DIVINATION";
+            // 
+            // ElderLabel
+            // 
+            this.ElderLabel.AutoSize = true;
+            this.ElderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ElderLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ElderLabel.Location = new System.Drawing.Point(829, 341);
+            this.ElderLabel.Name = "ElderLabel";
+            this.ElderLabel.Size = new System.Drawing.Size(69, 20);
+            this.ElderLabel.TabIndex = 0;
+            this.ElderLabel.Text = "ELDER";
+            // 
+            // HarbingerLabel
+            // 
+            this.HarbingerLabel.AutoSize = true;
+            this.HarbingerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HarbingerLabel.ForeColor = System.Drawing.Color.Tan;
+            this.HarbingerLabel.Location = new System.Drawing.Point(829, 275);
+            this.HarbingerLabel.Name = "HarbingerLabel";
+            this.HarbingerLabel.Size = new System.Drawing.Size(116, 20);
+            this.HarbingerLabel.TabIndex = 0;
+            this.HarbingerLabel.Text = "HARBINGER";
+            // 
+            // CartographyLabel
+            // 
+            this.CartographyLabel.AutoSize = true;
+            this.CartographyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartographyLabel.ForeColor = System.Drawing.Color.Tan;
+            this.CartographyLabel.Location = new System.Drawing.Point(829, 209);
+            this.CartographyLabel.Name = "CartographyLabel";
+            this.CartographyLabel.Size = new System.Drawing.Size(144, 20);
+            this.CartographyLabel.TabIndex = 0;
+            this.CartographyLabel.Text = "CARTOGRAPHY";
+            // 
+            // ExpeditionLabel
+            // 
+            this.ExpeditionLabel.AutoSize = true;
+            this.ExpeditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpeditionLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ExpeditionLabel.Location = new System.Drawing.Point(829, 144);
+            this.ExpeditionLabel.Name = "ExpeditionLabel";
+            this.ExpeditionLabel.Size = new System.Drawing.Size(116, 20);
+            this.ExpeditionLabel.TabIndex = 0;
+            this.ExpeditionLabel.Text = "EXPEDITION";
+            // 
+            // ShaperLabel
+            // 
+            this.ShaperLabel.AutoSize = true;
+            this.ShaperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShaperLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ShaperLabel.Location = new System.Drawing.Point(829, 78);
+            this.ShaperLabel.Name = "ShaperLabel";
+            this.ShaperLabel.Size = new System.Drawing.Size(82, 20);
+            this.ShaperLabel.TabIndex = 0;
+            this.ShaperLabel.Text = "SHAPER";
+            // 
+            // BlightLabel
+            // 
+            this.BlightLabel.AutoSize = true;
+            this.BlightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BlightLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BlightLabel.Location = new System.Drawing.Point(206, 540);
+            this.BlightLabel.Name = "BlightLabel";
+            this.BlightLabel.Size = new System.Drawing.Size(74, 20);
+            this.BlightLabel.TabIndex = 0;
+            this.BlightLabel.Text = "BLIGHT";
+            // 
+            // AmbushLabel
+            // 
+            this.AmbushLabel.AutoSize = true;
+            this.AmbushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmbushLabel.ForeColor = System.Drawing.Color.Tan;
+            this.AmbushLabel.Location = new System.Drawing.Point(195, 473);
+            this.AmbushLabel.Name = "AmbushLabel";
+            this.AmbushLabel.Size = new System.Drawing.Size(85, 20);
+            this.AmbushLabel.TabIndex = 0;
+            this.AmbushLabel.Text = "AMBUSH";
+            // 
+            // LegionLabel
+            // 
+            this.LegionLabel.AutoSize = true;
+            this.LegionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LegionLabel.ForeColor = System.Drawing.Color.Tan;
+            this.LegionLabel.Location = new System.Drawing.Point(204, 407);
+            this.LegionLabel.Name = "LegionLabel";
+            this.LegionLabel.Size = new System.Drawing.Size(76, 20);
+            this.LegionLabel.TabIndex = 0;
+            this.LegionLabel.Text = "LEGION";
+            // 
+            // MetamorphLabel
+            // 
+            this.MetamorphLabel.AutoSize = true;
+            this.MetamorphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetamorphLabel.ForeColor = System.Drawing.Color.Tan;
+            this.MetamorphLabel.Location = new System.Drawing.Point(159, 341);
+            this.MetamorphLabel.Name = "MetamorphLabel";
+            this.MetamorphLabel.Size = new System.Drawing.Size(121, 20);
+            this.MetamorphLabel.TabIndex = 0;
+            this.MetamorphLabel.Text = "METAMORPH";
+            // 
+            // SulphiteLabel
+            // 
+            this.SulphiteLabel.AutoSize = true;
+            this.SulphiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SulphiteLabel.ForeColor = System.Drawing.Color.Tan;
+            this.SulphiteLabel.Location = new System.Drawing.Point(184, 275);
+            this.SulphiteLabel.Name = "SulphiteLabel";
+            this.SulphiteLabel.Size = new System.Drawing.Size(96, 20);
+            this.SulphiteLabel.TabIndex = 0;
+            this.SulphiteLabel.Text = "SULPHITE";
+            // 
+            // ReliquaryLabel
+            // 
+            this.ReliquaryLabel.AutoSize = true;
+            this.ReliquaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReliquaryLabel.ForeColor = System.Drawing.Color.Tan;
+            this.ReliquaryLabel.Location = new System.Drawing.Point(167, 144);
+            this.ReliquaryLabel.Name = "ReliquaryLabel";
+            this.ReliquaryLabel.Size = new System.Drawing.Size(113, 20);
+            this.ReliquaryLabel.TabIndex = 0;
+            this.ReliquaryLabel.Text = "RELIQUARY";
+            // 
+            // TormentLabel
+            // 
+            this.TormentLabel.AutoSize = true;
+            this.TormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TormentLabel.ForeColor = System.Drawing.Color.Tan;
+            this.TormentLabel.Location = new System.Drawing.Point(187, 209);
+            this.TormentLabel.Name = "TormentLabel";
+            this.TormentLabel.Size = new System.Drawing.Size(93, 20);
+            this.TormentLabel.TabIndex = 0;
+            this.TormentLabel.Text = "TORMENT";
+            // 
+            // BestiaryLabel
+            // 
+            this.BestiaryLabel.AutoSize = true;
+            this.BestiaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BestiaryLabel.ForeColor = System.Drawing.Color.Tan;
+            this.BestiaryLabel.Location = new System.Drawing.Point(182, 78);
+            this.BestiaryLabel.Name = "BestiaryLabel";
+            this.BestiaryLabel.Size = new System.Drawing.Size(98, 20);
+            this.BestiaryLabel.TabIndex = 0;
+            this.BestiaryLabel.Text = "BESTIARY";
+            // 
             // DisplayModeButton
             // 
             this.DisplayModeButton.Location = new System.Drawing.Point(138, 0);
@@ -532,6 +778,27 @@ namespace PoePricing
             this.EssenceBasePanel.Name = "EssenceBasePanel";
             this.EssenceBasePanel.Size = new System.Drawing.Size(1109, 640);
             this.EssenceBasePanel.TabIndex = 0;
+            // 
+            // EssenceLogo
+            // 
+            this.EssenceLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo1;
+            this.EssenceLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EssenceLogo.Location = new System.Drawing.Point(0, 0);
+            this.EssenceLogo.Name = "EssenceLogo";
+            this.EssenceLogo.Size = new System.Drawing.Size(64, 64);
+            this.EssenceLogo.TabIndex = 0;
+            // 
+            // EssenceTitle
+            // 
+            this.EssenceTitle.AutoSize = true;
+            this.EssenceTitle.BackColor = System.Drawing.Color.Black;
+            this.EssenceTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EssenceTitle.ForeColor = System.Drawing.Color.Cyan;
+            this.EssenceTitle.Location = new System.Drawing.Point(0, 64);
+            this.EssenceTitle.Name = "EssenceTitle";
+            this.EssenceTitle.Size = new System.Drawing.Size(126, 31);
+            this.EssenceTitle.TabIndex = 0;
+            this.EssenceTitle.Text = "Essence";
             // 
             // EssencePoorPanel
             // 
@@ -866,921 +1133,6 @@ namespace PoePricing
             this.EssenceAngerPoorLabel.TabIndex = 0;
             this.EssenceAngerPoorLabel.Text = "ANGER";
             // 
-            // ResetButton
-            // 
-            this.ResetButton.Location = new System.Drawing.Point(1047, 647);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(75, 23);
-            this.ResetButton.TabIndex = 1000;
-            this.ResetButton.Text = "Reset All";
-            this.ResetButton.UseVisualStyleBackColor = true;
-            // 
-            // FossilBasePanel
-            // 
-            this.FossilBasePanel.Controls.Add(this.FossilLogo);
-            this.FossilBasePanel.Controls.Add(this.FossilTitle);
-            this.FossilBasePanel.Controls.Add(this.FossilPoorPanel);
-            this.FossilBasePanel.Controls.Add(this.FossilPanel);
-            this.FossilBasePanel.Location = new System.Drawing.Point(12, 30);
-            this.FossilBasePanel.Name = "FossilBasePanel";
-            this.FossilBasePanel.Size = new System.Drawing.Size(1109, 640);
-            this.FossilBasePanel.TabIndex = 0;
-            // 
-            // FossilPoorPanel
-            // 
-            this.FossilPoorPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.FossilPoorPanel.Controls.Add(this.FossilGlyphicPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilTangledPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilShudderingPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilSerratedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilScorchedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilGildedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilFrigidPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilFracturedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilFacetedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilSanctifiedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilPristinePoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilPrismaticPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilPerfectPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilMetallicPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilLucentPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilJaggedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilHollowPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilEncrustedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilEnchantedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilDensePoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilCorrodedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilBoundPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilAethericPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilBloodstainedPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilAberrantPoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilTitlePoorLabel);
-            this.FossilPoorPanel.Controls.Add(this.FossilTotal);
-            this.FossilPoorPanel.Controls.Add(this.FossilTotalLabel);
-            this.FossilPoorPanel.Location = new System.Drawing.Point(0, 0);
-            this.FossilPoorPanel.Name = "FossilPoorPanel";
-            this.FossilPoorPanel.Size = new System.Drawing.Size(1109, 640);
-            this.FossilPoorPanel.TabIndex = 0;
-            // 
-            // FossilGlyphicPoorLabel
-            // 
-            this.FossilGlyphicPoorLabel.AutoSize = true;
-            this.FossilGlyphicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilGlyphicPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilGlyphicPoorLabel.Location = new System.Drawing.Point(320, 586);
-            this.FossilGlyphicPoorLabel.Name = "FossilGlyphicPoorLabel";
-            this.FossilGlyphicPoorLabel.Size = new System.Drawing.Size(87, 20);
-            this.FossilGlyphicPoorLabel.TabIndex = 0;
-            this.FossilGlyphicPoorLabel.Text = "GLYPHIC";
-            // 
-            // FossilTangledPoorLabel
-            // 
-            this.FossilTangledPoorLabel.AutoSize = true;
-            this.FossilTangledPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTangledPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilTangledPoorLabel.Location = new System.Drawing.Point(565, 542);
-            this.FossilTangledPoorLabel.Name = "FossilTangledPoorLabel";
-            this.FossilTangledPoorLabel.Size = new System.Drawing.Size(92, 20);
-            this.FossilTangledPoorLabel.TabIndex = 0;
-            this.FossilTangledPoorLabel.Text = "TANGLED";
-            // 
-            // FossilShudderingPoorLabel
-            // 
-            this.FossilShudderingPoorLabel.AutoSize = true;
-            this.FossilShudderingPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilShudderingPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilShudderingPoorLabel.Location = new System.Drawing.Point(565, 498);
-            this.FossilShudderingPoorLabel.Name = "FossilShudderingPoorLabel";
-            this.FossilShudderingPoorLabel.Size = new System.Drawing.Size(130, 20);
-            this.FossilShudderingPoorLabel.TabIndex = 0;
-            this.FossilShudderingPoorLabel.Text = "SHUDDERING";
-            // 
-            // FossilSerratedPoorLabel
-            // 
-            this.FossilSerratedPoorLabel.AutoSize = true;
-            this.FossilSerratedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilSerratedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilSerratedPoorLabel.Location = new System.Drawing.Point(565, 454);
-            this.FossilSerratedPoorLabel.Name = "FossilSerratedPoorLabel";
-            this.FossilSerratedPoorLabel.Size = new System.Drawing.Size(106, 20);
-            this.FossilSerratedPoorLabel.TabIndex = 0;
-            this.FossilSerratedPoorLabel.Text = "SERRATED";
-            // 
-            // FossilScorchedPoorLabel
-            // 
-            this.FossilScorchedPoorLabel.AutoSize = true;
-            this.FossilScorchedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilScorchedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilScorchedPoorLabel.Location = new System.Drawing.Point(565, 410);
-            this.FossilScorchedPoorLabel.Name = "FossilScorchedPoorLabel";
-            this.FossilScorchedPoorLabel.Size = new System.Drawing.Size(109, 20);
-            this.FossilScorchedPoorLabel.TabIndex = 0;
-            this.FossilScorchedPoorLabel.Text = "SCORCHED";
-            // 
-            // FossilGildedPoorLabel
-            // 
-            this.FossilGildedPoorLabel.AutoSize = true;
-            this.FossilGildedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilGildedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilGildedPoorLabel.Location = new System.Drawing.Point(320, 542);
-            this.FossilGildedPoorLabel.Name = "FossilGildedPoorLabel";
-            this.FossilGildedPoorLabel.Size = new System.Drawing.Size(77, 20);
-            this.FossilGildedPoorLabel.TabIndex = 0;
-            this.FossilGildedPoorLabel.Text = "GILDED";
-            // 
-            // FossilFrigidPoorLabel
-            // 
-            this.FossilFrigidPoorLabel.AutoSize = true;
-            this.FossilFrigidPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFrigidPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilFrigidPoorLabel.Location = new System.Drawing.Point(320, 498);
-            this.FossilFrigidPoorLabel.Name = "FossilFrigidPoorLabel";
-            this.FossilFrigidPoorLabel.Size = new System.Drawing.Size(72, 20);
-            this.FossilFrigidPoorLabel.TabIndex = 0;
-            this.FossilFrigidPoorLabel.Text = "FRIGID";
-            // 
-            // FossilFracturedPoorLabel
-            // 
-            this.FossilFracturedPoorLabel.AutoSize = true;
-            this.FossilFracturedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFracturedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilFracturedPoorLabel.Location = new System.Drawing.Point(320, 454);
-            this.FossilFracturedPoorLabel.Name = "FossilFracturedPoorLabel";
-            this.FossilFracturedPoorLabel.Size = new System.Drawing.Size(118, 20);
-            this.FossilFracturedPoorLabel.TabIndex = 0;
-            this.FossilFracturedPoorLabel.Text = "FRACTURED";
-            // 
-            // FossilFacetedPoorLabel
-            // 
-            this.FossilFacetedPoorLabel.AutoSize = true;
-            this.FossilFacetedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFacetedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilFacetedPoorLabel.Location = new System.Drawing.Point(320, 410);
-            this.FossilFacetedPoorLabel.Name = "FossilFacetedPoorLabel";
-            this.FossilFacetedPoorLabel.Size = new System.Drawing.Size(91, 20);
-            this.FossilFacetedPoorLabel.TabIndex = 0;
-            this.FossilFacetedPoorLabel.Text = "FACETED";
-            // 
-            // FossilSanctifiedPoorLabel
-            // 
-            this.FossilSanctifiedPoorLabel.AutoSize = true;
-            this.FossilSanctifiedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilSanctifiedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilSanctifiedPoorLabel.Location = new System.Drawing.Point(565, 366);
-            this.FossilSanctifiedPoorLabel.Name = "FossilSanctifiedPoorLabel";
-            this.FossilSanctifiedPoorLabel.Size = new System.Drawing.Size(115, 20);
-            this.FossilSanctifiedPoorLabel.TabIndex = 0;
-            this.FossilSanctifiedPoorLabel.Text = "SANCTIFIED";
-            // 
-            // FossilPristinePoorLabel
-            // 
-            this.FossilPristinePoorLabel.AutoSize = true;
-            this.FossilPristinePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPristinePoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilPristinePoorLabel.Location = new System.Drawing.Point(565, 322);
-            this.FossilPristinePoorLabel.Name = "FossilPristinePoorLabel";
-            this.FossilPristinePoorLabel.Size = new System.Drawing.Size(91, 20);
-            this.FossilPristinePoorLabel.TabIndex = 0;
-            this.FossilPristinePoorLabel.Text = "PRISTINE";
-            // 
-            // FossilPrismaticPoorLabel
-            // 
-            this.FossilPrismaticPoorLabel.AutoSize = true;
-            this.FossilPrismaticPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPrismaticPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilPrismaticPoorLabel.Location = new System.Drawing.Point(565, 278);
-            this.FossilPrismaticPoorLabel.Name = "FossilPrismaticPoorLabel";
-            this.FossilPrismaticPoorLabel.Size = new System.Drawing.Size(105, 20);
-            this.FossilPrismaticPoorLabel.TabIndex = 0;
-            this.FossilPrismaticPoorLabel.Text = "PRISMATIC";
-            // 
-            // FossilPerfectPoorLabel
-            // 
-            this.FossilPerfectPoorLabel.AutoSize = true;
-            this.FossilPerfectPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPerfectPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilPerfectPoorLabel.Location = new System.Drawing.Point(565, 234);
-            this.FossilPerfectPoorLabel.Name = "FossilPerfectPoorLabel";
-            this.FossilPerfectPoorLabel.Size = new System.Drawing.Size(90, 20);
-            this.FossilPerfectPoorLabel.TabIndex = 0;
-            this.FossilPerfectPoorLabel.Text = "PERFECT";
-            // 
-            // FossilMetallicPoorLabel
-            // 
-            this.FossilMetallicPoorLabel.AutoSize = true;
-            this.FossilMetallicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilMetallicPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilMetallicPoorLabel.Location = new System.Drawing.Point(565, 190);
-            this.FossilMetallicPoorLabel.Name = "FossilMetallicPoorLabel";
-            this.FossilMetallicPoorLabel.Size = new System.Drawing.Size(95, 20);
-            this.FossilMetallicPoorLabel.TabIndex = 0;
-            this.FossilMetallicPoorLabel.Text = "METALLIC";
-            // 
-            // FossilLucentPoorLabel
-            // 
-            this.FossilLucentPoorLabel.AutoSize = true;
-            this.FossilLucentPoorLabel.BackColor = System.Drawing.SystemColors.Desktop;
-            this.FossilLucentPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilLucentPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilLucentPoorLabel.Location = new System.Drawing.Point(565, 146);
-            this.FossilLucentPoorLabel.Name = "FossilLucentPoorLabel";
-            this.FossilLucentPoorLabel.Size = new System.Drawing.Size(78, 20);
-            this.FossilLucentPoorLabel.TabIndex = 0;
-            this.FossilLucentPoorLabel.Text = "LUCENT";
-            // 
-            // FossilJaggedPoorLabel
-            // 
-            this.FossilJaggedPoorLabel.AutoSize = true;
-            this.FossilJaggedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilJaggedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilJaggedPoorLabel.Location = new System.Drawing.Point(565, 102);
-            this.FossilJaggedPoorLabel.Name = "FossilJaggedPoorLabel";
-            this.FossilJaggedPoorLabel.Size = new System.Drawing.Size(83, 20);
-            this.FossilJaggedPoorLabel.TabIndex = 0;
-            this.FossilJaggedPoorLabel.Text = "JAGGED";
-            // 
-            // FossilHollowPoorLabel
-            // 
-            this.FossilHollowPoorLabel.AutoSize = true;
-            this.FossilHollowPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilHollowPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilHollowPoorLabel.Location = new System.Drawing.Point(565, 58);
-            this.FossilHollowPoorLabel.Name = "FossilHollowPoorLabel";
-            this.FossilHollowPoorLabel.Size = new System.Drawing.Size(84, 20);
-            this.FossilHollowPoorLabel.TabIndex = 0;
-            this.FossilHollowPoorLabel.Text = "HOLLOW";
-            // 
-            // FossilEncrustedPoorLabel
-            // 
-            this.FossilEncrustedPoorLabel.AutoSize = true;
-            this.FossilEncrustedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilEncrustedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilEncrustedPoorLabel.Location = new System.Drawing.Point(320, 366);
-            this.FossilEncrustedPoorLabel.Name = "FossilEncrustedPoorLabel";
-            this.FossilEncrustedPoorLabel.Size = new System.Drawing.Size(118, 20);
-            this.FossilEncrustedPoorLabel.TabIndex = 0;
-            this.FossilEncrustedPoorLabel.Text = "ENCRUSTED";
-            // 
-            // FossilEnchantedPoorLabel
-            // 
-            this.FossilEnchantedPoorLabel.AutoSize = true;
-            this.FossilEnchantedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilEnchantedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilEnchantedPoorLabel.Location = new System.Drawing.Point(320, 322);
-            this.FossilEnchantedPoorLabel.Name = "FossilEnchantedPoorLabel";
-            this.FossilEnchantedPoorLabel.Size = new System.Drawing.Size(117, 20);
-            this.FossilEnchantedPoorLabel.TabIndex = 0;
-            this.FossilEnchantedPoorLabel.Text = "ENCHANTED";
-            // 
-            // FossilDensePoorLabel
-            // 
-            this.FossilDensePoorLabel.AutoSize = true;
-            this.FossilDensePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilDensePoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilDensePoorLabel.Location = new System.Drawing.Point(320, 278);
-            this.FossilDensePoorLabel.Name = "FossilDensePoorLabel";
-            this.FossilDensePoorLabel.Size = new System.Drawing.Size(70, 20);
-            this.FossilDensePoorLabel.TabIndex = 0;
-            this.FossilDensePoorLabel.Text = "DENSE";
-            // 
-            // FossilCorrodedPoorLabel
-            // 
-            this.FossilCorrodedPoorLabel.AutoSize = true;
-            this.FossilCorrodedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilCorrodedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilCorrodedPoorLabel.Location = new System.Drawing.Point(320, 234);
-            this.FossilCorrodedPoorLabel.Name = "FossilCorrodedPoorLabel";
-            this.FossilCorrodedPoorLabel.Size = new System.Drawing.Size(111, 20);
-            this.FossilCorrodedPoorLabel.TabIndex = 0;
-            this.FossilCorrodedPoorLabel.Text = "CORRODED";
-            // 
-            // FossilBoundPoorLabel
-            // 
-            this.FossilBoundPoorLabel.AutoSize = true;
-            this.FossilBoundPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilBoundPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilBoundPoorLabel.Location = new System.Drawing.Point(320, 190);
-            this.FossilBoundPoorLabel.Name = "FossilBoundPoorLabel";
-            this.FossilBoundPoorLabel.Size = new System.Drawing.Size(72, 20);
-            this.FossilBoundPoorLabel.TabIndex = 0;
-            this.FossilBoundPoorLabel.Text = "BOUND";
-            // 
-            // FossilAethericPoorLabel
-            // 
-            this.FossilAethericPoorLabel.AutoSize = true;
-            this.FossilAethericPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilAethericPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilAethericPoorLabel.Location = new System.Drawing.Point(320, 102);
-            this.FossilAethericPoorLabel.Name = "FossilAethericPoorLabel";
-            this.FossilAethericPoorLabel.Size = new System.Drawing.Size(99, 20);
-            this.FossilAethericPoorLabel.TabIndex = 0;
-            this.FossilAethericPoorLabel.Text = "AETHERIC";
-            // 
-            // FossilBloodstainedPoorLabel
-            // 
-            this.FossilBloodstainedPoorLabel.AutoSize = true;
-            this.FossilBloodstainedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilBloodstainedPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilBloodstainedPoorLabel.Location = new System.Drawing.Point(292, 146);
-            this.FossilBloodstainedPoorLabel.Name = "FossilBloodstainedPoorLabel";
-            this.FossilBloodstainedPoorLabel.Size = new System.Drawing.Size(147, 20);
-            this.FossilBloodstainedPoorLabel.TabIndex = 0;
-            this.FossilBloodstainedPoorLabel.Text = "BLOODSTAINED";
-            // 
-            // FossilAberrantPoorLabel
-            // 
-            this.FossilAberrantPoorLabel.AutoSize = true;
-            this.FossilAberrantPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilAberrantPoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilAberrantPoorLabel.Location = new System.Drawing.Point(320, 58);
-            this.FossilAberrantPoorLabel.Name = "FossilAberrantPoorLabel";
-            this.FossilAberrantPoorLabel.Size = new System.Drawing.Size(105, 20);
-            this.FossilAberrantPoorLabel.TabIndex = 0;
-            this.FossilAberrantPoorLabel.Text = "ABERRANT";
-            // 
-            // FossilTitlePoorLabel
-            // 
-            this.FossilTitlePoorLabel.AutoSize = true;
-            this.FossilTitlePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTitlePoorLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilTitlePoorLabel.Location = new System.Drawing.Point(383, 18);
-            this.FossilTitlePoorLabel.Name = "FossilTitlePoorLabel";
-            this.FossilTitlePoorLabel.Size = new System.Drawing.Size(334, 20);
-            this.FossilTitlePoorLabel.TabIndex = 0;
-            this.FossilTitlePoorLabel.Text = "Alphabetical Order (Stash tabless mode)";
-            // 
-            // FossilTotal
-            // 
-            this.FossilTotal.AutoSize = true;
-            this.FossilTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTotal.ForeColor = System.Drawing.Color.Yellow;
-            this.FossilTotal.Location = new System.Drawing.Point(690, 592);
-            this.FossilTotal.Name = "FossilTotal";
-            this.FossilTotal.Size = new System.Drawing.Size(32, 24);
-            this.FossilTotal.TabIndex = 0;
-            this.FossilTotal.Text = "0c";
-            // 
-            // FossilTotalLabel
-            // 
-            this.FossilTotalLabel.AutoSize = true;
-            this.FossilTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTotalLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.FossilTotalLabel.Location = new System.Drawing.Point(565, 592);
-            this.FossilTotalLabel.Name = "FossilTotalLabel";
-            this.FossilTotalLabel.Size = new System.Drawing.Size(116, 24);
-            this.FossilTotalLabel.TabIndex = 0;
-            this.FossilTotalLabel.Text = "Total Price:";
-            // 
-            // LeagueSelector
-            // 
-            this.LeagueSelector.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LeagueSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeagueSelector.FormattingEnabled = true;
-            this.LeagueSelector.Location = new System.Drawing.Point(764, 4);
-            this.LeagueSelector.Name = "LeagueSelector";
-            this.LeagueSelector.Size = new System.Drawing.Size(121, 23);
-            this.LeagueSelector.TabIndex = 1001;
-            // 
-            // StartPanel
-            // 
-            this.StartPanel.Controls.Add(this.StartInstructions);
-            this.StartPanel.Controls.Add(this.StartPastebin);
-            this.StartPanel.Location = new System.Drawing.Point(12, 30);
-            this.StartPanel.Name = "StartPanel";
-            this.StartPanel.Size = new System.Drawing.Size(1109, 640);
-            this.StartPanel.TabIndex = 1003;
-            // 
-            // StartInstructions
-            // 
-            this.StartInstructions.BackColor = System.Drawing.Color.Black;
-            this.StartInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.StartInstructions.ForeColor = System.Drawing.Color.White;
-            this.StartInstructions.Location = new System.Drawing.Point(389, 0);
-            this.StartInstructions.Multiline = true;
-            this.StartInstructions.Name = "StartInstructions";
-            this.StartInstructions.ReadOnly = true;
-            this.StartInstructions.Size = new System.Drawing.Size(330, 76);
-            this.StartInstructions.TabIndex = 0;
-            this.StartInstructions.Text = resources.GetString("StartInstructions.Text");
-            // 
-            // StartPastebin
-            // 
-            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
-            this.StartPastebin.Name = "StartPastebin";
-            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
-            this.StartPastebin.TabIndex = 1;
-            this.StartPastebin.Text = "Paste things here";
-            // 
-            // ScreencapButton
-            // 
-            this.ScreencapButton.Location = new System.Drawing.Point(12, 647);
-            this.ScreencapButton.Name = "ScreencapButton";
-            this.ScreencapButton.Size = new System.Drawing.Size(143, 23);
-            this.ScreencapButton.TabIndex = 999;
-            this.ScreencapButton.Text = "Copy Screen to Clipboard";
-            this.ScreencapButton.UseVisualStyleBackColor = true;
-            // 
-            // StashDumpPanel
-            // 
-            this.StashDumpPanel.Controls.Add(this.StashDumpExitButton);
-            this.StashDumpPanel.Controls.Add(this.StashDumpGoButton);
-            this.StashDumpPanel.Controls.Add(this.StashDumpAccountNameLabel);
-            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndexLabel);
-            this.StashDumpPanel.Controls.Add(this.StashDumpAccountName);
-            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndex);
-            this.StashDumpPanel.Controls.Add(this.StashDumpInstructions);
-            this.StashDumpPanel.Controls.Add(this.StashDumpPastebin);
-            this.StashDumpPanel.Location = new System.Drawing.Point(12, 30);
-            this.StashDumpPanel.Name = "StashDumpPanel";
-            this.StashDumpPanel.Size = new System.Drawing.Size(1109, 640);
-            this.StashDumpPanel.TabIndex = 1004;
-            // 
-            // StashDumpGoButton
-            // 
-            this.StashDumpGoButton.Location = new System.Drawing.Point(940, 75);
-            this.StashDumpGoButton.Name = "StashDumpGoButton";
-            this.StashDumpGoButton.Size = new System.Drawing.Size(67, 23);
-            this.StashDumpGoButton.TabIndex = 3;
-            this.StashDumpGoButton.Text = "Go";
-            this.StashDumpGoButton.UseVisualStyleBackColor = true;
-            // 
-            // StashDumpAccountNameLabel
-            // 
-            this.StashDumpAccountNameLabel.AutoSize = true;
-            this.StashDumpAccountNameLabel.Cursor = System.Windows.Forms.Cursors.Help;
-            this.StashDumpAccountNameLabel.ForeColor = System.Drawing.Color.White;
-            this.StashDumpAccountNameLabel.Location = new System.Drawing.Point(904, 23);
-            this.StashDumpAccountNameLabel.Name = "StashDumpAccountNameLabel";
-            this.StashDumpAccountNameLabel.Size = new System.Drawing.Size(93, 13);
-            this.StashDumpAccountNameLabel.TabIndex = 0;
-            this.StashDumpAccountNameLabel.Text = "Account Name (?)";
-            // 
-            // StashDumpTabIndexLabel
-            // 
-            this.StashDumpTabIndexLabel.AutoSize = true;
-            this.StashDumpTabIndexLabel.Cursor = System.Windows.Forms.Cursors.Help;
-            this.StashDumpTabIndexLabel.ForeColor = System.Drawing.Color.White;
-            this.StashDumpTabIndexLabel.Location = new System.Drawing.Point(789, 23);
-            this.StashDumpTabIndexLabel.Name = "StashDumpTabIndexLabel";
-            this.StashDumpTabIndexLabel.Size = new System.Drawing.Size(70, 13);
-            this.StashDumpTabIndexLabel.TabIndex = 0;
-            this.StashDumpTabIndexLabel.Text = "Tab Index (?)";
-            // 
-            // StashDumpAccountName
-            // 
-            this.StashDumpAccountName.BackColor = System.Drawing.Color.Black;
-            this.StashDumpAccountName.ForeColor = System.Drawing.Color.White;
-            this.StashDumpAccountName.Location = new System.Drawing.Point(907, 39);
-            this.StashDumpAccountName.MaxLength = 30;
-            this.StashDumpAccountName.Name = "StashDumpAccountName";
-            this.StashDumpAccountName.Size = new System.Drawing.Size(100, 20);
-            this.StashDumpAccountName.TabIndex = 2;
-            this.StashDumpAccountName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // StashDumpTabIndex
-            // 
-            this.StashDumpTabIndex.BackColor = System.Drawing.Color.Black;
-            this.StashDumpTabIndex.ForeColor = System.Drawing.Color.White;
-            this.StashDumpTabIndex.Location = new System.Drawing.Point(792, 39);
-            this.StashDumpTabIndex.MaxLength = 4;
-            this.StashDumpTabIndex.Name = "StashDumpTabIndex";
-            this.StashDumpTabIndex.Size = new System.Drawing.Size(100, 20);
-            this.StashDumpTabIndex.TabIndex = 1;
-            this.StashDumpTabIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // StashDumpInstructions
-            // 
-            this.StashDumpInstructions.BackColor = System.Drawing.Color.Black;
-            this.StashDumpInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.StashDumpInstructions.ForeColor = System.Drawing.Color.White;
-            this.StashDumpInstructions.Location = new System.Drawing.Point(389, 0);
-            this.StashDumpInstructions.Multiline = true;
-            this.StashDumpInstructions.Name = "StashDumpInstructions";
-            this.StashDumpInstructions.ReadOnly = true;
-            this.StashDumpInstructions.Size = new System.Drawing.Size(330, 122);
-            this.StashDumpInstructions.TabIndex = 0;
-            this.StashDumpInstructions.Text = resources.GetString("StashDumpInstructions.Text");
-            // 
-            // StashDumpPastebin
-            // 
-            this.StashDumpPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.StashDumpPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.StashDumpPastebin.Location = new System.Drawing.Point(274, 125);
-            this.StashDumpPastebin.Name = "StashDumpPastebin";
-            this.StashDumpPastebin.Size = new System.Drawing.Size(561, 511);
-            this.StashDumpPastebin.TabIndex = 4;
-            this.StashDumpPastebin.Text = "Paste things here";
-            // 
-            // StashDumpButton
-            // 
-            this.StashDumpButton.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.StashDumpButton.Location = new System.Drawing.Point(935, 647);
-            this.StashDumpButton.Name = "StashDumpButton";
-            this.StashDumpButton.Size = new System.Drawing.Size(107, 23);
-            this.StashDumpButton.TabIndex = 1005;
-            this.StashDumpButton.Text = "Import Stash";
-            this.StashDumpButton.UseVisualStyleBackColor = true;
-            // 
-            // ScarabTitle
-            // 
-            this.ScarabTitle.AutoSize = true;
-            this.ScarabTitle.BackColor = System.Drawing.Color.Black;
-            this.ScarabTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScarabTitle.ForeColor = System.Drawing.Color.ForestGreen;
-            this.ScarabTitle.Location = new System.Drawing.Point(0, 64);
-            this.ScarabTitle.Name = "ScarabTitle";
-            this.ScarabTitle.Size = new System.Drawing.Size(106, 31);
-            this.ScarabTitle.TabIndex = 0;
-            this.ScarabTitle.Text = "Scarab";
-            // 
-            // EssenceTitle
-            // 
-            this.EssenceTitle.AutoSize = true;
-            this.EssenceTitle.BackColor = System.Drawing.Color.Black;
-            this.EssenceTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EssenceTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.EssenceTitle.Location = new System.Drawing.Point(0, 64);
-            this.EssenceTitle.Name = "EssenceTitle";
-            this.EssenceTitle.Size = new System.Drawing.Size(126, 31);
-            this.EssenceTitle.TabIndex = 0;
-            this.EssenceTitle.Text = "Essence";
-            // 
-            // FossilTitle
-            // 
-            this.FossilTitle.AutoSize = true;
-            this.FossilTitle.BackColor = System.Drawing.Color.Black;
-            this.FossilTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTitle.ForeColor = System.Drawing.Color.Gold;
-            this.FossilTitle.Location = new System.Drawing.Point(0, 64);
-            this.FossilTitle.Name = "FossilTitle";
-            this.FossilTitle.Size = new System.Drawing.Size(92, 31);
-            this.FossilTitle.TabIndex = 0;
-            this.FossilTitle.Text = "Fossil";
-            // 
-            // StashDumpExitButton
-            // 
-            this.StashDumpExitButton.BackgroundImage = global::PoePricing.Properties.Resources.cross;
-            this.StashDumpExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.StashDumpExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StashDumpExitButton.Location = new System.Drawing.Point(1074, 3);
-            this.StashDumpExitButton.Name = "StashDumpExitButton";
-            this.StashDumpExitButton.Size = new System.Drawing.Size(32, 32);
-            this.StashDumpExitButton.TabIndex = 5;
-            this.StashDumpExitButton.UseVisualStyleBackColor = true;
-            // 
-            // FossilPanel
-            // 
-            this.FossilPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg2;
-            this.FossilPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.FossilPanel.Controls.Add(this.FossilFacetedLabel);
-            this.FossilPanel.Controls.Add(this.FossilGlyphicLabel);
-            this.FossilPanel.Controls.Add(this.FossilFracturedLabel);
-            this.FossilPanel.Controls.Add(this.FossilHollowLabel);
-            this.FossilPanel.Controls.Add(this.FossilSanctifiedLabel);
-            this.FossilPanel.Controls.Add(this.FossilEncrustedLabel);
-            this.FossilPanel.Controls.Add(this.FossilGildedLabel);
-            this.FossilPanel.Controls.Add(this.FossilBloodstainedLabel);
-            this.FossilPanel.Controls.Add(this.FossilTangledLabel);
-            this.FossilPanel.Controls.Add(this.FossilShudderingLabel);
-            this.FossilPanel.Controls.Add(this.FossilSerratedLabel);
-            this.FossilPanel.Controls.Add(this.FossilLucentLabel);
-            this.FossilPanel.Controls.Add(this.FossilAethericLabel);
-            this.FossilPanel.Controls.Add(this.FossilEnchantedLabel);
-            this.FossilPanel.Controls.Add(this.FossilPrismaticLabel);
-            this.FossilPanel.Controls.Add(this.FossilPerfectLabel);
-            this.FossilPanel.Controls.Add(this.FossilCorrodedLabel);
-            this.FossilPanel.Controls.Add(this.FossilBoundLabel);
-            this.FossilPanel.Controls.Add(this.FossilPristineLabel);
-            this.FossilPanel.Controls.Add(this.FossilMetallicLabel);
-            this.FossilPanel.Controls.Add(this.FossilScorchedLabel);
-            this.FossilPanel.Controls.Add(this.FossilAberrantLabel);
-            this.FossilPanel.Controls.Add(this.FossilFrigidLabel);
-            this.FossilPanel.Controls.Add(this.FossilDenseLabel);
-            this.FossilPanel.Controls.Add(this.FossilJaggedLabel);
-            this.FossilPanel.Controls.Add(this.FossilTotalPoor);
-            this.FossilPanel.Controls.Add(this.FossilTotalPoorLabel);
-            this.FossilPanel.Location = new System.Drawing.Point(0, 0);
-            this.FossilPanel.Name = "FossilPanel";
-            this.FossilPanel.Size = new System.Drawing.Size(1109, 640);
-            this.FossilPanel.TabIndex = 0;
-            // 
-            // FossilFacetedLabel
-            // 
-            this.FossilFacetedLabel.AutoSize = true;
-            this.FossilFacetedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFacetedLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilFacetedLabel.Location = new System.Drawing.Point(726, 242);
-            this.FossilFacetedLabel.Name = "FossilFacetedLabel";
-            this.FossilFacetedLabel.Size = new System.Drawing.Size(54, 20);
-            this.FossilFacetedLabel.TabIndex = 0;
-            this.FossilFacetedLabel.Text = "FACT";
-            // 
-            // FossilGlyphicLabel
-            // 
-            this.FossilGlyphicLabel.AutoSize = true;
-            this.FossilGlyphicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilGlyphicLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilGlyphicLabel.Location = new System.Drawing.Point(327, 242);
-            this.FossilGlyphicLabel.Name = "FossilGlyphicLabel";
-            this.FossilGlyphicLabel.Size = new System.Drawing.Size(56, 20);
-            this.FossilGlyphicLabel.TabIndex = 0;
-            this.FossilGlyphicLabel.Text = "GLYF";
-            // 
-            // FossilFracturedLabel
-            // 
-            this.FossilFracturedLabel.AutoSize = true;
-            this.FossilFracturedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFracturedLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilFracturedLabel.Location = new System.Drawing.Point(758, 176);
-            this.FossilFracturedLabel.Name = "FossilFracturedLabel";
-            this.FossilFracturedLabel.Size = new System.Drawing.Size(57, 20);
-            this.FossilFracturedLabel.TabIndex = 0;
-            this.FossilFracturedLabel.Text = "FRAC";
-            // 
-            // FossilHollowLabel
-            // 
-            this.FossilHollowLabel.AutoSize = true;
-            this.FossilHollowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilHollowLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilHollowLabel.Location = new System.Drawing.Point(690, 176);
-            this.FossilHollowLabel.Name = "FossilHollowLabel";
-            this.FossilHollowLabel.Size = new System.Drawing.Size(61, 20);
-            this.FossilHollowLabel.TabIndex = 0;
-            this.FossilHollowLabel.Text = "HOLW";
-            // 
-            // FossilSanctifiedLabel
-            // 
-            this.FossilSanctifiedLabel.AutoSize = true;
-            this.FossilSanctifiedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilSanctifiedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilSanctifiedLabel.Location = new System.Drawing.Point(592, 176);
-            this.FossilSanctifiedLabel.Name = "FossilSanctifiedLabel";
-            this.FossilSanctifiedLabel.Size = new System.Drawing.Size(57, 20);
-            this.FossilSanctifiedLabel.TabIndex = 0;
-            this.FossilSanctifiedLabel.Text = "SANC";
-            // 
-            // FossilEncrustedLabel
-            // 
-            this.FossilEncrustedLabel.AutoSize = true;
-            this.FossilEncrustedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilEncrustedLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilEncrustedLabel.Location = new System.Drawing.Point(525, 176);
-            this.FossilEncrustedLabel.Name = "FossilEncrustedLabel";
-            this.FossilEncrustedLabel.Size = new System.Drawing.Size(58, 20);
-            this.FossilEncrustedLabel.TabIndex = 0;
-            this.FossilEncrustedLabel.Text = "ENCR";
-            // 
-            // FossilGildedLabel
-            // 
-            this.FossilGildedLabel.AutoSize = true;
-            this.FossilGildedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilGildedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilGildedLabel.Location = new System.Drawing.Point(461, 176);
-            this.FossilGildedLabel.Name = "FossilGildedLabel";
-            this.FossilGildedLabel.Size = new System.Drawing.Size(52, 20);
-            this.FossilGildedLabel.TabIndex = 0;
-            this.FossilGildedLabel.Text = "GILD";
-            // 
-            // FossilBloodstainedLabel
-            // 
-            this.FossilBloodstainedLabel.AutoSize = true;
-            this.FossilBloodstainedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilBloodstainedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilBloodstainedLabel.Location = new System.Drawing.Point(360, 176);
-            this.FossilBloodstainedLabel.Name = "FossilBloodstainedLabel";
-            this.FossilBloodstainedLabel.Size = new System.Drawing.Size(56, 20);
-            this.FossilBloodstainedLabel.TabIndex = 0;
-            this.FossilBloodstainedLabel.Text = "BLDS";
-            // 
-            // FossilTangledLabel
-            // 
-            this.FossilTangledLabel.AutoSize = true;
-            this.FossilTangledLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTangledLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilTangledLabel.Location = new System.Drawing.Point(293, 176);
-            this.FossilTangledLabel.Name = "FossilTangledLabel";
-            this.FossilTangledLabel.Size = new System.Drawing.Size(57, 20);
-            this.FossilTangledLabel.TabIndex = 0;
-            this.FossilTangledLabel.Text = "TANG";
-            // 
-            // FossilShudderingLabel
-            // 
-            this.FossilShudderingLabel.AutoSize = true;
-            this.FossilShudderingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilShudderingLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilShudderingLabel.Location = new System.Drawing.Point(788, 110);
-            this.FossilShudderingLabel.Name = "FossilShudderingLabel";
-            this.FossilShudderingLabel.Size = new System.Drawing.Size(60, 20);
-            this.FossilShudderingLabel.TabIndex = 0;
-            this.FossilShudderingLabel.Text = "SHUD";
-            // 
-            // FossilSerratedLabel
-            // 
-            this.FossilSerratedLabel.AutoSize = true;
-            this.FossilSerratedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilSerratedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilSerratedLabel.Location = new System.Drawing.Point(723, 110);
-            this.FossilSerratedLabel.Name = "FossilSerratedLabel";
-            this.FossilSerratedLabel.Size = new System.Drawing.Size(59, 20);
-            this.FossilSerratedLabel.TabIndex = 0;
-            this.FossilSerratedLabel.Text = "SERR";
-            // 
-            // FossilLucentLabel
-            // 
-            this.FossilLucentLabel.AutoSize = true;
-            this.FossilLucentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilLucentLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilLucentLabel.Location = new System.Drawing.Point(660, 110);
-            this.FossilLucentLabel.Name = "FossilLucentLabel";
-            this.FossilLucentLabel.Size = new System.Drawing.Size(54, 20);
-            this.FossilLucentLabel.TabIndex = 0;
-            this.FossilLucentLabel.Text = "LUCT";
-            // 
-            // FossilAethericLabel
-            // 
-            this.FossilAethericLabel.AutoSize = true;
-            this.FossilAethericLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilAethericLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilAethericLabel.Location = new System.Drawing.Point(593, 110);
-            this.FossilAethericLabel.Name = "FossilAethericLabel";
-            this.FossilAethericLabel.Size = new System.Drawing.Size(56, 20);
-            this.FossilAethericLabel.TabIndex = 0;
-            this.FossilAethericLabel.Text = "AETH";
-            // 
-            // FossilEnchantedLabel
-            // 
-            this.FossilEnchantedLabel.AutoSize = true;
-            this.FossilEnchantedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilEnchantedLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilEnchantedLabel.Location = new System.Drawing.Point(525, 110);
-            this.FossilEnchantedLabel.Name = "FossilEnchantedLabel";
-            this.FossilEnchantedLabel.Size = new System.Drawing.Size(58, 20);
-            this.FossilEnchantedLabel.TabIndex = 0;
-            this.FossilEnchantedLabel.Text = "ENCH";
-            // 
-            // FossilPrismaticLabel
-            // 
-            this.FossilPrismaticLabel.AutoSize = true;
-            this.FossilPrismaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPrismaticLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilPrismaticLabel.Location = new System.Drawing.Point(459, 110);
-            this.FossilPrismaticLabel.Name = "FossilPrismaticLabel";
-            this.FossilPrismaticLabel.Size = new System.Drawing.Size(59, 20);
-            this.FossilPrismaticLabel.TabIndex = 0;
-            this.FossilPrismaticLabel.Text = "PRSM";
-            // 
-            // FossilPerfectLabel
-            // 
-            this.FossilPerfectLabel.AutoSize = true;
-            this.FossilPerfectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPerfectLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilPerfectLabel.Location = new System.Drawing.Point(395, 110);
-            this.FossilPerfectLabel.Name = "FossilPerfectLabel";
-            this.FossilPerfectLabel.Size = new System.Drawing.Size(54, 20);
-            this.FossilPerfectLabel.TabIndex = 0;
-            this.FossilPerfectLabel.Text = "PRFT";
-            // 
-            // FossilCorrodedLabel
-            // 
-            this.FossilCorrodedLabel.AutoSize = true;
-            this.FossilCorrodedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilCorrodedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilCorrodedLabel.Location = new System.Drawing.Point(326, 110);
-            this.FossilCorrodedLabel.Name = "FossilCorrodedLabel";
-            this.FossilCorrodedLabel.Size = new System.Drawing.Size(60, 20);
-            this.FossilCorrodedLabel.TabIndex = 0;
-            this.FossilCorrodedLabel.Text = "CORR";
-            // 
-            // FossilBoundLabel
-            // 
-            this.FossilBoundLabel.AutoSize = true;
-            this.FossilBoundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilBoundLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilBoundLabel.Location = new System.Drawing.Point(260, 110);
-            this.FossilBoundLabel.Name = "FossilBoundLabel";
-            this.FossilBoundLabel.Size = new System.Drawing.Size(59, 20);
-            this.FossilBoundLabel.TabIndex = 0;
-            this.FossilBoundLabel.Text = "BOUN";
-            // 
-            // FossilPristineLabel
-            // 
-            this.FossilPristineLabel.AutoSize = true;
-            this.FossilPristineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilPristineLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilPristineLabel.Location = new System.Drawing.Point(725, 44);
-            this.FossilPristineLabel.Name = "FossilPristineLabel";
-            this.FossilPristineLabel.Size = new System.Drawing.Size(55, 20);
-            this.FossilPristineLabel.TabIndex = 0;
-            this.FossilPristineLabel.Text = "PRST";
-            // 
-            // FossilMetallicLabel
-            // 
-            this.FossilMetallicLabel.AutoSize = true;
-            this.FossilMetallicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilMetallicLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilMetallicLabel.Location = new System.Drawing.Point(659, 44);
-            this.FossilMetallicLabel.Name = "FossilMetallicLabel";
-            this.FossilMetallicLabel.Size = new System.Drawing.Size(55, 20);
-            this.FossilMetallicLabel.TabIndex = 0;
-            this.FossilMetallicLabel.Text = "METL";
-            // 
-            // FossilScorchedLabel
-            // 
-            this.FossilScorchedLabel.AutoSize = true;
-            this.FossilScorchedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilScorchedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilScorchedLabel.Location = new System.Drawing.Point(591, 44);
-            this.FossilScorchedLabel.Name = "FossilScorchedLabel";
-            this.FossilScorchedLabel.Size = new System.Drawing.Size(59, 20);
-            this.FossilScorchedLabel.TabIndex = 0;
-            this.FossilScorchedLabel.Text = "SCOR";
-            // 
-            // FossilAberrantLabel
-            // 
-            this.FossilAberrantLabel.AutoSize = true;
-            this.FossilAberrantLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilAberrantLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilAberrantLabel.Location = new System.Drawing.Point(525, 44);
-            this.FossilAberrantLabel.Name = "FossilAberrantLabel";
-            this.FossilAberrantLabel.Size = new System.Drawing.Size(58, 20);
-            this.FossilAberrantLabel.TabIndex = 0;
-            this.FossilAberrantLabel.Text = "ABER";
-            // 
-            // FossilFrigidLabel
-            // 
-            this.FossilFrigidLabel.AutoSize = true;
-            this.FossilFrigidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilFrigidLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilFrigidLabel.Location = new System.Drawing.Point(462, 44);
-            this.FossilFrigidLabel.Name = "FossilFrigidLabel";
-            this.FossilFrigidLabel.Size = new System.Drawing.Size(53, 20);
-            this.FossilFrigidLabel.TabIndex = 0;
-            this.FossilFrigidLabel.Text = "FRIG";
-            // 
-            // FossilDenseLabel
-            // 
-            this.FossilDenseLabel.AutoSize = true;
-            this.FossilDenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilDenseLabel.ForeColor = System.Drawing.Color.Peru;
-            this.FossilDenseLabel.Location = new System.Drawing.Point(393, 44);
-            this.FossilDenseLabel.Name = "FossilDenseLabel";
-            this.FossilDenseLabel.Size = new System.Drawing.Size(58, 20);
-            this.FossilDenseLabel.TabIndex = 0;
-            this.FossilDenseLabel.Text = "DNSE";
-            // 
-            // FossilJaggedLabel
-            // 
-            this.FossilJaggedLabel.AutoSize = true;
-            this.FossilJaggedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilJaggedLabel.ForeColor = System.Drawing.Color.Tan;
-            this.FossilJaggedLabel.Location = new System.Drawing.Point(327, 44);
-            this.FossilJaggedLabel.Name = "FossilJaggedLabel";
-            this.FossilJaggedLabel.Size = new System.Drawing.Size(57, 20);
-            this.FossilJaggedLabel.TabIndex = 0;
-            this.FossilJaggedLabel.Text = "JAGD";
-            // 
-            // FossilTotalPoor
-            // 
-            this.FossilTotalPoor.AutoSize = true;
-            this.FossilTotalPoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTotalPoor.ForeColor = System.Drawing.Color.Yellow;
-            this.FossilTotalPoor.Location = new System.Drawing.Point(599, 592);
-            this.FossilTotalPoor.Name = "FossilTotalPoor";
-            this.FossilTotalPoor.Size = new System.Drawing.Size(32, 24);
-            this.FossilTotalPoor.TabIndex = 0;
-            this.FossilTotalPoor.Text = "0c";
-            // 
-            // FossilTotalPoorLabel
-            // 
-            this.FossilTotalPoorLabel.AutoSize = true;
-            this.FossilTotalPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FossilTotalPoorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.FossilTotalPoorLabel.Location = new System.Drawing.Point(463, 592);
-            this.FossilTotalPoorLabel.Name = "FossilTotalPoorLabel";
-            this.FossilTotalPoorLabel.Size = new System.Drawing.Size(116, 24);
-            this.FossilTotalPoorLabel.TabIndex = 0;
-            this.FossilTotalPoorLabel.Text = "Total Price:";
-            // 
-            // EssenceLogo
-            // 
-            this.EssenceLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo1;
-            this.EssenceLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EssenceLogo.Location = new System.Drawing.Point(0, 0);
-            this.EssenceLogo.Name = "EssenceLogo";
-            this.EssenceLogo.Size = new System.Drawing.Size(64, 64);
-            this.EssenceLogo.TabIndex = 0;
-            // 
-            // FossilLogo
-            // 
-            this.FossilLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo2;
-            this.FossilLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FossilLogo.Location = new System.Drawing.Point(0, 0);
-            this.FossilLogo.Name = "FossilLogo";
-            this.FossilLogo.Size = new System.Drawing.Size(64, 64);
-            this.FossilLogo.TabIndex = 0;
-            // 
             // EssencePanel
             // 
             this.EssencePanel.BackgroundImage = global::PoePricing.Properties.Resources.bg1;
@@ -2103,239 +1455,887 @@ namespace PoePricing
             this.EssenceGreedLabel.TabIndex = 0;
             this.EssenceGreedLabel.Text = "GREED";
             // 
-            // ScarabLogo
+            // ResetButton
             // 
-            this.ScarabLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo;
-            this.ScarabLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ScarabLogo.Location = new System.Drawing.Point(0, 0);
-            this.ScarabLogo.Name = "ScarabLogo";
-            this.ScarabLogo.Size = new System.Drawing.Size(64, 64);
-            this.ScarabLogo.TabIndex = 0;
+            this.ResetButton.Location = new System.Drawing.Point(1047, 647);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(75, 23);
+            this.ResetButton.TabIndex = 1000;
+            this.ResetButton.Text = "Reset All";
+            this.ResetButton.UseVisualStyleBackColor = true;
             // 
-            // ScarabPanel
+            // FossilBasePanel
             // 
-            this.ScarabPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg;
-            this.ScarabPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ScarabPanel.Controls.Add(this.ScarabTotalLabel);
-            this.ScarabPanel.Controls.Add(this.ScarabTotal);
-            this.ScarabPanel.Controls.Add(this.AbyssLabel);
-            this.ScarabPanel.Controls.Add(this.BreachLabel);
-            this.ScarabPanel.Controls.Add(this.DivinationLabel);
-            this.ScarabPanel.Controls.Add(this.ElderLabel);
-            this.ScarabPanel.Controls.Add(this.HarbingerLabel);
-            this.ScarabPanel.Controls.Add(this.CartographyLabel);
-            this.ScarabPanel.Controls.Add(this.PerandusLabel);
-            this.ScarabPanel.Controls.Add(this.ShaperLabel);
-            this.ScarabPanel.Controls.Add(this.BlightLabel);
-            this.ScarabPanel.Controls.Add(this.AmbushLabel);
-            this.ScarabPanel.Controls.Add(this.LegionLabel);
-            this.ScarabPanel.Controls.Add(this.MetamorphLabel);
-            this.ScarabPanel.Controls.Add(this.SulphiteLabel);
-            this.ScarabPanel.Controls.Add(this.ReliquaryLabel);
-            this.ScarabPanel.Controls.Add(this.TormentLabel);
-            this.ScarabPanel.Controls.Add(this.BestiaryLabel);
-            this.ScarabPanel.Location = new System.Drawing.Point(0, 0);
-            this.ScarabPanel.Name = "ScarabPanel";
-            this.ScarabPanel.Size = new System.Drawing.Size(1109, 640);
-            this.ScarabPanel.TabIndex = 0;
+            this.FossilBasePanel.Controls.Add(this.FossilLogo);
+            this.FossilBasePanel.Controls.Add(this.FossilTitle);
+            this.FossilBasePanel.Controls.Add(this.FossilPoorPanel);
+            this.FossilBasePanel.Controls.Add(this.FossilPanel);
+            this.FossilBasePanel.Location = new System.Drawing.Point(12, 30);
+            this.FossilBasePanel.Name = "FossilBasePanel";
+            this.FossilBasePanel.Size = new System.Drawing.Size(1109, 640);
+            this.FossilBasePanel.TabIndex = 0;
             // 
-            // ScarabTotalLabel
+            // FossilLogo
             // 
-            this.ScarabTotalLabel.AutoSize = true;
-            this.ScarabTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScarabTotalLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.ScarabTotalLabel.Location = new System.Drawing.Point(671, 592);
-            this.ScarabTotalLabel.Name = "ScarabTotalLabel";
-            this.ScarabTotalLabel.Size = new System.Drawing.Size(116, 24);
-            this.ScarabTotalLabel.TabIndex = 20;
-            this.ScarabTotalLabel.Text = "Total Price:";
+            this.FossilLogo.BackgroundImage = global::PoePricing.Properties.Resources.logo2;
+            this.FossilLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FossilLogo.Location = new System.Drawing.Point(0, 0);
+            this.FossilLogo.Name = "FossilLogo";
+            this.FossilLogo.Size = new System.Drawing.Size(64, 64);
+            this.FossilLogo.TabIndex = 0;
             // 
-            // ScarabTotal
+            // FossilTitle
             // 
-            this.ScarabTotal.AutoSize = true;
-            this.ScarabTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScarabTotal.ForeColor = System.Drawing.Color.Yellow;
-            this.ScarabTotal.Location = new System.Drawing.Point(793, 592);
-            this.ScarabTotal.Name = "ScarabTotal";
-            this.ScarabTotal.Size = new System.Drawing.Size(32, 24);
-            this.ScarabTotal.TabIndex = 19;
-            this.ScarabTotal.Text = "0c";
+            this.FossilTitle.AutoSize = true;
+            this.FossilTitle.BackColor = System.Drawing.Color.Black;
+            this.FossilTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTitle.ForeColor = System.Drawing.Color.Gold;
+            this.FossilTitle.Location = new System.Drawing.Point(0, 64);
+            this.FossilTitle.Name = "FossilTitle";
+            this.FossilTitle.Size = new System.Drawing.Size(92, 31);
+            this.FossilTitle.TabIndex = 0;
+            this.FossilTitle.Text = "Fossil";
             // 
-            // AbyssLabel
+            // FossilPoorPanel
             // 
-            this.AbyssLabel.AutoSize = true;
-            this.AbyssLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbyssLabel.ForeColor = System.Drawing.Color.Tan;
-            this.AbyssLabel.Location = new System.Drawing.Point(829, 540);
-            this.AbyssLabel.Name = "AbyssLabel";
-            this.AbyssLabel.Size = new System.Drawing.Size(69, 20);
-            this.AbyssLabel.TabIndex = 0;
-            this.AbyssLabel.Text = "ABYSS";
+            this.FossilPoorPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.FossilPoorPanel.Controls.Add(this.FossilGlyphicPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilTangledPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilShudderingPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilSerratedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilScorchedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilGildedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilFrigidPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilFracturedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilFacetedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilSanctifiedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilPristinePoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilPrismaticPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilPerfectPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilMetallicPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilLucentPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilJaggedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilHollowPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilFundamentalPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilDeftPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilDensePoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilCorrodedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilBoundPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilAethericPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilBloodstainedPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilAberrantPoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilTitlePoorLabel);
+            this.FossilPoorPanel.Controls.Add(this.FossilTotal);
+            this.FossilPoorPanel.Controls.Add(this.FossilTotalLabel);
+            this.FossilPoorPanel.Location = new System.Drawing.Point(0, 0);
+            this.FossilPoorPanel.Name = "FossilPoorPanel";
+            this.FossilPoorPanel.Size = new System.Drawing.Size(1109, 640);
+            this.FossilPoorPanel.TabIndex = 0;
             // 
-            // BreachLabel
+            // FossilGlyphicPoorLabel
             // 
-            this.BreachLabel.AutoSize = true;
-            this.BreachLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BreachLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BreachLabel.Location = new System.Drawing.Point(829, 473);
-            this.BreachLabel.Name = "BreachLabel";
-            this.BreachLabel.Size = new System.Drawing.Size(83, 20);
-            this.BreachLabel.TabIndex = 0;
-            this.BreachLabel.Text = "BREACH";
+            this.FossilGlyphicPoorLabel.AutoSize = true;
+            this.FossilGlyphicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilGlyphicPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilGlyphicPoorLabel.Location = new System.Drawing.Point(320, 586);
+            this.FossilGlyphicPoorLabel.Name = "FossilGlyphicPoorLabel";
+            this.FossilGlyphicPoorLabel.Size = new System.Drawing.Size(87, 20);
+            this.FossilGlyphicPoorLabel.TabIndex = 0;
+            this.FossilGlyphicPoorLabel.Text = "GLYPHIC";
             // 
-            // DivinationLabel
+            // FossilTangledPoorLabel
             // 
-            this.DivinationLabel.AutoSize = true;
-            this.DivinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DivinationLabel.ForeColor = System.Drawing.Color.Tan;
-            this.DivinationLabel.Location = new System.Drawing.Point(829, 407);
-            this.DivinationLabel.Name = "DivinationLabel";
-            this.DivinationLabel.Size = new System.Drawing.Size(111, 20);
-            this.DivinationLabel.TabIndex = 0;
-            this.DivinationLabel.Text = "DIVINATION";
+            this.FossilTangledPoorLabel.AutoSize = true;
+            this.FossilTangledPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTangledPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilTangledPoorLabel.Location = new System.Drawing.Point(565, 542);
+            this.FossilTangledPoorLabel.Name = "FossilTangledPoorLabel";
+            this.FossilTangledPoorLabel.Size = new System.Drawing.Size(92, 20);
+            this.FossilTangledPoorLabel.TabIndex = 0;
+            this.FossilTangledPoorLabel.Text = "TANGLED";
             // 
-            // ElderLabel
+            // FossilShudderingPoorLabel
             // 
-            this.ElderLabel.AutoSize = true;
-            this.ElderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElderLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ElderLabel.Location = new System.Drawing.Point(829, 341);
-            this.ElderLabel.Name = "ElderLabel";
-            this.ElderLabel.Size = new System.Drawing.Size(69, 20);
-            this.ElderLabel.TabIndex = 0;
-            this.ElderLabel.Text = "ELDER";
+            this.FossilShudderingPoorLabel.AutoSize = true;
+            this.FossilShudderingPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilShudderingPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilShudderingPoorLabel.Location = new System.Drawing.Point(565, 498);
+            this.FossilShudderingPoorLabel.Name = "FossilShudderingPoorLabel";
+            this.FossilShudderingPoorLabel.Size = new System.Drawing.Size(130, 20);
+            this.FossilShudderingPoorLabel.TabIndex = 0;
+            this.FossilShudderingPoorLabel.Text = "SHUDDERING";
             // 
-            // HarbingerLabel
+            // FossilSerratedPoorLabel
             // 
-            this.HarbingerLabel.AutoSize = true;
-            this.HarbingerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HarbingerLabel.ForeColor = System.Drawing.Color.Tan;
-            this.HarbingerLabel.Location = new System.Drawing.Point(829, 275);
-            this.HarbingerLabel.Name = "HarbingerLabel";
-            this.HarbingerLabel.Size = new System.Drawing.Size(116, 20);
-            this.HarbingerLabel.TabIndex = 0;
-            this.HarbingerLabel.Text = "HARBINGER";
+            this.FossilSerratedPoorLabel.AutoSize = true;
+            this.FossilSerratedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilSerratedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilSerratedPoorLabel.Location = new System.Drawing.Point(565, 454);
+            this.FossilSerratedPoorLabel.Name = "FossilSerratedPoorLabel";
+            this.FossilSerratedPoorLabel.Size = new System.Drawing.Size(106, 20);
+            this.FossilSerratedPoorLabel.TabIndex = 0;
+            this.FossilSerratedPoorLabel.Text = "SERRATED";
             // 
-            // CartographyLabel
+            // FossilScorchedPoorLabel
             // 
-            this.CartographyLabel.AutoSize = true;
-            this.CartographyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartographyLabel.ForeColor = System.Drawing.Color.Tan;
-            this.CartographyLabel.Location = new System.Drawing.Point(829, 209);
-            this.CartographyLabel.Name = "CartographyLabel";
-            this.CartographyLabel.Size = new System.Drawing.Size(144, 20);
-            this.CartographyLabel.TabIndex = 0;
-            this.CartographyLabel.Text = "CARTOGRAPHY";
+            this.FossilScorchedPoorLabel.AutoSize = true;
+            this.FossilScorchedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilScorchedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilScorchedPoorLabel.Location = new System.Drawing.Point(565, 410);
+            this.FossilScorchedPoorLabel.Name = "FossilScorchedPoorLabel";
+            this.FossilScorchedPoorLabel.Size = new System.Drawing.Size(109, 20);
+            this.FossilScorchedPoorLabel.TabIndex = 0;
+            this.FossilScorchedPoorLabel.Text = "SCORCHED";
             // 
-            // PerandusLabel
+            // FossilGildedPoorLabel
             // 
-            this.PerandusLabel.AutoSize = true;
-            this.PerandusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PerandusLabel.ForeColor = System.Drawing.Color.Tan;
-            this.PerandusLabel.Location = new System.Drawing.Point(829, 144);
-            this.PerandusLabel.Name = "PerandusLabel";
-            this.PerandusLabel.Size = new System.Drawing.Size(107, 20);
-            this.PerandusLabel.TabIndex = 0;
-            this.PerandusLabel.Text = "PERANDUS";
+            this.FossilGildedPoorLabel.AutoSize = true;
+            this.FossilGildedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilGildedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilGildedPoorLabel.Location = new System.Drawing.Point(320, 542);
+            this.FossilGildedPoorLabel.Name = "FossilGildedPoorLabel";
+            this.FossilGildedPoorLabel.Size = new System.Drawing.Size(77, 20);
+            this.FossilGildedPoorLabel.TabIndex = 0;
+            this.FossilGildedPoorLabel.Text = "GILDED";
             // 
-            // ShaperLabel
+            // FossilFrigidPoorLabel
             // 
-            this.ShaperLabel.AutoSize = true;
-            this.ShaperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShaperLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ShaperLabel.Location = new System.Drawing.Point(829, 78);
-            this.ShaperLabel.Name = "ShaperLabel";
-            this.ShaperLabel.Size = new System.Drawing.Size(82, 20);
-            this.ShaperLabel.TabIndex = 0;
-            this.ShaperLabel.Text = "SHAPER";
+            this.FossilFrigidPoorLabel.AutoSize = true;
+            this.FossilFrigidPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFrigidPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilFrigidPoorLabel.Location = new System.Drawing.Point(320, 454);
+            this.FossilFrigidPoorLabel.Name = "FossilFrigidPoorLabel";
+            this.FossilFrigidPoorLabel.Size = new System.Drawing.Size(72, 20);
+            this.FossilFrigidPoorLabel.TabIndex = 0;
+            this.FossilFrigidPoorLabel.Text = "FRIGID";
             // 
-            // BlightLabel
+            // FossilFracturedPoorLabel
             // 
-            this.BlightLabel.AutoSize = true;
-            this.BlightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BlightLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BlightLabel.Location = new System.Drawing.Point(206, 540);
-            this.BlightLabel.Name = "BlightLabel";
-            this.BlightLabel.Size = new System.Drawing.Size(74, 20);
-            this.BlightLabel.TabIndex = 0;
-            this.BlightLabel.Text = "BLIGHT";
+            this.FossilFracturedPoorLabel.AutoSize = true;
+            this.FossilFracturedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFracturedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilFracturedPoorLabel.Location = new System.Drawing.Point(320, 410);
+            this.FossilFracturedPoorLabel.Name = "FossilFracturedPoorLabel";
+            this.FossilFracturedPoorLabel.Size = new System.Drawing.Size(118, 20);
+            this.FossilFracturedPoorLabel.TabIndex = 0;
+            this.FossilFracturedPoorLabel.Text = "FRACTURED";
             // 
-            // AmbushLabel
+            // FossilFacetedPoorLabel
             // 
-            this.AmbushLabel.AutoSize = true;
-            this.AmbushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmbushLabel.ForeColor = System.Drawing.Color.Tan;
-            this.AmbushLabel.Location = new System.Drawing.Point(195, 473);
-            this.AmbushLabel.Name = "AmbushLabel";
-            this.AmbushLabel.Size = new System.Drawing.Size(85, 20);
-            this.AmbushLabel.TabIndex = 0;
-            this.AmbushLabel.Text = "AMBUSH";
+            this.FossilFacetedPoorLabel.AutoSize = true;
+            this.FossilFacetedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFacetedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilFacetedPoorLabel.Location = new System.Drawing.Point(320, 366);
+            this.FossilFacetedPoorLabel.Name = "FossilFacetedPoorLabel";
+            this.FossilFacetedPoorLabel.Size = new System.Drawing.Size(91, 20);
+            this.FossilFacetedPoorLabel.TabIndex = 0;
+            this.FossilFacetedPoorLabel.Text = "FACETED";
             // 
-            // LegionLabel
+            // FossilSanctifiedPoorLabel
             // 
-            this.LegionLabel.AutoSize = true;
-            this.LegionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LegionLabel.ForeColor = System.Drawing.Color.Tan;
-            this.LegionLabel.Location = new System.Drawing.Point(204, 407);
-            this.LegionLabel.Name = "LegionLabel";
-            this.LegionLabel.Size = new System.Drawing.Size(76, 20);
-            this.LegionLabel.TabIndex = 0;
-            this.LegionLabel.Text = "LEGION";
+            this.FossilSanctifiedPoorLabel.AutoSize = true;
+            this.FossilSanctifiedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilSanctifiedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilSanctifiedPoorLabel.Location = new System.Drawing.Point(565, 366);
+            this.FossilSanctifiedPoorLabel.Name = "FossilSanctifiedPoorLabel";
+            this.FossilSanctifiedPoorLabel.Size = new System.Drawing.Size(115, 20);
+            this.FossilSanctifiedPoorLabel.TabIndex = 0;
+            this.FossilSanctifiedPoorLabel.Text = "SANCTIFIED";
             // 
-            // MetamorphLabel
+            // FossilPristinePoorLabel
             // 
-            this.MetamorphLabel.AutoSize = true;
-            this.MetamorphLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MetamorphLabel.ForeColor = System.Drawing.Color.Tan;
-            this.MetamorphLabel.Location = new System.Drawing.Point(159, 341);
-            this.MetamorphLabel.Name = "MetamorphLabel";
-            this.MetamorphLabel.Size = new System.Drawing.Size(121, 20);
-            this.MetamorphLabel.TabIndex = 0;
-            this.MetamorphLabel.Text = "METAMORPH";
+            this.FossilPristinePoorLabel.AutoSize = true;
+            this.FossilPristinePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPristinePoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilPristinePoorLabel.Location = new System.Drawing.Point(565, 322);
+            this.FossilPristinePoorLabel.Name = "FossilPristinePoorLabel";
+            this.FossilPristinePoorLabel.Size = new System.Drawing.Size(91, 20);
+            this.FossilPristinePoorLabel.TabIndex = 0;
+            this.FossilPristinePoorLabel.Text = "PRISTINE";
             // 
-            // SulphiteLabel
+            // FossilPrismaticPoorLabel
             // 
-            this.SulphiteLabel.AutoSize = true;
-            this.SulphiteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SulphiteLabel.ForeColor = System.Drawing.Color.Tan;
-            this.SulphiteLabel.Location = new System.Drawing.Point(184, 275);
-            this.SulphiteLabel.Name = "SulphiteLabel";
-            this.SulphiteLabel.Size = new System.Drawing.Size(96, 20);
-            this.SulphiteLabel.TabIndex = 0;
-            this.SulphiteLabel.Text = "SULPHITE";
+            this.FossilPrismaticPoorLabel.AutoSize = true;
+            this.FossilPrismaticPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPrismaticPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilPrismaticPoorLabel.Location = new System.Drawing.Point(565, 278);
+            this.FossilPrismaticPoorLabel.Name = "FossilPrismaticPoorLabel";
+            this.FossilPrismaticPoorLabel.Size = new System.Drawing.Size(105, 20);
+            this.FossilPrismaticPoorLabel.TabIndex = 0;
+            this.FossilPrismaticPoorLabel.Text = "PRISMATIC";
             // 
-            // ReliquaryLabel
+            // FossilPerfectPoorLabel
             // 
-            this.ReliquaryLabel.AutoSize = true;
-            this.ReliquaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReliquaryLabel.ForeColor = System.Drawing.Color.Tan;
-            this.ReliquaryLabel.Location = new System.Drawing.Point(167, 144);
-            this.ReliquaryLabel.Name = "ReliquaryLabel";
-            this.ReliquaryLabel.Size = new System.Drawing.Size(113, 20);
-            this.ReliquaryLabel.TabIndex = 0;
-            this.ReliquaryLabel.Text = "RELIQUARY";
+            this.FossilPerfectPoorLabel.AutoSize = true;
+            this.FossilPerfectPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPerfectPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilPerfectPoorLabel.Location = new System.Drawing.Point(565, 234);
+            this.FossilPerfectPoorLabel.Name = "FossilPerfectPoorLabel";
+            this.FossilPerfectPoorLabel.Size = new System.Drawing.Size(90, 20);
+            this.FossilPerfectPoorLabel.TabIndex = 0;
+            this.FossilPerfectPoorLabel.Text = "PERFECT";
             // 
-            // TormentLabel
+            // FossilMetallicPoorLabel
             // 
-            this.TormentLabel.AutoSize = true;
-            this.TormentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TormentLabel.ForeColor = System.Drawing.Color.Tan;
-            this.TormentLabel.Location = new System.Drawing.Point(187, 209);
-            this.TormentLabel.Name = "TormentLabel";
-            this.TormentLabel.Size = new System.Drawing.Size(93, 20);
-            this.TormentLabel.TabIndex = 0;
-            this.TormentLabel.Text = "TORMENT";
+            this.FossilMetallicPoorLabel.AutoSize = true;
+            this.FossilMetallicPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilMetallicPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilMetallicPoorLabel.Location = new System.Drawing.Point(565, 190);
+            this.FossilMetallicPoorLabel.Name = "FossilMetallicPoorLabel";
+            this.FossilMetallicPoorLabel.Size = new System.Drawing.Size(95, 20);
+            this.FossilMetallicPoorLabel.TabIndex = 0;
+            this.FossilMetallicPoorLabel.Text = "METALLIC";
             // 
-            // BestiaryLabel
+            // FossilLucentPoorLabel
             // 
-            this.BestiaryLabel.AutoSize = true;
-            this.BestiaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BestiaryLabel.ForeColor = System.Drawing.Color.Tan;
-            this.BestiaryLabel.Location = new System.Drawing.Point(182, 78);
-            this.BestiaryLabel.Name = "BestiaryLabel";
-            this.BestiaryLabel.Size = new System.Drawing.Size(98, 20);
-            this.BestiaryLabel.TabIndex = 0;
-            this.BestiaryLabel.Text = "BESTIARY";
+            this.FossilLucentPoorLabel.AutoSize = true;
+            this.FossilLucentPoorLabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.FossilLucentPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilLucentPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilLucentPoorLabel.Location = new System.Drawing.Point(565, 146);
+            this.FossilLucentPoorLabel.Name = "FossilLucentPoorLabel";
+            this.FossilLucentPoorLabel.Size = new System.Drawing.Size(78, 20);
+            this.FossilLucentPoorLabel.TabIndex = 0;
+            this.FossilLucentPoorLabel.Text = "LUCENT";
+            // 
+            // FossilJaggedPoorLabel
+            // 
+            this.FossilJaggedPoorLabel.AutoSize = true;
+            this.FossilJaggedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilJaggedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilJaggedPoorLabel.Location = new System.Drawing.Point(565, 102);
+            this.FossilJaggedPoorLabel.Name = "FossilJaggedPoorLabel";
+            this.FossilJaggedPoorLabel.Size = new System.Drawing.Size(83, 20);
+            this.FossilJaggedPoorLabel.TabIndex = 0;
+            this.FossilJaggedPoorLabel.Text = "JAGGED";
+            // 
+            // FossilHollowPoorLabel
+            // 
+            this.FossilHollowPoorLabel.AutoSize = true;
+            this.FossilHollowPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilHollowPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilHollowPoorLabel.Location = new System.Drawing.Point(565, 58);
+            this.FossilHollowPoorLabel.Name = "FossilHollowPoorLabel";
+            this.FossilHollowPoorLabel.Size = new System.Drawing.Size(84, 20);
+            this.FossilHollowPoorLabel.TabIndex = 0;
+            this.FossilHollowPoorLabel.Text = "HOLLOW";
+            // 
+            // FossilFundamentalPoorLabel
+            // 
+            this.FossilFundamentalPoorLabel.AutoSize = true;
+            this.FossilFundamentalPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFundamentalPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilFundamentalPoorLabel.Location = new System.Drawing.Point(320, 498);
+            this.FossilFundamentalPoorLabel.Name = "FossilFundamentalPoorLabel";
+            this.FossilFundamentalPoorLabel.Size = new System.Drawing.Size(140, 20);
+            this.FossilFundamentalPoorLabel.TabIndex = 0;
+            this.FossilFundamentalPoorLabel.Text = "FUNDAMENTAL";
+            // 
+            // FossilDeftPoorLabel
+            // 
+            this.FossilDeftPoorLabel.AutoSize = true;
+            this.FossilDeftPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilDeftPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilDeftPoorLabel.Location = new System.Drawing.Point(320, 278);
+            this.FossilDeftPoorLabel.Name = "FossilDeftPoorLabel";
+            this.FossilDeftPoorLabel.Size = new System.Drawing.Size(55, 20);
+            this.FossilDeftPoorLabel.TabIndex = 0;
+            this.FossilDeftPoorLabel.Text = "DEFT";
+            // 
+            // FossilDensePoorLabel
+            // 
+            this.FossilDensePoorLabel.AutoSize = true;
+            this.FossilDensePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilDensePoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilDensePoorLabel.Location = new System.Drawing.Point(320, 322);
+            this.FossilDensePoorLabel.Name = "FossilDensePoorLabel";
+            this.FossilDensePoorLabel.Size = new System.Drawing.Size(70, 20);
+            this.FossilDensePoorLabel.TabIndex = 0;
+            this.FossilDensePoorLabel.Text = "DENSE";
+            // 
+            // FossilCorrodedPoorLabel
+            // 
+            this.FossilCorrodedPoorLabel.AutoSize = true;
+            this.FossilCorrodedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilCorrodedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilCorrodedPoorLabel.Location = new System.Drawing.Point(320, 234);
+            this.FossilCorrodedPoorLabel.Name = "FossilCorrodedPoorLabel";
+            this.FossilCorrodedPoorLabel.Size = new System.Drawing.Size(111, 20);
+            this.FossilCorrodedPoorLabel.TabIndex = 0;
+            this.FossilCorrodedPoorLabel.Text = "CORRODED";
+            // 
+            // FossilBoundPoorLabel
+            // 
+            this.FossilBoundPoorLabel.AutoSize = true;
+            this.FossilBoundPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilBoundPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilBoundPoorLabel.Location = new System.Drawing.Point(320, 190);
+            this.FossilBoundPoorLabel.Name = "FossilBoundPoorLabel";
+            this.FossilBoundPoorLabel.Size = new System.Drawing.Size(72, 20);
+            this.FossilBoundPoorLabel.TabIndex = 0;
+            this.FossilBoundPoorLabel.Text = "BOUND";
+            // 
+            // FossilAethericPoorLabel
+            // 
+            this.FossilAethericPoorLabel.AutoSize = true;
+            this.FossilAethericPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilAethericPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilAethericPoorLabel.Location = new System.Drawing.Point(320, 102);
+            this.FossilAethericPoorLabel.Name = "FossilAethericPoorLabel";
+            this.FossilAethericPoorLabel.Size = new System.Drawing.Size(99, 20);
+            this.FossilAethericPoorLabel.TabIndex = 0;
+            this.FossilAethericPoorLabel.Text = "AETHERIC";
+            // 
+            // FossilBloodstainedPoorLabel
+            // 
+            this.FossilBloodstainedPoorLabel.AutoSize = true;
+            this.FossilBloodstainedPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilBloodstainedPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilBloodstainedPoorLabel.Location = new System.Drawing.Point(292, 146);
+            this.FossilBloodstainedPoorLabel.Name = "FossilBloodstainedPoorLabel";
+            this.FossilBloodstainedPoorLabel.Size = new System.Drawing.Size(147, 20);
+            this.FossilBloodstainedPoorLabel.TabIndex = 0;
+            this.FossilBloodstainedPoorLabel.Text = "BLOODSTAINED";
+            // 
+            // FossilAberrantPoorLabel
+            // 
+            this.FossilAberrantPoorLabel.AutoSize = true;
+            this.FossilAberrantPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilAberrantPoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilAberrantPoorLabel.Location = new System.Drawing.Point(320, 58);
+            this.FossilAberrantPoorLabel.Name = "FossilAberrantPoorLabel";
+            this.FossilAberrantPoorLabel.Size = new System.Drawing.Size(105, 20);
+            this.FossilAberrantPoorLabel.TabIndex = 0;
+            this.FossilAberrantPoorLabel.Text = "ABERRANT";
+            // 
+            // FossilTitlePoorLabel
+            // 
+            this.FossilTitlePoorLabel.AutoSize = true;
+            this.FossilTitlePoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTitlePoorLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilTitlePoorLabel.Location = new System.Drawing.Point(383, 18);
+            this.FossilTitlePoorLabel.Name = "FossilTitlePoorLabel";
+            this.FossilTitlePoorLabel.Size = new System.Drawing.Size(334, 20);
+            this.FossilTitlePoorLabel.TabIndex = 0;
+            this.FossilTitlePoorLabel.Text = "Alphabetical Order (Stash tabless mode)";
+            // 
+            // FossilTotal
+            // 
+            this.FossilTotal.AutoSize = true;
+            this.FossilTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTotal.ForeColor = System.Drawing.Color.Yellow;
+            this.FossilTotal.Location = new System.Drawing.Point(690, 592);
+            this.FossilTotal.Name = "FossilTotal";
+            this.FossilTotal.Size = new System.Drawing.Size(32, 24);
+            this.FossilTotal.TabIndex = 0;
+            this.FossilTotal.Text = "0c";
+            // 
+            // FossilTotalLabel
+            // 
+            this.FossilTotalLabel.AutoSize = true;
+            this.FossilTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTotalLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.FossilTotalLabel.Location = new System.Drawing.Point(565, 592);
+            this.FossilTotalLabel.Name = "FossilTotalLabel";
+            this.FossilTotalLabel.Size = new System.Drawing.Size(116, 24);
+            this.FossilTotalLabel.TabIndex = 0;
+            this.FossilTotalLabel.Text = "Total Price:";
+            // 
+            // FossilPanel
+            // 
+            this.FossilPanel.BackgroundImage = global::PoePricing.Properties.Resources.bg2;
+            this.FossilPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.FossilPanel.Controls.Add(this.FossilFacetedLabel);
+            this.FossilPanel.Controls.Add(this.FossilGlyphicLabel);
+            this.FossilPanel.Controls.Add(this.FossilFracturedLabel);
+            this.FossilPanel.Controls.Add(this.FossilHollowLabel);
+            this.FossilPanel.Controls.Add(this.FossilSanctifiedLabel);
+            this.FossilPanel.Controls.Add(this.FossilFundamentalLabel);
+            this.FossilPanel.Controls.Add(this.FossilGildedLabel);
+            this.FossilPanel.Controls.Add(this.FossilBloodstainedLabel);
+            this.FossilPanel.Controls.Add(this.FossilTangledLabel);
+            this.FossilPanel.Controls.Add(this.FossilShudderingLabel);
+            this.FossilPanel.Controls.Add(this.FossilSerratedLabel);
+            this.FossilPanel.Controls.Add(this.FossilLucentLabel);
+            this.FossilPanel.Controls.Add(this.FossilAethericLabel);
+            this.FossilPanel.Controls.Add(this.FossilDeftLabel);
+            this.FossilPanel.Controls.Add(this.FossilPrismaticLabel);
+            this.FossilPanel.Controls.Add(this.FossilPerfectLabel);
+            this.FossilPanel.Controls.Add(this.FossilCorrodedLabel);
+            this.FossilPanel.Controls.Add(this.FossilBoundLabel);
+            this.FossilPanel.Controls.Add(this.FossilPristineLabel);
+            this.FossilPanel.Controls.Add(this.FossilMetallicLabel);
+            this.FossilPanel.Controls.Add(this.FossilScorchedLabel);
+            this.FossilPanel.Controls.Add(this.FossilAberrantLabel);
+            this.FossilPanel.Controls.Add(this.FossilFrigidLabel);
+            this.FossilPanel.Controls.Add(this.FossilDenseLabel);
+            this.FossilPanel.Controls.Add(this.FossilJaggedLabel);
+            this.FossilPanel.Controls.Add(this.FossilTotalPoor);
+            this.FossilPanel.Controls.Add(this.FossilTotalPoorLabel);
+            this.FossilPanel.Location = new System.Drawing.Point(0, 0);
+            this.FossilPanel.Name = "FossilPanel";
+            this.FossilPanel.Size = new System.Drawing.Size(1109, 640);
+            this.FossilPanel.TabIndex = 0;
+            // 
+            // FossilFacetedLabel
+            // 
+            this.FossilFacetedLabel.AutoSize = true;
+            this.FossilFacetedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFacetedLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilFacetedLabel.Location = new System.Drawing.Point(726, 242);
+            this.FossilFacetedLabel.Name = "FossilFacetedLabel";
+            this.FossilFacetedLabel.Size = new System.Drawing.Size(54, 20);
+            this.FossilFacetedLabel.TabIndex = 0;
+            this.FossilFacetedLabel.Text = "FACT";
+            // 
+            // FossilGlyphicLabel
+            // 
+            this.FossilGlyphicLabel.AutoSize = true;
+            this.FossilGlyphicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilGlyphicLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilGlyphicLabel.Location = new System.Drawing.Point(327, 242);
+            this.FossilGlyphicLabel.Name = "FossilGlyphicLabel";
+            this.FossilGlyphicLabel.Size = new System.Drawing.Size(56, 20);
+            this.FossilGlyphicLabel.TabIndex = 0;
+            this.FossilGlyphicLabel.Text = "GLYF";
+            // 
+            // FossilFracturedLabel
+            // 
+            this.FossilFracturedLabel.AutoSize = true;
+            this.FossilFracturedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFracturedLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilFracturedLabel.Location = new System.Drawing.Point(758, 176);
+            this.FossilFracturedLabel.Name = "FossilFracturedLabel";
+            this.FossilFracturedLabel.Size = new System.Drawing.Size(57, 20);
+            this.FossilFracturedLabel.TabIndex = 0;
+            this.FossilFracturedLabel.Text = "FRAC";
+            // 
+            // FossilHollowLabel
+            // 
+            this.FossilHollowLabel.AutoSize = true;
+            this.FossilHollowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilHollowLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilHollowLabel.Location = new System.Drawing.Point(690, 176);
+            this.FossilHollowLabel.Name = "FossilHollowLabel";
+            this.FossilHollowLabel.Size = new System.Drawing.Size(61, 20);
+            this.FossilHollowLabel.TabIndex = 0;
+            this.FossilHollowLabel.Text = "HOLW";
+            // 
+            // FossilSanctifiedLabel
+            // 
+            this.FossilSanctifiedLabel.AutoSize = true;
+            this.FossilSanctifiedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilSanctifiedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilSanctifiedLabel.Location = new System.Drawing.Point(592, 176);
+            this.FossilSanctifiedLabel.Name = "FossilSanctifiedLabel";
+            this.FossilSanctifiedLabel.Size = new System.Drawing.Size(57, 20);
+            this.FossilSanctifiedLabel.TabIndex = 0;
+            this.FossilSanctifiedLabel.Text = "SANC";
+            // 
+            // FossilFundamentalLabel
+            // 
+            this.FossilFundamentalLabel.AutoSize = true;
+            this.FossilFundamentalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFundamentalLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilFundamentalLabel.Location = new System.Drawing.Point(525, 176);
+            this.FossilFundamentalLabel.Name = "FossilFundamentalLabel";
+            this.FossilFundamentalLabel.Size = new System.Drawing.Size(58, 20);
+            this.FossilFundamentalLabel.TabIndex = 0;
+            this.FossilFundamentalLabel.Text = "FUND";
+            // 
+            // FossilGildedLabel
+            // 
+            this.FossilGildedLabel.AutoSize = true;
+            this.FossilGildedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilGildedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilGildedLabel.Location = new System.Drawing.Point(461, 176);
+            this.FossilGildedLabel.Name = "FossilGildedLabel";
+            this.FossilGildedLabel.Size = new System.Drawing.Size(52, 20);
+            this.FossilGildedLabel.TabIndex = 0;
+            this.FossilGildedLabel.Text = "GILD";
+            // 
+            // FossilBloodstainedLabel
+            // 
+            this.FossilBloodstainedLabel.AutoSize = true;
+            this.FossilBloodstainedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilBloodstainedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilBloodstainedLabel.Location = new System.Drawing.Point(360, 176);
+            this.FossilBloodstainedLabel.Name = "FossilBloodstainedLabel";
+            this.FossilBloodstainedLabel.Size = new System.Drawing.Size(56, 20);
+            this.FossilBloodstainedLabel.TabIndex = 0;
+            this.FossilBloodstainedLabel.Text = "BLDS";
+            // 
+            // FossilTangledLabel
+            // 
+            this.FossilTangledLabel.AutoSize = true;
+            this.FossilTangledLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTangledLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilTangledLabel.Location = new System.Drawing.Point(293, 176);
+            this.FossilTangledLabel.Name = "FossilTangledLabel";
+            this.FossilTangledLabel.Size = new System.Drawing.Size(57, 20);
+            this.FossilTangledLabel.TabIndex = 0;
+            this.FossilTangledLabel.Text = "TANG";
+            // 
+            // FossilShudderingLabel
+            // 
+            this.FossilShudderingLabel.AutoSize = true;
+            this.FossilShudderingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilShudderingLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilShudderingLabel.Location = new System.Drawing.Point(788, 110);
+            this.FossilShudderingLabel.Name = "FossilShudderingLabel";
+            this.FossilShudderingLabel.Size = new System.Drawing.Size(60, 20);
+            this.FossilShudderingLabel.TabIndex = 0;
+            this.FossilShudderingLabel.Text = "SHUD";
+            // 
+            // FossilSerratedLabel
+            // 
+            this.FossilSerratedLabel.AutoSize = true;
+            this.FossilSerratedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilSerratedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilSerratedLabel.Location = new System.Drawing.Point(723, 110);
+            this.FossilSerratedLabel.Name = "FossilSerratedLabel";
+            this.FossilSerratedLabel.Size = new System.Drawing.Size(59, 20);
+            this.FossilSerratedLabel.TabIndex = 0;
+            this.FossilSerratedLabel.Text = "SERR";
+            // 
+            // FossilLucentLabel
+            // 
+            this.FossilLucentLabel.AutoSize = true;
+            this.FossilLucentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilLucentLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilLucentLabel.Location = new System.Drawing.Point(660, 110);
+            this.FossilLucentLabel.Name = "FossilLucentLabel";
+            this.FossilLucentLabel.Size = new System.Drawing.Size(54, 20);
+            this.FossilLucentLabel.TabIndex = 0;
+            this.FossilLucentLabel.Text = "LUCT";
+            // 
+            // FossilAethericLabel
+            // 
+            this.FossilAethericLabel.AutoSize = true;
+            this.FossilAethericLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilAethericLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilAethericLabel.Location = new System.Drawing.Point(593, 110);
+            this.FossilAethericLabel.Name = "FossilAethericLabel";
+            this.FossilAethericLabel.Size = new System.Drawing.Size(56, 20);
+            this.FossilAethericLabel.TabIndex = 0;
+            this.FossilAethericLabel.Text = "AETH";
+            // 
+            // FossilDeftLabel
+            // 
+            this.FossilDeftLabel.AutoSize = true;
+            this.FossilDeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilDeftLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilDeftLabel.Location = new System.Drawing.Point(525, 110);
+            this.FossilDeftLabel.Name = "FossilDeftLabel";
+            this.FossilDeftLabel.Size = new System.Drawing.Size(55, 20);
+            this.FossilDeftLabel.TabIndex = 0;
+            this.FossilDeftLabel.Text = "DEFT";
+            // 
+            // FossilPrismaticLabel
+            // 
+            this.FossilPrismaticLabel.AutoSize = true;
+            this.FossilPrismaticLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPrismaticLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilPrismaticLabel.Location = new System.Drawing.Point(459, 110);
+            this.FossilPrismaticLabel.Name = "FossilPrismaticLabel";
+            this.FossilPrismaticLabel.Size = new System.Drawing.Size(59, 20);
+            this.FossilPrismaticLabel.TabIndex = 0;
+            this.FossilPrismaticLabel.Text = "PRSM";
+            // 
+            // FossilPerfectLabel
+            // 
+            this.FossilPerfectLabel.AutoSize = true;
+            this.FossilPerfectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPerfectLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilPerfectLabel.Location = new System.Drawing.Point(395, 110);
+            this.FossilPerfectLabel.Name = "FossilPerfectLabel";
+            this.FossilPerfectLabel.Size = new System.Drawing.Size(54, 20);
+            this.FossilPerfectLabel.TabIndex = 0;
+            this.FossilPerfectLabel.Text = "PRFT";
+            // 
+            // FossilCorrodedLabel
+            // 
+            this.FossilCorrodedLabel.AutoSize = true;
+            this.FossilCorrodedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilCorrodedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilCorrodedLabel.Location = new System.Drawing.Point(326, 110);
+            this.FossilCorrodedLabel.Name = "FossilCorrodedLabel";
+            this.FossilCorrodedLabel.Size = new System.Drawing.Size(60, 20);
+            this.FossilCorrodedLabel.TabIndex = 0;
+            this.FossilCorrodedLabel.Text = "CORR";
+            // 
+            // FossilBoundLabel
+            // 
+            this.FossilBoundLabel.AutoSize = true;
+            this.FossilBoundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilBoundLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilBoundLabel.Location = new System.Drawing.Point(260, 110);
+            this.FossilBoundLabel.Name = "FossilBoundLabel";
+            this.FossilBoundLabel.Size = new System.Drawing.Size(59, 20);
+            this.FossilBoundLabel.TabIndex = 0;
+            this.FossilBoundLabel.Text = "BOUN";
+            // 
+            // FossilPristineLabel
+            // 
+            this.FossilPristineLabel.AutoSize = true;
+            this.FossilPristineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilPristineLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilPristineLabel.Location = new System.Drawing.Point(725, 44);
+            this.FossilPristineLabel.Name = "FossilPristineLabel";
+            this.FossilPristineLabel.Size = new System.Drawing.Size(55, 20);
+            this.FossilPristineLabel.TabIndex = 0;
+            this.FossilPristineLabel.Text = "PRST";
+            // 
+            // FossilMetallicLabel
+            // 
+            this.FossilMetallicLabel.AutoSize = true;
+            this.FossilMetallicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilMetallicLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilMetallicLabel.Location = new System.Drawing.Point(659, 44);
+            this.FossilMetallicLabel.Name = "FossilMetallicLabel";
+            this.FossilMetallicLabel.Size = new System.Drawing.Size(55, 20);
+            this.FossilMetallicLabel.TabIndex = 0;
+            this.FossilMetallicLabel.Text = "METL";
+            // 
+            // FossilScorchedLabel
+            // 
+            this.FossilScorchedLabel.AutoSize = true;
+            this.FossilScorchedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilScorchedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilScorchedLabel.Location = new System.Drawing.Point(591, 44);
+            this.FossilScorchedLabel.Name = "FossilScorchedLabel";
+            this.FossilScorchedLabel.Size = new System.Drawing.Size(59, 20);
+            this.FossilScorchedLabel.TabIndex = 0;
+            this.FossilScorchedLabel.Text = "SCOR";
+            // 
+            // FossilAberrantLabel
+            // 
+            this.FossilAberrantLabel.AutoSize = true;
+            this.FossilAberrantLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilAberrantLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilAberrantLabel.Location = new System.Drawing.Point(525, 44);
+            this.FossilAberrantLabel.Name = "FossilAberrantLabel";
+            this.FossilAberrantLabel.Size = new System.Drawing.Size(58, 20);
+            this.FossilAberrantLabel.TabIndex = 0;
+            this.FossilAberrantLabel.Text = "ABER";
+            // 
+            // FossilFrigidLabel
+            // 
+            this.FossilFrigidLabel.AutoSize = true;
+            this.FossilFrigidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilFrigidLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilFrigidLabel.Location = new System.Drawing.Point(462, 44);
+            this.FossilFrigidLabel.Name = "FossilFrigidLabel";
+            this.FossilFrigidLabel.Size = new System.Drawing.Size(53, 20);
+            this.FossilFrigidLabel.TabIndex = 0;
+            this.FossilFrigidLabel.Text = "FRIG";
+            // 
+            // FossilDenseLabel
+            // 
+            this.FossilDenseLabel.AutoSize = true;
+            this.FossilDenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilDenseLabel.ForeColor = System.Drawing.Color.Peru;
+            this.FossilDenseLabel.Location = new System.Drawing.Point(393, 44);
+            this.FossilDenseLabel.Name = "FossilDenseLabel";
+            this.FossilDenseLabel.Size = new System.Drawing.Size(58, 20);
+            this.FossilDenseLabel.TabIndex = 0;
+            this.FossilDenseLabel.Text = "DNSE";
+            // 
+            // FossilJaggedLabel
+            // 
+            this.FossilJaggedLabel.AutoSize = true;
+            this.FossilJaggedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilJaggedLabel.ForeColor = System.Drawing.Color.Tan;
+            this.FossilJaggedLabel.Location = new System.Drawing.Point(327, 44);
+            this.FossilJaggedLabel.Name = "FossilJaggedLabel";
+            this.FossilJaggedLabel.Size = new System.Drawing.Size(57, 20);
+            this.FossilJaggedLabel.TabIndex = 0;
+            this.FossilJaggedLabel.Text = "JAGD";
+            // 
+            // FossilTotalPoor
+            // 
+            this.FossilTotalPoor.AutoSize = true;
+            this.FossilTotalPoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTotalPoor.ForeColor = System.Drawing.Color.Yellow;
+            this.FossilTotalPoor.Location = new System.Drawing.Point(599, 592);
+            this.FossilTotalPoor.Name = "FossilTotalPoor";
+            this.FossilTotalPoor.Size = new System.Drawing.Size(32, 24);
+            this.FossilTotalPoor.TabIndex = 0;
+            this.FossilTotalPoor.Text = "0c";
+            // 
+            // FossilTotalPoorLabel
+            // 
+            this.FossilTotalPoorLabel.AutoSize = true;
+            this.FossilTotalPoorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FossilTotalPoorLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.FossilTotalPoorLabel.Location = new System.Drawing.Point(463, 592);
+            this.FossilTotalPoorLabel.Name = "FossilTotalPoorLabel";
+            this.FossilTotalPoorLabel.Size = new System.Drawing.Size(116, 24);
+            this.FossilTotalPoorLabel.TabIndex = 0;
+            this.FossilTotalPoorLabel.Text = "Total Price:";
+            // 
+            // LeagueSelector
+            // 
+            this.LeagueSelector.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LeagueSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LeagueSelector.FormattingEnabled = true;
+            this.LeagueSelector.Location = new System.Drawing.Point(764, 4);
+            this.LeagueSelector.Name = "LeagueSelector";
+            this.LeagueSelector.Size = new System.Drawing.Size(121, 23);
+            this.LeagueSelector.TabIndex = 1001;
+            // 
+            // StartPanel
+            // 
+            this.StartPanel.Controls.Add(this.StartInstructions);
+            this.StartPanel.Controls.Add(this.StartPastebin);
+            this.StartPanel.Location = new System.Drawing.Point(12, 30);
+            this.StartPanel.Name = "StartPanel";
+            this.StartPanel.Size = new System.Drawing.Size(1109, 640);
+            this.StartPanel.TabIndex = 1003;
+            // 
+            // StartInstructions
+            // 
+            this.StartInstructions.BackColor = System.Drawing.Color.Black;
+            this.StartInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StartInstructions.ForeColor = System.Drawing.Color.White;
+            this.StartInstructions.Location = new System.Drawing.Point(389, 0);
+            this.StartInstructions.Multiline = true;
+            this.StartInstructions.Name = "StartInstructions";
+            this.StartInstructions.ReadOnly = true;
+            this.StartInstructions.Size = new System.Drawing.Size(330, 76);
+            this.StartInstructions.TabIndex = 0;
+            this.StartInstructions.Text = resources.GetString("StartInstructions.Text");
+            // 
+            // StartPastebin
+            // 
+            this.StartPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StartPastebin.Location = new System.Drawing.Point(274, 78);
+            this.StartPastebin.Name = "StartPastebin";
+            this.StartPastebin.Size = new System.Drawing.Size(561, 511);
+            this.StartPastebin.TabIndex = 1;
+            this.StartPastebin.Text = "Paste things here";
+            // 
+            // ScreencapButton
+            // 
+            this.ScreencapButton.Location = new System.Drawing.Point(12, 647);
+            this.ScreencapButton.Name = "ScreencapButton";
+            this.ScreencapButton.Size = new System.Drawing.Size(143, 23);
+            this.ScreencapButton.TabIndex = 999;
+            this.ScreencapButton.Text = "Copy Screen to Clipboard";
+            this.ScreencapButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpPanel
+            // 
+            this.StashDumpPanel.Controls.Add(this.StashDumpExitButton);
+            this.StashDumpPanel.Controls.Add(this.StashDumpGoButton);
+            this.StashDumpPanel.Controls.Add(this.StashDumpAccountNameLabel);
+            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndexLabel);
+            this.StashDumpPanel.Controls.Add(this.StashDumpAccountName);
+            this.StashDumpPanel.Controls.Add(this.StashDumpTabIndex);
+            this.StashDumpPanel.Controls.Add(this.StashDumpInstructions);
+            this.StashDumpPanel.Controls.Add(this.StashDumpPastebin);
+            this.StashDumpPanel.Location = new System.Drawing.Point(12, 30);
+            this.StashDumpPanel.Name = "StashDumpPanel";
+            this.StashDumpPanel.Size = new System.Drawing.Size(1109, 640);
+            this.StashDumpPanel.TabIndex = 1004;
+            // 
+            // StashDumpExitButton
+            // 
+            this.StashDumpExitButton.BackgroundImage = global::PoePricing.Properties.Resources.cross;
+            this.StashDumpExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StashDumpExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StashDumpExitButton.Location = new System.Drawing.Point(1074, 3);
+            this.StashDumpExitButton.Name = "StashDumpExitButton";
+            this.StashDumpExitButton.Size = new System.Drawing.Size(32, 32);
+            this.StashDumpExitButton.TabIndex = 5;
+            this.StashDumpExitButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpGoButton
+            // 
+            this.StashDumpGoButton.Location = new System.Drawing.Point(940, 75);
+            this.StashDumpGoButton.Name = "StashDumpGoButton";
+            this.StashDumpGoButton.Size = new System.Drawing.Size(67, 23);
+            this.StashDumpGoButton.TabIndex = 3;
+            this.StashDumpGoButton.Text = "Go";
+            this.StashDumpGoButton.UseVisualStyleBackColor = true;
+            // 
+            // StashDumpAccountNameLabel
+            // 
+            this.StashDumpAccountNameLabel.AutoSize = true;
+            this.StashDumpAccountNameLabel.Cursor = System.Windows.Forms.Cursors.Help;
+            this.StashDumpAccountNameLabel.ForeColor = System.Drawing.Color.White;
+            this.StashDumpAccountNameLabel.Location = new System.Drawing.Point(904, 23);
+            this.StashDumpAccountNameLabel.Name = "StashDumpAccountNameLabel";
+            this.StashDumpAccountNameLabel.Size = new System.Drawing.Size(93, 13);
+            this.StashDumpAccountNameLabel.TabIndex = 0;
+            this.StashDumpAccountNameLabel.Text = "Account Name (?)";
+            // 
+            // StashDumpTabIndexLabel
+            // 
+            this.StashDumpTabIndexLabel.AutoSize = true;
+            this.StashDumpTabIndexLabel.Cursor = System.Windows.Forms.Cursors.Help;
+            this.StashDumpTabIndexLabel.ForeColor = System.Drawing.Color.White;
+            this.StashDumpTabIndexLabel.Location = new System.Drawing.Point(789, 23);
+            this.StashDumpTabIndexLabel.Name = "StashDumpTabIndexLabel";
+            this.StashDumpTabIndexLabel.Size = new System.Drawing.Size(70, 13);
+            this.StashDumpTabIndexLabel.TabIndex = 0;
+            this.StashDumpTabIndexLabel.Text = "Tab Index (?)";
+            // 
+            // StashDumpAccountName
+            // 
+            this.StashDumpAccountName.BackColor = System.Drawing.Color.Black;
+            this.StashDumpAccountName.ForeColor = System.Drawing.Color.White;
+            this.StashDumpAccountName.Location = new System.Drawing.Point(907, 39);
+            this.StashDumpAccountName.MaxLength = 30;
+            this.StashDumpAccountName.Name = "StashDumpAccountName";
+            this.StashDumpAccountName.Size = new System.Drawing.Size(100, 20);
+            this.StashDumpAccountName.TabIndex = 2;
+            this.StashDumpAccountName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // StashDumpTabIndex
+            // 
+            this.StashDumpTabIndex.BackColor = System.Drawing.Color.Black;
+            this.StashDumpTabIndex.ForeColor = System.Drawing.Color.White;
+            this.StashDumpTabIndex.Location = new System.Drawing.Point(792, 39);
+            this.StashDumpTabIndex.MaxLength = 4;
+            this.StashDumpTabIndex.Name = "StashDumpTabIndex";
+            this.StashDumpTabIndex.Size = new System.Drawing.Size(100, 20);
+            this.StashDumpTabIndex.TabIndex = 1;
+            this.StashDumpTabIndex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // StashDumpInstructions
+            // 
+            this.StashDumpInstructions.BackColor = System.Drawing.Color.Black;
+            this.StashDumpInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StashDumpInstructions.ForeColor = System.Drawing.Color.White;
+            this.StashDumpInstructions.Location = new System.Drawing.Point(389, 0);
+            this.StashDumpInstructions.Multiline = true;
+            this.StashDumpInstructions.Name = "StashDumpInstructions";
+            this.StashDumpInstructions.ReadOnly = true;
+            this.StashDumpInstructions.Size = new System.Drawing.Size(330, 122);
+            this.StashDumpInstructions.TabIndex = 0;
+            this.StashDumpInstructions.Text = resources.GetString("StashDumpInstructions.Text");
+            // 
+            // StashDumpPastebin
+            // 
+            this.StashDumpPastebin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StashDumpPastebin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StashDumpPastebin.Location = new System.Drawing.Point(274, 125);
+            this.StashDumpPastebin.Name = "StashDumpPastebin";
+            this.StashDumpPastebin.Size = new System.Drawing.Size(561, 511);
+            this.StashDumpPastebin.TabIndex = 4;
+            this.StashDumpPastebin.Text = "Paste things here";
+            // 
+            // StashDumpButton
+            // 
+            this.StashDumpButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.StashDumpButton.Location = new System.Drawing.Point(935, 647);
+            this.StashDumpButton.Name = "StashDumpButton";
+            this.StashDumpButton.Size = new System.Drawing.Size(107, 23);
+            this.StashDumpButton.TabIndex = 1005;
+            this.StashDumpButton.Text = "Import Stash";
+            this.StashDumpButton.UseVisualStyleBackColor = true;
             // 
             // PoePricing
             // 
@@ -2365,24 +2365,24 @@ namespace PoePricing
             this.ScarabBasePanel.PerformLayout();
             this.ScarabPoorPanel.ResumeLayout(false);
             this.ScarabPoorPanel.PerformLayout();
+            this.ScarabPanel.ResumeLayout(false);
+            this.ScarabPanel.PerformLayout();
             this.EssenceBasePanel.ResumeLayout(false);
             this.EssenceBasePanel.PerformLayout();
             this.EssencePoorPanel.ResumeLayout(false);
             this.EssencePoorPanel.PerformLayout();
+            this.EssencePanel.ResumeLayout(false);
+            this.EssencePanel.PerformLayout();
             this.FossilBasePanel.ResumeLayout(false);
             this.FossilBasePanel.PerformLayout();
             this.FossilPoorPanel.ResumeLayout(false);
             this.FossilPoorPanel.PerformLayout();
+            this.FossilPanel.ResumeLayout(false);
+            this.FossilPanel.PerformLayout();
             this.StartPanel.ResumeLayout(false);
             this.StartPanel.PerformLayout();
             this.StashDumpPanel.ResumeLayout(false);
             this.StashDumpPanel.PerformLayout();
-            this.FossilPanel.ResumeLayout(false);
-            this.FossilPanel.PerformLayout();
-            this.EssencePanel.ResumeLayout(false);
-            this.EssencePanel.PerformLayout();
-            this.ScarabPanel.ResumeLayout(false);
-            this.ScarabPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2404,7 +2404,7 @@ namespace PoePricing
         private System.Windows.Forms.Label ElderLabel;
         private System.Windows.Forms.Label HarbingerLabel;
         private System.Windows.Forms.Label CartographyLabel;
-        private System.Windows.Forms.Label PerandusLabel;
+        private System.Windows.Forms.Label ExpeditionLabel;
         private System.Windows.Forms.Label ShaperLabel;
         private System.Windows.Forms.Label BlightLabel;
         private System.Windows.Forms.Label AmbushLabel;
@@ -2426,7 +2426,7 @@ namespace PoePricing
         private System.Windows.Forms.Label SulphitePoorLabel;
         private System.Windows.Forms.Label ShaperPoorLabel;
         private System.Windows.Forms.Label ReliquaryPoorLabel;
-        private System.Windows.Forms.Label PerandusPoorLabel;
+        private System.Windows.Forms.Label ExpeditionPoorLabel;
         private System.Windows.Forms.Label MetamorphPoorLabel;
         private System.Windows.Forms.Label LegionPoorLabel;
         private System.Windows.Forms.Label ScarabTotalPoor;
@@ -2500,7 +2500,7 @@ namespace PoePricing
         private System.Windows.Forms.Label FossilJaggedLabel;
         private System.Windows.Forms.Label FossilTotalPoor;
         private System.Windows.Forms.Label FossilTotalPoorLabel;
-        private System.Windows.Forms.Label FossilEncrustedLabel;
+        private System.Windows.Forms.Label FossilFundamentalLabel;
         private System.Windows.Forms.Label FossilGildedLabel;
         private System.Windows.Forms.Label FossilBloodstainedLabel;
         private System.Windows.Forms.Label FossilTangledLabel;
@@ -2508,7 +2508,7 @@ namespace PoePricing
         private System.Windows.Forms.Label FossilSerratedLabel;
         private System.Windows.Forms.Label FossilLucentLabel;
         private System.Windows.Forms.Label FossilAethericLabel;
-        private System.Windows.Forms.Label FossilEnchantedLabel;
+        private System.Windows.Forms.Label FossilDeftLabel;
         private System.Windows.Forms.Label FossilPrismaticLabel;
         private System.Windows.Forms.Label FossilPerfectLabel;
         private System.Windows.Forms.Label FossilCorrodedLabel;
@@ -2541,8 +2541,8 @@ namespace PoePricing
         private System.Windows.Forms.Label FossilLucentPoorLabel;
         private System.Windows.Forms.Label FossilJaggedPoorLabel;
         private System.Windows.Forms.Label FossilHollowPoorLabel;
-        private System.Windows.Forms.Label FossilEncrustedPoorLabel;
-        private System.Windows.Forms.Label FossilEnchantedPoorLabel;
+        private System.Windows.Forms.Label FossilFundamentalPoorLabel;
+        private System.Windows.Forms.Label FossilDeftPoorLabel;
         private System.Windows.Forms.Label FossilDensePoorLabel;
         private System.Windows.Forms.Label FossilCorrodedPoorLabel;
         private System.Windows.Forms.Label FossilBoundPoorLabel;
